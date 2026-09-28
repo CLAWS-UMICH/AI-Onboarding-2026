@@ -3,11 +3,11 @@ Onboarding repo for the 2026-27 year, AI subteam.
 
 **Task:** write training data for 35 EVA voice intents, fine-tune a small text model (MiniLM) to classify them, and test it on sentences it has never seen. Voice (Whisper + TTS) is optional.
 
-Full guide: [`onboarding/claws_intent_onboarding.pdf`](onboarding/claws_intent_onboarding.pdf)
+Full guide: [`claws_intent_onboarding.pdf`](claws_intent_onboarding.pdf)
 
 ## Layout
 ```
-onboarding/
+.
 ├── claws_intent_onboarding.pdf   # the guide (read this first)
 ├── code/                         # shared scripts; don't edit or copy
 │   ├── intents.json              # the 35 intent labels
@@ -26,8 +26,8 @@ Members: aaron, evan, raiana, sam, utsav, vivian.
 
 ## Quick start
 ```bash
+git clone https://github.com/CLAWS-UMICH/AI-Onboarding-2026.git && cd AI-Onboarding-2026
 git checkout -b onboarding/<your-name>
-cd onboarding
 python3 -m venv .venv && source .venv/bin/activate
 pip install torch transformers sentence-transformers scikit-learn
 cd submissions/<your-name>

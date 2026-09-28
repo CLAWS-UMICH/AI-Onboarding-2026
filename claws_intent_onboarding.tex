@@ -45,7 +45,7 @@
 \textbf{Goal:} write training sentences for 35 EVA intents, fine-tune a small
 model, classify sentences it has never seen. Text in, intent out is required.
 Voice (Whisper + TTS) is a stretch goal. Shared code is in
-\texttt{onboarding/code/}; your work goes in your own folder.
+\texttt{code/}; your work goes in your own folder.
 
 \section{Where this fits}
 
@@ -132,19 +132,19 @@ Your folder is already made:
 \toprule
 Member & Folder \\
 \midrule
-Aaron  & \texttt{onboarding/submissions/aaron/} \\
-Evan   & \texttt{onboarding/submissions/evan/} \\
-Raiana & \texttt{onboarding/submissions/raiana/} \\
-Sam    & \texttt{onboarding/submissions/sam/} \\
-Utsav  & \texttt{onboarding/submissions/utsav/} \\
-Vivian & \texttt{onboarding/submissions/vivian/} \\
+Aaron  & \texttt{submissions/aaron/} \\
+Evan   & \texttt{submissions/evan/} \\
+Raiana & \texttt{submissions/raiana/} \\
+Sam    & \texttt{submissions/sam/} \\
+Utsav  & \texttt{submissions/utsav/} \\
+Vivian & \texttt{submissions/vivian/} \\
 \bottomrule
 \end{tabular}
 \end{center}
 
 \begin{lstlisting}[language=bash]
+git clone https://github.com/CLAWS-UMICH/AI-Onboarding-2026.git && cd AI-Onboarding-2026
 git checkout -b onboarding/<your-name>
-cd onboarding
 python3 -m venv .venv && source .venv/bin/activate
 pip install torch transformers sentence-transformers scikit-learn
 cd submissions/<your-name>        # run everything from here
