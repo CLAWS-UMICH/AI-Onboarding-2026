@@ -1,32 +1,44 @@
-"""Check a training file: known labels, one label per row, no duplicates, enough rows."""
+"""Check a training file: valid JSON, known labels, one label per row, no duplicates, enough rows."""
 import json
 import sys
 from collections import Counter
 from pathlib import Path
 
-MIN_PER_INTENT = 30
+MIN_PER_INTENT = 30    # rows per intent in total
+MIN_HANDWRITTEN = 20   # rows per intent without "source": "llm"
 
-labels = {x["intent"] for x in json.load(open(Path(__file__).with_name("intents.json")))}
-seen, counts, problems = set(), Counter(), 0
+if len(sys.argv) != 2:
+    sys.exit("usage: python validate.py data/train.jsonl")
+
+intents_file = Path(__file__).with_name("intents.json")
+labels = {x["intent"] for x in json.loads(intents_file.read_text(encoding="utf-8"))}
+seen, total, handwritten, problems = set(), Counter(), Counter(), []
 
 for n, line in enumerate(open(sys.argv[1], encoding="utf-8"), 1):
     if not line.strip():
         continue
-    row = json.loads(line)
-    text, intents = row["text"].strip(), row["intents"]
-    if len(intents) != 1 or intents[0] not in labels:
-        print(f"line {n}: bad intents {intents}")
-        problems += 1
+    try:
+        row = json.loads(line)
+        text, intents = row["text"].strip(), row["intents"]
+    except (ValueError, KeyError, TypeError, AttributeError):
+        problems.append(f'line {n}: not a valid row, expected {{"text": "...", "intents": ["label"]}}')
+        continue
+    if not isinstance(intents, list) or len(intents) != 1 or intents[0] not in labels:
+        problems.append(f"line {n}: bad intents {intents!r} (need exactly one label from intents.json)")
+        continue
     if text.lower() in seen:
-        print(f"line {n}: duplicate text '{text}'")
-        problems += 1
+        problems.append(f"line {n}: duplicate text '{text}'")
     seen.add(text.lower())
-    counts.update(intents)
+    total[intents[0]] += 1
+    if row.get("source") != "llm":
+        handwritten[intents[0]] += 1
 
 for label in sorted(labels):
-    if counts[label] < MIN_PER_INTENT:
-        print(f"{label}: only {counts[label]} rows (need {MIN_PER_INTENT})")
-        problems += 1
+    if total[label] < MIN_PER_INTENT:
+        problems.append(f"{label}: only {total[label]} rows (need {MIN_PER_INTENT})")
+    if handwritten[label] < MIN_HANDWRITTEN:
+        problems.append(f"{label}: only {handwritten[label]} handwritten rows (need {MIN_HANDWRITTEN})")
 
-print(f"{sum(counts.values())} rows, {problems} problems")
+print("\n".join(problems))
+print(f"{sum(total.values())} rows, {len(problems)} problems")
 sys.exit(1 if problems else 0)

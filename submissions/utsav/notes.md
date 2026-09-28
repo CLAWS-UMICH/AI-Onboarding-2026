@@ -3,6 +3,7 @@
 ## Results
 - Baseline accuracy (baseline.txt):
 - Fine-tuned accuracy / macro-F1 (runs/metrics.json):
+- Peer test on vivian's data (`predict.py --peer vivian`):
 
 ## Unseen sentences (10+)
 | Sentence | Predicted | Confidence | Correct? |

@@ -39,10 +39,13 @@
 \author{CLAWS Voice Assistant Team}
 \date{Fall 2026}
 
+% Edit this line to set the deadline.
+\newcommand{\duedate}{TBD}
+
 \begin{document}
 \maketitle
 
-\textbf{Goal:} write training sentences for 35 EVA intents, fine-tune a small
+\textbf{Goal:} write training sentences for 36 EVA intents, fine-tune a small
 model, classify sentences it has never seen. Text in, intent out is required.
 Voice (Whisper + TTS) is a stretch goal. Shared code is in
 \texttt{code/}; your work goes in your own folder.
@@ -66,13 +69,18 @@ Voice (Whisper + TTS) is a stretch goal. Shared code is in
 \end{center}
 
 Solid = required. Dashed = stretch. The model picks an intent (plus a name for
-five intents). The HUD reads the actual value from telemetry.
+five intents), or \texttt{unhandled} if the speech isn't a command. The HUD
+reads the actual value from telemetry.
+
+\textbf{Due:} \duedate. \quad \textbf{Reviewed and merged by:} Ayush.
 
 \newpage
 \section{The intents}
 
 Labels are \textbf{case-sensitive}. Copy them exactly. Also in
-\texttt{code/intents.json}.
+\texttt{code/intents.json}. \texttt{unhandled} is a real intent: write 30+
+things an astronaut might say that aren't commands (``nice view'', ``copy
+that'', ``hold on'').
 
 \begin{center}
 \small
@@ -117,6 +125,8 @@ Intent & Meaning & Name \\
 \texttt{Add\_waypoint} & Add a named waypoint & $\checkmark$ \\
 \texttt{Delete\_waypoint} & Delete a named waypoint & $\checkmark$ \\
 \texttt{Complete\_task} & Mark a named task complete & $\checkmark$ \\
+\midrule
+\texttt{unhandled} & Not a command: small talk, noise, off-topic & \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -124,8 +134,9 @@ Intent & Meaning & Name \\
 \newpage
 \section{Setup}
 
-Any laptop works (CPU is fine; MPS/CUDA used if present). Python 3.9+.
-Your folder is already made:
+Any laptop works (CPU is fine; MPS/CUDA used if present). Use
+\textbf{Python 3.10--3.12} (newer versions may lack PyTorch builds). Your
+folder is already made:
 
 \begin{center}
 \begin{tabular}{@{}ll@{}}
@@ -143,24 +154,46 @@ Vivian & \texttt{submissions/vivian/} \\
 \end{center}
 
 \begin{lstlisting}[language=bash]
-git clone https://github.com/CLAWS-UMICH/AI-Onboarding-2026.git && cd AI-Onboarding-2026
+git clone https://github.com/CLAWS-UMICH/AI-Onboarding-2026.git
+cd AI-Onboarding-2026
 git checkout -b onboarding/<your-name>
-python3 -m venv .venv && source .venv/bin/activate
-pip install torch transformers sentence-transformers scikit-learn
+\end{lstlisting}
+
+\textbf{macOS / Linux}
+\begin{lstlisting}[language=bash]
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 cd submissions/<your-name>        # run everything from here
 \end{lstlisting}
+
+\textbf{Windows (PowerShell)}
+\begin{lstlisting}
+py -3.11 -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+cd submissions\<your-name>
+\end{lstlisting}
+
+If PowerShell refuses to run \texttt{Activate.ps1}, run this once:
+\begin{lstlisting}
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+\end{lstlisting}
+In
+Command Prompt use \texttt{.venv\textbackslash Scripts\textbackslash
+activate.bat}. After activating, \texttt{python} works the same on every OS
+and all commands below use forward slashes, which Windows accepts.
 
 Each folder has an empty \texttt{data/train.jsonl}, an empty \texttt{runs/},
 and a \texttt{notes.md} template. Run scripts from your folder as
 \texttt{python ../../code/<script>.py}; data and results land in your folder.
-Don't copy the code into your folder.
+Never edit \texttt{code/}. Your PR should only touch your own folder.
 
 \newpage
 \section{Write the training data}
 
 The model is only as good as your sentences. One file,
-\texttt{data/train.jsonl}, one JSON object per line, exactly one intent each
-(same format as \texttt{EVA/data/}):
+\texttt{data/train.jsonl}, one JSON object per line, exactly one intent each:
 
 \begin{lstlisting}[language=json]
 {"text": "what's my primary oxygen at", "intents": ["get_oxy_pri_storage"]}
@@ -168,11 +201,16 @@ The model is only as good as your sentences. One file,
 {"text": "uh how hot is it in the suit", "intents": ["get_temperature"]}
 {"text": "pull up the map", "intents": ["open_menu_navigation"]}
 {"text": "drop a waypoint called Crater Rim", "intents": ["Add_waypoint"]}
+{"text": "copy that, heading out", "intents": ["unhandled"]}
+{"text": "whats the heart rate", "intents": ["get_heart_rate"], "source": "llm"}
 \end{lstlisting}
 
 \textbf{Rules}
 \begin{itemize}
-  \item \textbf{30+ per intent} (50 ideal). Write them yourself; LLM ideas OK if you check every line.
+  \item \textbf{30+ per intent} (50 ideal), and \textbf{at least 20 per intent handwritten}.
+        LLM-written rows are allowed on top, but check every one and tag it
+        \texttt{"source": "llm"}. The validator counts both.
+  \item Save the file as UTF-8 (VS Code does by default).
   \item Mix questions, commands and clipped phrases (``fan RPM?''). 2 to 20 words.
   \item Vary words: oxygen/O2/ox, battery/charge/power, menu/panel/screen.
   \item Sound like speech: ``uh'', ``please'', lowercase, no punctuation.
@@ -195,11 +233,11 @@ This is the number to beat.
 \lstinputlisting[language=Python, caption={\texttt{baseline.py}}]{code/baseline.py}
 
 \begin{lstlisting}[language=bash]
-python ../../code/baseline.py > baseline.txt
+python ../../code/baseline.py      # also writes baseline.txt
 \end{lstlisting}
 
 \textbf{Step 1: fine-tune.} MiniLM (22M params) + mean pooling + one linear
-layer, same as the club model in \texttt{EVA/Models/singleintentmodel/}.
+layer.
 
 \begin{center}
 \begin{tikzpicture}[node distance=6mm]
@@ -207,7 +245,7 @@ layer, same as the club model in \texttt{EVA/Models/singleintentmodel/}.
   \node[box, right=of in] (tok) {Tokenizer};
   \node[box, right=of tok] (enc) {MiniLM\\(6 layers)};
   \node[box, right=of enc] (pool) {Mean pool\\384 numbers};
-  \node[box, right=of pool] (head) {Linear\\384$\to$35};
+  \node[box, right=of pool] (head) {Linear\\384$\to$36};
   \node[box, below=8mm of head] (out) {Softmax\\$\to$ intent};
   \draw[arr] (in) -- (tok);
   \draw[arr] (tok) -- (enc);
@@ -240,15 +278,32 @@ python ../../code/predict.py "add a waypoint named Olympus Ridge"
  "confidence": 0.969, "slot": "Olympus Ridge"}
 \end{lstlisting}
 
-\textbf{Held-out accuracy is not the real test.} Write 10+ new sentences
-(ideally a friend writes some) and see what breaks. Common confusions:
-primary/secondary, scrubber A/B, coolant gas/liquid,
-\texttt{open\_menu\_navigation}/\texttt{reroute\_navigation}, and the
-coordinate/target/waypoint intents. Fix confusions with better data, not code.
+Anything under 0.5 confidence comes back as \texttt{unhandled}.
+
+\textbf{Held-out accuracy is not the real test}, because you wrote both halves.
+Two real tests:
+
+\begin{enumerate}
+  \item Write 10+ new sentences you didn't plan for and see what breaks.
+  \item \textbf{Peer test.} Score your model on the next member's data
+        (alphabetical, wrapping around: Aaron$\to$Evan$\to$Raiana$\to$Sam%
+        $\to$Utsav$\to$Vivian$\to$Aaron). They need to have pushed their branch.
+\end{enumerate}
+
+\begin{lstlisting}[language=bash]
+git fetch origin
+python ../../code/predict.py --peer evan
+\end{lstlisting}
+
+This reads their file straight from git, so nothing lands in your folder.
+Common confusions:
+primary vs.\ secondary, scrubber A vs.\ B, coolant gas vs.\ liquid, opening
+the nav menu vs.\ rerouting, and the coordinate/target/waypoint intents. Fix confusions with better data, not code.
 
 \textbf{Names:} \texttt{extract\_slot} takes the text after the last trigger
 word. It's naive (``mark task soil sample complete'' $\to$ \texttt{soil sample
-complete}). Improving it is a bonus.
+complete}). Improving it is a bonus: copy \texttt{predict.py} into your own
+folder, improve it there, and run your copy.
 
 \newpage
 \section{Stretch: make it talk}
@@ -258,6 +313,10 @@ pip install faster-whisper sounddevice pyttsx3
 python ../../code/voice.py
 \end{lstlisting}
 
+macOS asks for microphone permission for your terminal the first time. Allow
+it, then restart the terminal. macOS speaks with the built-in \texttt{say};
+Windows and Linux use \texttt{pyttsx3}.
+
 \lstinputlisting[language=Python, caption={\texttt{voice.py}}]{code/voice.py}
 
 Next steps: \texttt{small.en} Whisper, speak the real value back, push-to-talk.
@@ -265,18 +324,26 @@ Next steps: \texttt{small.en} Whisper, speak the real value back, push-to-talk.
 \newpage
 \section{What to hand in}
 
-\textbf{One big PR.} Commit as often as you like on your branch, but open a
-single PR when everything below is done. No partial PRs. Only touch your own
-folder, so the six PRs never conflict.
+\textbf{Due \duedate. One big PR.} Commit and push as often as you like
+(push early so your peer can test on your data), but open a single PR only
+when everything below is done. No partial PRs. Only touch your own folder, so
+the six PRs never conflict.
 
 \begin{itemize}[label=$\square$]
-  \item \texttt{data/train.jsonl} (0 problems in \texttt{validate.py})
-  \item \texttt{runs/metrics.json}, \texttt{runs/label2id.json}
-  \item \texttt{baseline.txt} (output of \texttt{baseline.py})
-  \item \texttt{notes.md}: filled in (results, 10+ unseen sentences, what failed)
+  \item \texttt{data/train.jsonl}: 0 problems in \texttt{validate.py}
+  \item \texttt{runs/metrics.json}: fine-tuned model beats \texttt{baseline.txt}
+  \item \texttt{runs/label2id.json}, \texttt{baseline.txt}
+  \item \texttt{notes.md}: results, 10+ unseen sentences, peer test score, what failed
   \item \textbf{Not} \texttt{runs/model.pt} (\texttt{.gitignore} skips it)
 \end{itemize}
 
-Stuck for over an hour? Ask in the channel.
+The PR is done when every box is checked. Ayush reviews and merges. Stuck for
+over an hour? Ask in the channel.
+
+\textbf{Editing this guide:} change the \texttt{.tex}, rebuild, and commit
+both the \texttt{.tex} and the PDF.
+\begin{lstlisting}[language=bash]
+latexmk -pdf claws_intent_onboarding.tex
+\end{lstlisting}
 
 \end{document}

@@ -15,7 +15,7 @@ random.seed(0)
 torch.manual_seed(0)
 device = best_device()
 
-rows = [json.loads(line) for line in open("data/train.jsonl") if line.strip()]
+rows = [json.loads(line) for line in open("data/train.jsonl", encoding="utf-8") if line.strip()]
 labels = sorted({r["intents"][0] for r in rows})
 label2id = {label: i for i, label in enumerate(labels)}
 texts = [r["text"] for r in rows]
@@ -45,6 +45,7 @@ for epoch in range(1, EPOCHS + 1):
     model.train()
     order = list(range(len(X_tr)))
     random.shuffle(order)
+    losses = []
     for s in range(0, len(order), BATCH):
         idx = order[s:s + BATCH]
         logits = model(encode([X_tr[i] for i in idx]))
@@ -53,8 +54,9 @@ for epoch in range(1, EPOCHS + 1):
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
+        losses.append(loss.item())
     pred = predict_ids(X_te)
-    print(f"epoch {epoch}  loss {loss.item():.3f}  "
+    print(f"epoch {epoch}  loss {sum(losses) / len(losses):.3f}  "
           f"acc {accuracy_score(y_te, pred):.3f}  "
           f"macro-F1 {f1_score(y_te, pred, average='macro'):.3f}")
 
@@ -65,9 +67,9 @@ for text, gold, guess in zip(X_te, y_te, pred):
 
 os.makedirs("runs", exist_ok=True)
 torch.save(model.state_dict(), "runs/model.pt")
-json.dump(label2id, open("runs/label2id.json", "w"), indent=2)
+json.dump(label2id, open("runs/label2id.json", "w", encoding="utf-8"), indent=2)
 json.dump({"accuracy": accuracy_score(y_te, pred),
            "macro_f1": f1_score(y_te, pred, average="macro"),
            "train_rows": len(X_tr), "test_rows": len(X_te),
            "epochs": EPOCHS, "batch": BATCH, "lr": LR},
-          open("runs/metrics.json", "w"), indent=2)
+          open("runs/metrics.json", "w", encoding="utf-8"), indent=2)
