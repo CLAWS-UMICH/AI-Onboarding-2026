@@ -1,6 +1,7 @@
 # vivian: onboarding notes
 
 ## Results
+- Model (see MODELS.md):
 - Baseline accuracy (baseline.txt):
 - Fine-tuned accuracy / macro-F1 (runs/metrics.json):
 - Peer test on aaron's data (`predict.py --peer aaron`):

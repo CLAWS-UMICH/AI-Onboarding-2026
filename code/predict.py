@@ -3,6 +3,7 @@
   python predict.py --peer evan             score your model on evan's pushed data
 """
 import json
+import os
 import re
 import subprocess
 import sys
@@ -10,7 +11,10 @@ import sys
 import torch
 from transformers import AutoTokenizer
 
-from model import MODEL_NAME, IntentModel
+# Use the encoder train.py actually used, not whatever MODEL is set to now.
+metrics = json.load(open("runs/metrics.json", encoding="utf-8"))
+os.environ["MODEL"] = metrics.get("model", "sentence-transformers/all-MiniLM-L6-v2")
+from model import MODEL_NAME, IntentModel  # noqa: E402
 
 MIN_CONF = 0.5   # below this, answer "unhandled" instead of guessing
 

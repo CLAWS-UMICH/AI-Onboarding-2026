@@ -1,9 +1,12 @@
-"""MiniLM encoder + mean pooling + one linear layer (same shape as EVA/Models/singleintentmodel)."""
+"""Encoder + mean pooling + one linear layer (same shape as EVA/Models/singleintentmodel).
+Pick the encoder with the MODEL env var (see MODELS.md); default is MiniLM."""
+import os
+
 import torch
 from torch import nn
 from transformers import AutoModel
 
-MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+MODEL_NAME = os.environ.get("MODEL", "sentence-transformers/all-MiniLM-L6-v2")
 
 
 class IntentModel(nn.Module):
@@ -13,7 +16,7 @@ class IntentModel(nn.Module):
         self.head = nn.Linear(self.encoder.config.hidden_size, num_labels)
 
     def forward(self, batch):
-        hidden = self.encoder(**batch).last_hidden_state   # (B, tokens, 384)
+        hidden = self.encoder(**batch).last_hidden_state   # (B, tokens, hidden)
         mask = batch["attention_mask"].unsqueeze(-1).float()
         pooled = (hidden * mask).sum(1) / mask.sum(1).clamp(min=1e-9)
         return self.head(pooled)                           # (B, num_labels) logits

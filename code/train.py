@@ -1,4 +1,4 @@
-"""Step 1: fine-tune MiniLM + linear head on data/train.jsonl, save to runs/."""
+"""Step 1: fine-tune the encoder (MODEL env var) + linear head on data/train.jsonl, save to runs/."""
 import json
 import os
 import random
@@ -68,7 +68,7 @@ for text, gold, guess in zip(X_te, y_te, pred):
 os.makedirs("runs", exist_ok=True)
 torch.save(model.state_dict(), "runs/model.pt")
 json.dump(label2id, open("runs/label2id.json", "w", encoding="utf-8"), indent=2)
-json.dump({"accuracy": accuracy_score(y_te, pred),
+json.dump({"model": MODEL_NAME, "accuracy": accuracy_score(y_te, pred),
            "macro_f1": f1_score(y_te, pred, average="macro"),
            "train_rows": len(X_tr), "test_rows": len(X_te),
            "epochs": EPOCHS, "batch": BATCH, "lr": LR},

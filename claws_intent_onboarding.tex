@@ -75,7 +75,7 @@ reads the actual value from telemetry.
 \section{The intents}
 
 Labels are \textbf{case-sensitive}. Copy them exactly. Also in
-\texttt{code/intents.json}. \texttt{unhandled} is a real intent: write 30+
+\texttt{code/intents.json} and a copy in your folder. \texttt{unhandled} is a real intent: write 30+
 things an astronaut might say that aren't commands (``nice view'', ``copy
 that'', ``hold on'').
 
@@ -182,7 +182,8 @@ activate.bat}. After activating, \texttt{python} works the same on every OS
 and all commands below use forward slashes, which Windows accepts.
 
 Each folder has an empty \texttt{data/train.jsonl}, an empty \texttt{runs/},
-and a \texttt{notes.md} template. Run scripts from your folder as
+a \texttt{notes.md} template, \texttt{MODELS.md} (the model options below) and
+a copy of \texttt{intents.json}. Run scripts from your folder as
 \texttt{python ../../code/<script>.py}; data and results land in your folder.
 Never edit \texttt{code/}. Your PR should only touch your own folder.
 
@@ -224,6 +225,32 @@ python ../../code/validate.py data/train.jsonl   # fix until "0 problems"
 \newpage
 \section{Build the model}
 
+\textbf{Pick an encoder.} Three options, all on Hugging Face. MiniLM is the
+default; try another once your data is solid. Click a name for its model page
+(\texttt{huggingface.co/<model>}).
+
+\begin{center}
+\small
+\begin{tabular}{@{}llll@{}}
+\toprule
+Model & Params & Hidden & Notes \\
+\midrule
+\href{https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2}{\texttt{sentence-transformers/all-MiniLM-L6-v2}} & 22M & 384 & default, fastest \\
+\href{https://huggingface.co/BAAI/bge-small-en-v1.5}{\texttt{BAAI/bge-small-en-v1.5}} & 33M & 384 & often more accurate \\
+\href{https://huggingface.co/sentence-transformers/all-mpnet-base-v2}{\texttt{sentence-transformers/all-mpnet-base-v2}} & 110M & 768 & biggest, $\sim$5$\times$ slower \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Set \texttt{MODEL} before running the baseline and training. Both use it, so the
+comparison stays fair. \texttt{predict.py} reads your choice back from
+\texttt{runs/metrics.json}. Changed models? Re-run both.
+
+\begin{lstlisting}[language=bash]
+export MODEL=BAAI/bge-small-en-v1.5       # macOS / Linux
+$env:MODEL="BAAI/bge-small-en-v1.5"       # Windows PowerShell
+\end{lstlisting}
+
 \textbf{Step 0: baseline.} Frozen sentence embeddings + logistic regression.
 This is the number to beat.
 
@@ -233,8 +260,8 @@ This is the number to beat.
 python ../../code/baseline.py      # also writes baseline.txt
 \end{lstlisting}
 
-\textbf{Step 1: fine-tune.} MiniLM (22M params) + mean pooling + one linear
-layer.
+\textbf{Step 1: fine-tune.} Encoder + mean pooling + one linear layer (sizes
+below are for MiniLM).
 
 \begin{center}
 \begin{tikzpicture}[node distance=6mm]
@@ -330,7 +357,7 @@ the six PRs never conflict.
   \item \texttt{data/train.jsonl}: 0 problems in \texttt{validate.py}
   \item \texttt{runs/metrics.json}: fine-tuned model beats \texttt{baseline.txt}
   \item \texttt{runs/label2id.json}, \texttt{baseline.txt}
-  \item \texttt{notes.md}: results, 10+ unseen sentences, peer test score, what failed
+  \item \texttt{notes.md}: model used, results, 10+ unseen sentences, peer test score, what failed
   \item \textbf{Not} \texttt{runs/model.pt} (\texttt{.gitignore} skips it)
 \end{itemize}
 

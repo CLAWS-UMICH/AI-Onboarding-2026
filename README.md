@@ -1,7 +1,7 @@
 # AI-Onboarding-2026
 Onboarding repo for the 2026-27 year, AI subteam.
 
-**Task:** write training data for 36 EVA voice intents (35 commands + `unhandled`), fine-tune a small text model (MiniLM) to classify them, and test it on sentences it has never seen, including a teammate's data. Voice (Whisper + TTS) is optional.
+**Task:** write training data for 36 EVA voice intents (35 commands + `unhandled`), fine-tune a small text model (MiniLM by default, 3 options in `MODELS.md`) to classify them, and test it on sentences it has never seen, including a teammate's data. Voice (Whisper + TTS) is optional.
 
 Full guide: [`claws_intent_onboarding.pdf`](claws_intent_onboarding.pdf)
 
@@ -14,10 +14,12 @@ Full guide: [`claws_intent_onboarding.pdf`](claws_intent_onboarding.pdf)
 │   ├── intents.json              # the 36 intent labels
 │   ├── validate.py               # check your data
 │   ├── baseline.py               # embeddings + logistic regression
-│   ├── model.py, train.py        # fine-tune MiniLM
+│   ├── model.py, train.py        # fine-tune the encoder (MODEL env var)
 │   ├── predict.py                # classify a sentence / peer test
 │   └── voice.py                  # optional: mic -> Whisper -> model -> TTS
 └── submissions/<your-name>/      # your work goes here only
+    ├── MODELS.md                 # the 3 encoders + how to switch
+    ├── intents.json              # copy of code/intents.json
     ├── data/train.jsonl
     ├── runs/
     └── notes.md
