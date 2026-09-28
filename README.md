@@ -25,7 +25,7 @@ Full guide: [`claws_intent_onboarding.pdf`](claws_intent_onboarding.pdf)
     └── notes.md
 ```
 
-Members and peer-test partner: aaron → evan → raiana → sam → utsav → vivian → aaron.
+Members and peer-test partner: aaron → evan → gloria → raiana → sam → utsav → vivian → aaron.
 
 ## Quick start
 Use Python 3.10–3.12.
