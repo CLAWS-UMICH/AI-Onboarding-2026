@@ -1,12 +1,12 @@
 """Encoder + mean pooling + one linear layer (same shape as EVA/Models/singleintentmodel).
-Pick the encoder with the MODEL env var (see MODELS.md); default is MiniLM."""
+Pick the encoder with the INTENT_MODEL env var (see MODELS.md); default is MiniLM."""
 import os
 
 import torch
 from torch import nn
 from transformers import AutoModel
 
-MODEL_NAME = os.environ.get("MODEL", "sentence-transformers/all-MiniLM-L6-v2")
+MODEL_NAME = os.environ.get("INTENT_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
 
 
 class IntentModel(nn.Module):

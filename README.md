@@ -14,7 +14,7 @@ Full guide: [`claws_intent_onboarding.pdf`](claws_intent_onboarding.pdf)
 │   ├── intents.json              # the 36 intent labels
 │   ├── validate.py               # check your data
 │   ├── baseline.py               # embeddings + logistic regression
-│   ├── model.py, train.py        # fine-tune the encoder (MODEL env var)
+│   ├── model.py, train.py        # fine-tune the encoder (INTENT_MODEL env var)
 │   ├── predict.py                # classify a sentence / peer test
 │   └── voice.py                  # optional: mic -> Whisper -> model -> TTS
 └── submissions/<your-name>/      # your work goes here only

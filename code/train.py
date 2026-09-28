@@ -1,4 +1,4 @@
-"""Step 1: fine-tune the encoder (MODEL env var) + linear head on data/train.jsonl, save to runs/."""
+"""Step 1: fine-tune the encoder (INTENT_MODEL env var) + linear head on data/train.jsonl, save to runs/."""
 import json
 import os
 import random

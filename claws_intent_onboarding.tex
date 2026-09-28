@@ -243,13 +243,15 @@ Model & Params & Hidden & Notes \\
 \end{tabular}
 \end{center}
 
-Set \texttt{MODEL} before running the baseline and training. Both use it, so the
-comparison stays fair. \texttt{predict.py} reads your choice back from
+Set \texttt{INTENT\_MODEL} before running the baseline and training. Both use
+it, so you compare like with like (the baseline pools each model the way it was
+published; fine-tuning always mean-pools). \texttt{predict.py} reads your choice back from
 \texttt{runs/metrics.json}. Changed models? Re-run both.
 
 \begin{lstlisting}[language=bash]
-export MODEL=BAAI/bge-small-en-v1.5       # macOS / Linux
-$env:MODEL="BAAI/bge-small-en-v1.5"       # Windows PowerShell
+export INTENT_MODEL=BAAI/bge-small-en-v1.5       # macOS / Linux
+$env:INTENT_MODEL="BAAI/bge-small-en-v1.5"       # Windows PowerShell
+set INTENT_MODEL=BAAI/bge-small-en-v1.5          # Windows Command Prompt
 \end{lstlisting}
 
 \textbf{Step 0: baseline.} Frozen sentence embeddings + logistic regression.

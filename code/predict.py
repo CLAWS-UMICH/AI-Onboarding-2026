@@ -11,9 +11,12 @@ import sys
 import torch
 from transformers import AutoTokenizer
 
-# Use the encoder train.py actually used, not whatever MODEL is set to now.
+if not os.path.exists("runs/metrics.json"):
+    sys.exit("No runs/metrics.json. Run python ../../code/train.py from your folder first.")
+# Use the encoder train.py actually used, not whatever INTENT_MODEL is set to now.
 metrics = json.load(open("runs/metrics.json", encoding="utf-8"))
-os.environ["MODEL"] = metrics.get("model", "sentence-transformers/all-MiniLM-L6-v2")
+os.environ["INTENT_MODEL"] = metrics.get("model", "sentence-transformers/all-MiniLM-L6-v2")
+sys.path.append(os.path.join("..", "..", "code"))  # lets a copy in your folder find model.py
 from model import MODEL_NAME, IntentModel  # noqa: E402
 
 MIN_CONF = 0.5   # below this, answer "unhandled" instead of guessing
