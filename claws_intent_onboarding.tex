@@ -308,22 +308,8 @@ python ../../code/predict.py "add a waypoint named Olympus Ridge"
 Anything under 0.5 confidence comes back as \texttt{unhandled}.
 
 \textbf{Held-out accuracy is not the real test}, because you wrote both halves.
-Two real tests:
-
-\begin{enumerate}
-  \item Write 10+ new sentences you didn't plan for and see what breaks.
-  \item \textbf{Peer test.} Score your model on the next member's data
-        (alphabetical, wrapping around: Aaron$\to$Evan$\to$Gloria$\to$Raiana$\to$Sam%
-        $\to$Utsav$\to$Vivian$\to$Aaron). They need to have pushed their branch.
-\end{enumerate}
-
-\begin{lstlisting}[language=bash]
-git fetch origin
-python ../../code/predict.py --peer evan
-\end{lstlisting}
-
-This reads their file straight from git, so nothing lands in your folder.
-Common confusions:
+The real test: write 10+ new sentences you didn't plan for and see what
+breaks. Common confusions:
 primary vs.\ secondary, scrubber A vs.\ B, coolant gas vs.\ liquid, opening
 the nav menu vs.\ rerouting, and the coordinate/target/waypoint intents. Fix confusions with better data, not code.
 
@@ -351,8 +337,7 @@ Next steps: \texttt{small.en} Whisper, speak the real value back, push-to-talk.
 \newpage
 \section{What to hand in}
 
-\textbf{One big PR.} Commit and push as often as you like
-(push early so your peer can test on your data), but open a single PR only
+\textbf{One big PR.} Commit and push as often as you like, but open a single PR only
 when everything below is done. No partial PRs. Only touch your own folder, so
 the seven PRs never conflict.
 
@@ -360,7 +345,7 @@ the seven PRs never conflict.
   \item \texttt{data/train.jsonl}: 0 problems in \texttt{validate.py}
   \item \texttt{runs/metrics.json}: fine-tuned model beats \texttt{baseline.txt}
   \item \texttt{runs/label2id.json}, \texttt{baseline.txt}
-  \item \texttt{notes.md}: model used, results, 10+ unseen sentences, peer test score, what failed
+  \item \texttt{notes.md}: model used, results, 10+ unseen sentences, what failed
   \item \textbf{Not} \texttt{runs/model.pt} (\texttt{.gitignore} skips it)
 \end{itemize}
 
