@@ -1,7 +1,7 @@
 # AI-Onboarding-2026
 Onboarding repo for the 2026-27 year, AI subteam.
 
-**Task:** write training data for 36 EVA voice intents (35 commands + `unhandled`), fine-tune a small text model (MiniLM by default, 3 options in `MODELS.md`) to classify them, and test it on sentences it has never seen. Voice (Whisper + TTS) is optional.
+**Task:** write training data (by hand, synthetically generated, or both) for 36 EVA voice intents (35 commands + `unhandled`), fine-tune a small text model (MiniLM by default, 3 options in `MODELS.md`) to classify them, and test it on sentences it has never seen. Voice (Whisper + TTS) is optional.
 
 Full guide: [`claws_intent_onboarding.pdf`](claws_intent_onboarding.pdf)
 
@@ -38,7 +38,7 @@ py -3.11 -m venv .venv; .venv\Scripts\Activate.ps1    # Windows PowerShell
 pip install -r requirements.txt
 cd submissions/<your-name>
 
-python ../../code/validate.py data/train.jsonl   # until "0 problems"
+python ../../code/validate.py data/train.jsonl   # until "0 problems" (30+ rows per intent, handwritten or synthetic)
 python ../../code/baseline.py                    # writes baseline.txt
 python ../../code/train.py
 python ../../code/predict.py "open the nav menu"

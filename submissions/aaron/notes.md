@@ -1,6 +1,7 @@
 # aaron: onboarding notes
 
 ## Results
+- Data: handwritten / synthetic / mix (how did you generate it?):
 - Model (see MODELS.md):
 - Baseline accuracy (baseline.txt):
 - Fine-tuned accuracy / macro-F1 (runs/metrics.json):
