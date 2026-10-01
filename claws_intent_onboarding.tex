@@ -44,8 +44,9 @@
 
 \textbf{Goal:} write training sentences for 36 EVA intents, fine-tune a small
 model, classify sentences it has never seen. Text in, intent out is required.
-Voice (Whisper + TTS) is a stretch goal. Shared code is in
-\texttt{code/}; your work goes in your own folder.
+Voice (Whisper + TTS) is a stretch goal. You write all the code yourself;
+\texttt{code/} has the data validator plus short outlines of each step.
+Your work goes in your own folder.
 
 \section{Where this fits}
 
@@ -184,8 +185,10 @@ and all commands below use forward slashes, which Windows accepts.
 
 Each folder has an empty \texttt{data/train.jsonl}, an empty \texttt{runs/},
 a \texttt{notes.md} template, \texttt{MODELS.md} (the model options below) and
-a copy of \texttt{intents.json}. Run scripts from your folder as
-\texttt{python ../../code/<script>.py}; data and results land in your folder.
+a copy of \texttt{intents.json}. Write your scripts in your folder and run
+them from there. Structure them however you like (one file or many, notebook,
+any library in \texttt{requirements.txt} or beyond). The outlines in
+\texttt{code/} say what each step should do, not how.
 Never edit \texttt{code/}. Your PR should only touch your own folder.
 
 \newpage
@@ -243,28 +246,17 @@ Model & Params & Hidden & Notes \\
 \end{tabular}
 \end{center}
 
-Set \texttt{INTENT\_MODEL} before running the baseline and training. Both use
-it, so you compare like with like (the baseline pools each model the way it was
-published; fine-tuning always mean-pools). \texttt{predict.py} reads your choice back from
-\texttt{runs/metrics.json}. Changed models? Re-run both.
-
-\begin{lstlisting}[language=bash]
-export INTENT_MODEL=BAAI/bge-small-en-v1.5       # macOS / Linux
-$env:INTENT_MODEL="BAAI/bge-small-en-v1.5"       # Windows PowerShell
-set INTENT_MODEL=BAAI/bge-small-en-v1.5          # Windows Command Prompt
-\end{lstlisting}
+Use the same encoder for your baseline and your fine-tune so you compare like
+with like. Changed models? Re-run both.
 
 \textbf{Step 0: baseline.} Frozen sentence embeddings + logistic regression.
 This is the number to beat.
 
-\lstinputlisting[language=Python, caption={\texttt{baseline.py}}]{code/baseline.py}
+\lstinputlisting[language=Python, caption={\texttt{code/baseline.py} (outline)}]{code/baseline.py}
 
-\begin{lstlisting}[language=bash]
-python ../../code/baseline.py      # also writes baseline.txt
-\end{lstlisting}
 
-\textbf{Step 1: fine-tune.} Encoder + mean pooling + one linear layer (sizes
-below are for MiniLM).
+\textbf{Step 1: fine-tune.} One shape that works: encoder + mean pooling + one
+linear layer (sizes below are for MiniLM). Try something else if you want.
 
 \begin{center}
 \begin{tikzpicture}[node distance=6mm]
@@ -282,30 +274,28 @@ below are for MiniLM).
 \end{tikzpicture}
 \end{center}
 
-\lstinputlisting[language=Python, caption={\texttt{model.py}}]{code/model.py}
+\lstinputlisting[language=Python, caption={\texttt{code/model.py} (outline)}]{code/model.py}
 
-\texttt{train.py} holds out 15\%, trains 10 epochs, prints accuracy each epoch,
-then lists every miss. Expect $>$0.95 and a win over the baseline; if not, fix
+Hold out the same split as your baseline. Print accuracy as you train and list
+every miss at the end. Expect $>$0.95 and a win over the baseline; if not, fix
 your data.
 
-\lstinputlisting[language=Python, caption={\texttt{train.py}}]{code/train.py}
+\lstinputlisting[language=Python, caption={\texttt{code/train.py} (outline)}]{code/train.py}
 
-\begin{lstlisting}[language=bash]
-python ../../code/train.py
-\end{lstlisting}
 
 \newpage
 \section{Evaluate and predict}
 
-\lstinputlisting[language=Python, caption={\texttt{predict.py}}]{code/predict.py}
+\lstinputlisting[language=Python, caption={\texttt{code/predict.py} (outline)}]{code/predict.py}
 
+Output can look like this:
 \begin{lstlisting}[language=bash]
-python ../../code/predict.py "add a waypoint named Olympus Ridge"
+python predict.py "add a waypoint named Olympus Ridge"
 {"text": "add a waypoint named Olympus Ridge", "selected_intent": "Add_waypoint",
  "confidence": 0.969, "slot": "Olympus Ridge"}
 \end{lstlisting}
 
-Anything under 0.5 confidence comes back as \texttt{unhandled}.
+Pick a confidence threshold below which you answer \texttt{unhandled}.
 
 \textbf{Held-out accuracy is not the real test}, because you wrote both halves.
 The real test: write 10+ new sentences you didn't plan for and see what
@@ -313,24 +303,22 @@ breaks. Common confusions:
 primary vs.\ secondary, scrubber A vs.\ B, coolant gas vs.\ liquid, opening
 the nav menu vs.\ rerouting, and the coordinate/target/waypoint intents. Fix confusions with better data, not code.
 
-\textbf{Names:} \texttt{extract\_slot} takes the text after the last trigger
-word. It's naive (``mark task soil sample complete'' $\to$ \texttt{soil sample
-complete}). Improving it is a bonus: copy \texttt{predict.py} into your own
-folder, improve it there, and run your copy.
+\textbf{Names:} for the five name intents, pull the name out of the sentence
+(``add a waypoint named Olympus Ridge'' $\to$ \texttt{Olympus Ridge}). Watch for
+cases like ``mark task soil sample complete''. Any approach is fine.
 
 \newpage
 \section{Stretch: make it talk}
 
 \begin{lstlisting}[language=bash]
-pip install faster-whisper sounddevice pyttsx3
-python ../../code/voice.py
+pip install faster-whisper sounddevice pyttsx3   # one option
 \end{lstlisting}
 
 macOS asks for microphone permission for your terminal the first time. Allow
-it, then restart the terminal. macOS speaks with the built-in \texttt{say};
-Windows and Linux use \texttt{pyttsx3}.
+it, then restart the terminal. macOS has a built-in \texttt{say} command;
+\texttt{pyttsx3} works on Windows and Linux.
 
-\lstinputlisting[language=Python, caption={\texttt{voice.py}}]{code/voice.py}
+\lstinputlisting[language=Python, caption={\texttt{code/voice.py} (outline)}]{code/voice.py}
 
 Next steps: \texttt{small.en} Whisper, speak the real value back, push-to-talk.
 
@@ -342,8 +330,10 @@ when everything below is done. No partial PRs. Only touch your own folder, so
 the seven PRs never conflict.
 
 \begin{itemize}[label=$\square$]
+  \item Your code (any structure)
   \item \texttt{data/train.jsonl}: 0 problems in \texttt{validate.py}
   \item \texttt{runs/metrics.json}: fine-tuned model beats \texttt{baseline.txt}
+  \item \texttt{runs/metrics.json} has at least \texttt{model}, \texttt{accuracy}, \texttt{macro\_f1}
   \item \texttt{runs/label2id.json}, \texttt{baseline.txt}
   \item \texttt{notes.md}: model used, results, 10+ unseen sentences, what failed
   \item \textbf{Not} \texttt{runs/model.pt} (\texttt{.gitignore} skips it)

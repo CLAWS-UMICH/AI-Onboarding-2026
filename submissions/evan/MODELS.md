@@ -1,6 +1,6 @@
 # Models you can use
 
-Pick one encoder. `baseline.py` and `train.py` both use it, so you compare like with like. `predict.py` reads your choice back from `runs/metrics.json`.
+Pick one encoder. Use the same one for your baseline and your fine-tune so you compare like with like.
 
 | # | Model | Size | Hidden | Notes |
 |---|---|---|---|---|
@@ -9,20 +9,6 @@ Pick one encoder. `baseline.py` and `train.py` both use it, so you compare like 
 | 3 | [sentence-transformers/all-mpnet-base-v2](https://huggingface.co/sentence-transformers/all-mpnet-base-v2) | 110M | 768 | Biggest and usually most accurate, ~5x slower. Use a GPU/MPS if you have one. |
 
 ## Switch models
-Set `INTENT_MODEL` before running baseline and train (skip it to use MiniLM):
-
-```bash
-export INTENT_MODEL=BAAI/bge-small-en-v1.5          # macOS / Linux
-$env:INTENT_MODEL="BAAI/bge-small-en-v1.5"          # Windows PowerShell
-set INTENT_MODEL=BAAI/bge-small-en-v1.5             # Windows Command Prompt
-
-python ../../code/baseline.py
-python ../../code/train.py
-python ../../code/predict.py "open the nav menu"   # no INTENT_MODEL needed
-```
-
-Changed models? Re-run **both** baseline and train. The variable only lasts for that terminal; open a new one and set it again. Write the model you used in `notes.md`.
-
-One difference: the baseline embeds sentences the way each model was published (bge uses its first token, the other two average all tokens), while fine-tuning always averages all tokens. Doesn't matter for beating the baseline, just don't be surprised if bge's baseline is relatively strong.
+How you choose the model is up to you (a constant, a CLI flag, an env var). Changed models? Re-run **both** baseline and fine-tune. Write the model you used in `notes.md` and `runs/metrics.json`.
 
 The 36 intent labels are in `intents.json` in this folder (a copy of `code/intents.json`; the validator reads the one in `code/`).

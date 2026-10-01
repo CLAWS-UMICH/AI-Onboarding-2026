@@ -1,30 +1,8 @@
-"""Encoder + mean pooling + one linear layer (same shape as EVA/Models/singleintentmodel).
-Pick the encoder with the INTENT_MODEL env var (see MODELS.md); default is MiniLM."""
-import os
+"""The intent model. Write your own version in your folder.
 
-import torch
-from torch import nn
-from transformers import AutoModel
-
-MODEL_NAME = os.environ.get("INTENT_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
-
-
-class IntentModel(nn.Module):
-    def __init__(self, num_labels):
-        super().__init__()
-        self.encoder = AutoModel.from_pretrained(MODEL_NAME)
-        self.head = nn.Linear(self.encoder.config.hidden_size, num_labels)
-
-    def forward(self, batch):
-        hidden = self.encoder(**batch).last_hidden_state   # (B, tokens, hidden)
-        mask = batch["attention_mask"].unsqueeze(-1).float()
-        pooled = (hidden * mask).sum(1) / mask.sum(1).clamp(min=1e-9)
-        return self.head(pooled)                           # (B, num_labels) logits
-
-
-def best_device():
-    if torch.backends.mps.is_available():
-        return torch.device("mps")
-    if torch.cuda.is_available():
-        return torch.device("cuda")
-    return torch.device("cpu")
+Outline (do it however you like):
+- A pretrained encoder from Hugging Face (MiniLM, BGE-small, MPNet; see MODELS.md).
+- Pool the token outputs into one vector per sentence (mean pooling works well).
+- A classification head that maps that vector to one score per intent.
+- Use MPS/CUDA if available, otherwise CPU.
+"""
