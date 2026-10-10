@@ -59,7 +59,7 @@ LEAD = FILLER | {
     "what", "whats", "what's", "where", "where's", "is", "are", "show", "give", "tell", "find", "get",
     # actions
     "set", "add", "create", "drop", "make", "put", "place", "new", "save", "pin",
-    "delete", "remove", "clear", "erase", "mark", "complete", "check", "off", "finish", "finished",
+    "delete", "remove", "clear", "erase", "rid", "mark", "complete", "check", "off", "finish", "finished",
     "navigate", "route", "take", "go", "guide", "head", "bring", "start",
     # objects
     "waypoint", "marker", "point", "task", "navigation", "nav", "target",

@@ -1123,3 +1123,29 @@
 {"text": "the ground is pretty uneven here", "intents": ["unhandled"], "source": "llm"}
 {"text": "can you believe we're on the moon", "intents": ["unhandled"], "source": "llm"}
 {"text": "sorry wrong channel", "intents": ["unhandled"], "source": "llm"}
+{"text": "am I running low on oxygen", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "how much oxygen do I have left", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "is my oxygen low", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "am I running out of oxygen", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "how much o2 is left", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "do I have enough oxygen", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "oxygen left", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "oxygen", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "battery", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "battery level", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "how much battery is left", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "am I running low on battery", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "power level", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "temperature", "intents": ["get_temperature"], "source": "llm"}
+{"text": "temp", "intents": ["get_temperature"], "source": "llm"}
+{"text": "pulse", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "heart rate", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "warnings", "intents": ["get_warnings"], "source": "llm"}
+{"text": "alerts", "intents": ["get_warnings"], "source": "llm"}
+{"text": "coolant", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "elapsed time", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "vitals", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "tasks", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "navigation", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "map", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "scrubber a", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
