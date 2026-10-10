@@ -45,13 +45,15 @@ WARMUP = 0.1 # fraction of steps spent ramping the learning rate up from 0
 
 # HELPER FUNCTIONS ------------------------------------------------
 
-# Run the model over a list of sentences in batches, return predicted label ids
-def predict_ids(model, tokenizer, texts, device):
+# Run the model over a list of sentences in batches, return predicted label ids and average loss
+# (loss is only computed when ids + loss_fn are given, otherwise it's 0.0)
+def predict_ids(model, tokenizer, texts, device, ids=None, loss_fn=None):
     # switches model to evaluation mode, disabling dropout
     model.eval()
 
-    # will store predictions
+    # will store predictions + summed loss later
     preds = []
+    total_loss = 0.0
 
     # disables gradient computation (backprop) - saves memory + speeds up inference
     with torch.no_grad():
@@ -62,7 +64,12 @@ def predict_ids(model, tokenizer, texts, device):
 
             # add logits to predictions
             preds.extend(logits.argmax(dim=1).tolist())
-    return preds
+
+            # held-out loss, weighted by batch size so the average is per sentence
+            if loss_fn is not None:
+                target = torch.tensor(ids[i:i + BATCH], device=device)
+                total_loss += loss_fn(logits, target).item() * len(target)
+    return preds, total_loss / len(texts)
 
 # MAIN LOOP ---------------------------------------------------------
 
@@ -87,7 +94,7 @@ def main():
     train_ids = [label2id[y] for y in train_y]
     test_ids = [label2id[y] for y in test_y]
 
-    print(f"{MODEL_NAME} on {device}: {len(train_x)} train / {len(test_x)} test, {len(intents)} intents")
+    print(f"{MODEL_NAME} on {device}: {len(train_x)} train / {len(test_x)} test, and {len(intents)} intents")
 
     # loads pre-trained tokenizer
     tokenizer = load_tokenizer()
@@ -106,6 +113,9 @@ def main():
 
     # Defines loss function
     loss_fn = torch.nn.CrossEntropyLoss()
+
+    # One entry per epoch, saved to runs/history.json for plot_curves.py
+    history = []
 
     # Loops through each training epoch
     for epoch in range(1, EPOCHS + 1):
@@ -151,19 +161,29 @@ def main():
             # Accumulates loss
             total_loss += loss.item() * len(idx)
 
-        # Runs model on all test data to get predictions
-        pred = predict_ids(model, tokenizer, test_x, device)
+        # Runs model on all test data to get predictions + held-out loss
+        pred, test_loss = predict_ids(model, tokenizer, test_x, device, test_ids, loss_fn)
 
         # Accuracy + F1 (prints out)
+        train_loss = total_loss / len(train_x)
         acc = accuracy_score(test_ids, pred)
         macro_f1 = f1_score(test_ids, pred, average="macro")
         weighted_f1 = f1_score(test_ids, pred, average="weighted")
-        print(f"epoch {epoch:2d}  loss {total_loss / len(train_x):.4f}  acc {acc:.3f}  macro-F1 {macro_f1:.3f}  weighted-F1 {weighted_f1:.3f}")
+        print(f"epoch {epoch:2d}  loss {train_loss:.4f}  test-loss {test_loss:.4f}  acc {acc:.3f}  macro-F1 {macro_f1:.3f}  weighted-F1 {weighted_f1:.3f}")
+
+        # Records this epoch for ze learning curves
+        history.append({
+            "epoch": epoch,
+            "train_loss": train_loss,
+            "test_loss": test_loss,
+            "accuracy": acc,
+            "macro_f1": macro_f1,
+        })
 
     # Creates list of tuples containing only test samples where model's prediction didn't match true label
     # converts nummeric IDs back to intent names
     misses = [(t, intents[g], intents[p]) for t, g, p in zip(test_x, test_ids, pred) if g != p]
-    print(f"\n{len(misses)} misses out of {len(test_x)}")
+    print(f"\n{len(misses)} misses out of {len(test_x)} :/")
 
     # Loops through each mistake and prints test, expected intent, predicted intent
     for text, gold, guess in misses:
@@ -195,8 +215,9 @@ def main():
 
     # saves metrics dict as JSON file for later comparison
     (RUNS / "metrics.json").write_text(json.dumps(metrics, indent=2), encoding="utf-8")
-    
-    print(f"saved runs/model.pt, runs/label2id.json, runs/metrics.json")
+
+    # saves per-epoch history so plot_curves.py can draw learning curves without ze retraining
+    (RUNS / "history.json").write_text(json.dumps(history, indent=2), encoding="utf-8")
 
 
 if __name__ == "__main__":

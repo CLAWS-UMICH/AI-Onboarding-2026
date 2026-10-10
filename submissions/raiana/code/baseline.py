@@ -101,7 +101,6 @@ def main():
     )
     print(report)
     OUT.write_text(report, encoding="utf-8")
-    print(f"saved {OUT.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

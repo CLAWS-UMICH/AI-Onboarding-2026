@@ -173,7 +173,7 @@ if __name__ == "__main__":
 
     # If no arguments, if blank line, break
     else:
-        print(f"model: {METRICS['model']}. Type a sentence, blank line to quit.")
+        print(f"model: {METRICS['model']}. Type a sentence, and leave line balnk if you want to quit.")
         for line in sys.stdin:
             if not line.strip():
                 break

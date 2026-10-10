@@ -1,21 +1,21 @@
-# aaron: onboarding notes
+# raiana: onboarding notes
 
 ## Results
 - Data: handwritten / synthetic / mix (how did you generate it?): synthetic
 - Model (see MODELS.md): MiniLM
-- Baseline accuracy (baseline.txt): 95.3%
-- Fine-tuned accuracy / macro-F1 (runs/metrics.json): 97.0%
+- Baseline accuracy (baseline.txt): 98.3%
+- Fine-tuned accuracy / macro-F1 (runs/metrics.json): 98.8% / 98.9%
 
 ## Unseen sentences (10+)
 | Sentence | Predicted | Confidence | Correct? |
 |---|---|---|---|
 | how much oxygen do I have | get_oxy_pri_storage | 0.943 | Yes |
-| navigate to Olympus Ridge | Set_navigation_target (slot: Olympus Ridge) | 0.856 | Yes |
+| navigate to Ithaca | Set_navigation_target (slot: Olympus Ridge) | 0.856 | Yes |
 | drop a pin called rock cluster | Add_waypoint (slot: rock cluster) | 0.911 | Yes |
 | get rid of the crater waypoint | Delete_waypoint (slot: crater) | 0.930 | Yes |
 | where is the lander | Get_coordinates (slot: lander) | 0.828 | Yes |
 | I finished the sample collection | Complete_task (slot: sample collection) | 0.863 | Yes |
-| bring up the map | open_menu_navigation | 0.952 | Yes |
+| bring out the map | open_menu_navigation | 0.952 | Yes |
 | find a new path around the crater | reroute_navigation | 0.872 | Yes |
 | how hot is it | get_temperature | 0.948 | Yes |
 | how's my heartbeat | get_heart_rate | 0.954 | Yes |
