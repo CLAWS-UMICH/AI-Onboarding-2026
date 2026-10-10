@@ -1,4 +1,4 @@
-# raiana: onboarding notes
+# RAIANA: onboarding notes
 
 ## Results
 - Data: handwritten / synthetic / mix (how did you generate it?): synthetic
