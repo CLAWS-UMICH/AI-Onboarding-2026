@@ -1,0 +1,114 @@
+{
+ "model": "sentence-transformers/all-mpnet-base-v2",
+ "accuracy": 0.9788,
+ "macro_f1": 0.9785,
+ "seed_mean_accuracy": 0.9859,
+ "seed_std_accuracy": 0.0058,
+ "seed_mean_macro_f1": 0.9867,
+ "seed_std_macro_f1": 0.0065,
+ "saved_seed": 44,
+ "unhandled_threshold": 0.5,
+ "val_accuracy_by_threshold": {
+  "0.0": 0.9947089947089947,
+  "0.05": 0.9947089947089947,
+  "0.1": 0.9947089947089947,
+  "0.15": 0.9947089947089947,
+  "0.2": 0.9947089947089947,
+  "0.25": 0.9947089947089947,
+  "0.3": 0.9947089947089947,
+  "0.35": 0.9947089947089947,
+  "0.4": 0.9947089947089947,
+  "0.45": 0.9947089947089947,
+  "0.5": 0.9947089947089947,
+  "0.55": 0.9841269841269841,
+  "0.6": 0.9735449735449735,
+  "0.65": 0.9682539682539683,
+  "0.7": 0.9629629629629629,
+  "0.75": 0.9312169312169312,
+  "0.8": 0.8624338624338624,
+  "0.85": 0.7037037037037037,
+  "0.9": 0.13227513227513227
+ },
+ "split": {
+  "train": 1413,
+  "val": 189,
+  "test": 283
+ },
+ "hyperparams": {
+  "seeds": [
+   42,
+   43,
+   44
+  ],
+  "epochs": 15,
+  "patience": 3,
+  "batch_size": 32,
+  "lr": 5e-05,
+  "head_lr": 0.001,
+  "smoothing": 0.1
+ },
+ "runs": [
+  {
+   "seed": 42,
+   "best_epoch": 6,
+   "val_macro_f1": 0.9915,
+   "test_accuracy": 0.9929,
+   "test_macro_f1": 0.9944,
+   "seconds": 98
+  },
+  {
+   "seed": 43,
+   "best_epoch": 4,
+   "val_macro_f1": 0.9958,
+   "test_accuracy": 0.9859,
+   "test_macro_f1": 0.9872,
+   "seconds": 77
+  },
+  {
+   "seed": 44,
+   "best_epoch": 4,
+   "val_macro_f1": 0.9962,
+   "test_accuracy": 0.9788,
+   "test_macro_f1": 0.9785,
+   "seconds": 74
+  }
+ ],
+ "test_misses": [
+  {
+   "text": "sec fan speed",
+   "true": "get_fan_sec_rpm",
+   "pred": "get_fan_pri_rpm",
+   "confidence": 0.621
+  },
+  {
+   "text": "i'd like the current speed of the number two fan",
+   "true": "get_fan_sec_rpm",
+   "pred": "get_fan_pri_rpm",
+   "confidence": 0.533
+  },
+  {
+   "text": "hide my vitals",
+   "true": "close_menu",
+   "pred": "Delete_waypoint",
+   "confidence": 0.304
+  },
+  {
+   "text": "how far away is earth right now",
+   "true": "unhandled",
+   "pred": "Get_coordinates",
+   "confidence": 0.809
+  },
+  {
+   "text": "batt one percent?",
+   "true": "get_primary_battery_level",
+   "pred": "get_secondary_battery_level",
+   "confidence": 0.458
+  },
+  {
+   "text": "fan two rpm?",
+   "true": "get_fan_sec_rpm",
+   "pred": "get_fan_pri_rpm",
+   "confidence": 0.448
+  }
+ ]
+}
