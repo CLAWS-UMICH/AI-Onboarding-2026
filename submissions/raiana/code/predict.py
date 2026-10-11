@@ -34,8 +34,8 @@ import re
 import sys
 from pathlib import Path
 
-import torch # noqa: E402
-from model import IntentModel, load_tokenizer, tokenize # noqa: E402
+import torch
+from model import MIN_CONF, IntentModel, load_tokenizer, tokenize
 
 # VARIABLES ------------------------------------------------------
 
@@ -46,8 +46,6 @@ if not (RUNS / "metrics.json").exists():
     sys.exit("No runs/metrics.json yet. Run python code/train.py first.")
 METRICS = json.loads((RUNS / "metrics.json").read_text(encoding="utf-8"))
 os.environ["INTENT_MODEL"] = METRICS["model"] # must happen before importing model.py
-
-MIN_CONF = 0.5 # below this, answer "unhandled" instead of guessing
 
 SLOT_INTENTS = {"Get_coordinates", "Set_navigation_target", "Add_waypoint", "Delete_waypoint", "Complete_task"}
 

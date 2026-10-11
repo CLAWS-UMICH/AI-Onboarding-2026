@@ -1,45 +1,45 @@
 model: sentence-transformers/all-MiniLM-L6-v2
-accuracy: 0.983  macro-F1: 0.982  (train 978, test 173)
+accuracy: 0.930  macro-F1: 0.936  (train 1060, test 186 from test.jsonl)
 
                              precision    recall  f1-score   support
 
-               Add_waypoint       0.80      1.00      0.89         4
-              Complete_task       1.00      1.00      1.00         4
-            Delete_waypoint       1.00      1.00      1.00         4
+               Add_waypoint       1.00      0.50      0.67         6
+              Complete_task       1.00      0.60      0.75         5
+            Delete_waypoint       1.00      1.00      1.00         5
             Get_coordinates       1.00      1.00      1.00         5
-      Set_navigation_target       1.00      0.75      0.86         4
-                 close_menu       1.00      1.00      1.00         4
-         get_co2_production       1.00      1.00      1.00         4
+      Set_navigation_target       0.83      1.00      0.91         5
+                 close_menu       0.67      0.40      0.50         5
+         get_co2_production       1.00      1.00      1.00         5
    get_coolant_gas_pressure       1.00      1.00      1.00         5
-get_coolant_liquid_pressure       1.00      1.00      1.00         4
+get_coolant_liquid_pressure       1.00      1.00      1.00         5
         get_coolant_storage       1.00      1.00      1.00         5
        get_eva_elapsed_time       1.00      1.00      1.00         5
             get_fan_pri_rpm       1.00      1.00      1.00         5
-            get_fan_sec_rpm       1.00      1.00      1.00         4
-             get_heart_rate       1.00      1.00      1.00         5
+            get_fan_sec_rpm       1.00      1.00      1.00         5
+             get_heart_rate       1.00      0.80      0.89         5
     get_helmet_pressure_co2       1.00      1.00      1.00         5
-        get_oxy_consumption       1.00      1.00      1.00         4
+        get_oxy_consumption       1.00      1.00      1.00         5
        get_oxy_pri_pressure       1.00      1.00      1.00         5
-        get_oxy_pri_storage       1.00      1.00      1.00         7
-       get_oxy_sec_pressure       1.00      1.00      1.00         5
-        get_oxy_sec_storage       1.00      1.00      1.00         6
+        get_oxy_pri_storage       0.83      1.00      0.91         5
+       get_oxy_sec_pressure       0.83      1.00      0.91         5
+        get_oxy_sec_storage       1.00      0.80      0.89         5
   get_primary_battery_level       1.00      1.00      1.00         5
- get_scrubber_a_co2_storage       1.00      1.00      1.00         5
- get_scrubber_b_co2_storage       1.00      1.00      1.00         4
+ get_scrubber_a_co2_storage       0.83      1.00      0.91         5
+ get_scrubber_b_co2_storage       1.00      0.80      0.89         5
 get_secondary_battery_level       1.00      1.00      1.00         5
       get_suit_pressure_co2       1.00      1.00      1.00         5
-    get_suit_pressure_other       0.83      1.00      0.91         5
-      get_suit_pressure_oxy       1.00      1.00      1.00         5
-    get_suit_pressure_total       1.00      0.80      0.89         5
+    get_suit_pressure_other       1.00      1.00      1.00         5
+      get_suit_pressure_oxy       1.00      0.80      0.89         5
+    get_suit_pressure_total       1.00      1.00      1.00         5
             get_temperature       1.00      1.00      1.00         5
                get_warnings       1.00      1.00      1.00         5
        open_menu_navigation       1.00      1.00      1.00         5
             open_menu_tasks       1.00      1.00      1.00         5
-              open_menu_uia       1.00      1.00      1.00         4
+              open_menu_uia       1.00      1.00      1.00         5
            open_menu_vitals       1.00      1.00      1.00         5
          reroute_navigation       1.00      0.80      0.89         5
-                  unhandled       0.86      1.00      0.92         6
+                  unhandled       0.56      1.00      0.71        10
 
-                   accuracy                           0.98       173
-                  macro avg       0.99      0.98      0.98       173
-               weighted avg       0.99      0.98      0.98       173
+                   accuracy                           0.93       186
+                  macro avg       0.96      0.93      0.94       186
+               weighted avg       0.95      0.93      0.93       186

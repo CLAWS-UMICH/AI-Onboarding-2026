@@ -12,13 +12,14 @@ Outline (do it however you like):
 
 STEPS -----------------------------------------------------------
 
-1. Reuse baseline.py's load_rows, TEST_SIZE and SEED so the held-out 15% is identical
+1. Reuse baseline.py's load_rows, VAL_SIZE and SEED so we train on the same 85% as the baseline
 2. Sort the intent names and number them 0..35 (label2id), predict.py needs this map back
 3. Train IntentModel (encoder + head, all weights update) with cross-entropy, AdamW,
-   and a learning rate that warms up for the first 10% of steps then decays to 0
-4. After each epoch, score the held-out set: accuracy + macro-F1
-5. Print every held-out sentence the final model gets wrong (that's where the data needs work)
-6. Save runs/model.pt, runs/label2id.json, runs/metrics.json
+   and a learning rate that warms up for the first WARMUP fraction of steps then decays to 0
+4. After each epoch, score the validation split (15% of train.jsonl): accuracy + macro-F15. Print every validation sentence the final model gets wrong (that's where the data needs work)
+6. Score data/test.jsonl ONCE at the end: that's the number in metrics.json
+   - only the count of test misses is printed, so test.jsonl doesn't end up steering the data fixes
+7. Save runs/model.pt, runs/label2id.json, runs/metrics.json
 """
 
 # LIBRARIES ------------------------------------------------------
@@ -31,23 +32,24 @@ from sklearn.metrics import accuracy_score, f1_score
 from sklearn.model_selection import train_test_split
 from transformers import get_linear_schedule_with_warmup
 
-from baseline import ROOT, DATA, TEST_SIZE, SEED, load_rows
-from model import MODEL_NAME, IntentModel, load_tokenizer, pick_device, tokenize
+from baseline import ROOT, DATA, VAL_SIZE, SEED, load_rows, load_test
+from model import MIN_CONF, MODEL_NAME, IntentModel, load_tokenizer, pick_device, tokenize
 
 # VARIABLES ------------------------------------------------------
 
 RUNS = ROOT / "runs"
 
-EPOCHS = 10
-BATCH = 16
-LR = 5e-5 # small, so the pretrained encoder is nudged rather than overwritten
-WARMUP = 0.1 # fraction of steps spent ramping the learning rate up from 0
+EPOCHS = 4
+BATCH = 8
+LR = 1e-4 # small, so the pretrained encoder is nudged rather than overwritten, changed from 5e-5 to 1e-4 (worked pretty good acc)
+WARMUP = 0.4 # fraction of steps spent ramping the learning rate up from 0
 
 # HELPER FUNCTIONS ------------------------------------------------
 
 # Run the model over a list of sentences in batches, return predicted label ids and average loss
 # (loss is only computed when ids + loss_fn are given, otherwise it's 0.0)
-def predict_ids(model, tokenizer, texts, device, ids=None, loss_fn=None):
+# Like predict.py, a top probability under MIN_CONF becomes unhandled
+def predict_ids(model, tokenizer, texts, device, unhandled_id, ids=None, loss_fn=None):
     # switches model to evaluation mode, disabling dropout
     model.eval()
 
@@ -62,8 +64,10 @@ def predict_ids(model, tokenizer, texts, device, ids=None, loss_fn=None):
             # tokenize batch of texts and pass through mdoel to get logits
             logits = model(tokenize(tokenizer, texts[i:i + BATCH], device))
 
-            # add logits to predictions
-            preds.extend(logits.argmax(dim=1).tolist())
+            # top probability + its intent id per sentence, low-confidence guesses fall back to unhandled
+            conf, idx = logits.softmax(dim=1).max(dim=1)
+            idx[conf < MIN_CONF] = unhandled_id
+            preds.extend(idx.tolist())
 
             # held-out loss, weighted by batch size so the average is per sentence
             if loss_fn is not None:
@@ -79,9 +83,10 @@ def main():
     device = pick_device()
 
     texts, labels = load_rows(DATA) # loads raw data
-    train_x, test_x, train_y, test_y = train_test_split(
-        texts, labels, test_size=TEST_SIZE, stratify=labels, random_state=SEED
+    train_x, val_x, train_y, val_y = train_test_split(
+        texts, labels, test_size=VAL_SIZE, stratify=labels, random_state=SEED
     ) # same call as baseline.py, so same split
+    test_x, test_y = load_test(texts) # separate handwritten file
 
     # sorts labels + removes duplicates
     intents = sorted(set(labels))
@@ -90,11 +95,12 @@ def main():
     # this lets model work with integer instead of strings
     label2id = {name: i for i, name in enumerate(intents)}
 
-    # converts all training + testing labels from intent names to their numeric IDs from mapping
+    # converts all training, validation + testing labels from intent names to their numeric IDs from mapping
     train_ids = [label2id[y] for y in train_y]
+    val_ids = [label2id[y] for y in val_y]
     test_ids = [label2id[y] for y in test_y]
 
-    print(f"{MODEL_NAME} on {device}: {len(train_x)} train / {len(test_x)} test, and {len(intents)} intents")
+    print(f"{MODEL_NAME} on {device}: {len(train_x)} train / {len(val_x)} val / {len(test_x)} test, and {len(intents)} intents")
 
     # loads pre-trained tokenizer
     tokenizer = load_tokenizer()
@@ -161,34 +167,41 @@ def main():
             # Accumulates loss
             total_loss += loss.item() * len(idx)
 
-        # Runs model on all test data to get predictions + held-out loss
-        pred, test_loss = predict_ids(model, tokenizer, test_x, device, test_ids, loss_fn)
+        # Runs model on the validation split to get predictions + validation loss
+        val_pred, val_loss = predict_ids(model, tokenizer, val_x, device, label2id["unhandled"], val_ids, loss_fn)
 
-        # Accuracy + F1 (prints out)
+        # Accuracy + F1 on validation (prints out)
         train_loss = total_loss / len(train_x)
-        acc = accuracy_score(test_ids, pred)
-        macro_f1 = f1_score(test_ids, pred, average="macro")
-        weighted_f1 = f1_score(test_ids, pred, average="weighted")
-        print(f"epoch {epoch:2d}  loss {train_loss:.4f}  test-loss {test_loss:.4f}  acc {acc:.3f}  macro-F1 {macro_f1:.3f}  weighted-F1 {weighted_f1:.3f}")
+        val_acc = accuracy_score(val_ids, val_pred)
+        val_f1 = f1_score(val_ids, val_pred, average="macro")
+        print(f"epoch {epoch:2d}  loss {train_loss:.4f}  val-loss {val_loss:.4f}  val-acc {val_acc:.3f}  val-macro-F1 {val_f1:.3f}")
 
         # Records this epoch for ze learning curves
         history.append({
             "epoch": epoch,
             "train_loss": train_loss,
-            "test_loss": test_loss,
-            "accuracy": acc,
-            "macro_f1": macro_f1,
+            "val_loss": val_loss,
+            "val_accuracy": val_acc,
+            "val_macro_f1": val_f1,
         })
 
-    # Creates list of tuples containing only test samples where model's prediction didn't match true label
+    # Creates list of tuples containing only validation samples where model's prediction didn't match true label
     # converts nummeric IDs back to intent names
-    misses = [(t, intents[g], intents[p]) for t, g, p in zip(test_x, test_ids, pred) if g != p]
-    print(f"\n{len(misses)} misses out of {len(test_x)} :/")
+    misses = [(t, intents[g], intents[p]) for t, g, p in zip(val_x, val_ids, val_pred) if g != p]
+    print(f"\n{len(misses)} validation misses out of {len(val_x)} :/")
 
-    # Loops through each mistake and prints test, expected intent, predicted intent
+    # Loops through each mistake and prints text, expected intent, predicted intent
     for text, gold, guess in misses:
         print(f"  MISS '{text}'  expected {gold}  got {guess}")
 
+    # Final score on test.jsonl, computed once with the finished model
+    # Misses aren't printed cause then I look at them and wanna fix stuff
+    pred, _ = predict_ids(model, tokenizer, test_x, device, label2id["unhandled"])
+    acc = accuracy_score(test_ids, pred)
+    macro_f1 = f1_score(test_ids, pred, average="macro")
+    weighted_f1 = f1_score(test_ids, pred, average="weighted")
+    test_misses = sum(g != p for g, p in zip(test_ids, pred))
+    print(f"\nTEST ({len(test_x)} sentences)  acc {acc:.3f}  macro-F1 {macro_f1:.3f}  weighted-F1 {weighted_f1:.3f}  ({test_misses} misses)")
     # creates output directory
     RUNS.mkdir(exist_ok=True)
 
@@ -204,7 +217,10 @@ def main():
         "accuracy": acc,
         "macro_f1": macro_f1,
         "weighted_f1": weighted_f1,
+        "val_accuracy": val_acc,
+        "val_macro_f1": val_f1,
         "train_rows": len(train_x),
+        "val_rows": len(val_x),
         "test_rows": len(test_x),
         "epochs": EPOCHS,
         "batch": BATCH,

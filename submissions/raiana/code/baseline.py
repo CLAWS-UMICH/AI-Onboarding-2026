@@ -13,14 +13,17 @@ STEPS -----------------------------------------------------------
 
 1. Frozen encoder embeddings + logistic regression, no fine-tuning
 2. Embeds every sentence once with the pretrained encoder, fits linear classifier on those vectors
-3. Scores it on held-out 15% split, writes report to baseline.txt. That number train.py has to beat
-4. Picking default MiniLM for now
+3. Fits on the same 85% of train.jsonl that train.py trains on (the other 15% is train.py's validation split)
+4. Scores it on data/test.jsonl, a separate handwritten file that never comes from train.jsonl,
+   writes report to baseline.txt. That number train.py has to beat
+5. Picking default MiniLM for now
 """
 
 # LIBRARIES ------------------------------------------------------
 
 import json
 import os
+import sys
 from pathlib import Path
 
 from sentence_transformers import SentenceTransformer
@@ -32,13 +35,14 @@ from sklearn.model_selection import train_test_split
 
 ROOT = Path(__file__).resolve().parent.parent  # submissions/raiana/
 DATA = ROOT / "data" / "train.jsonl"
+TEST_DATA = ROOT / "data" / "test.jsonl" # handwritten, never split from train.jsonl, and used for final score because accuracy was coming up WAY too high and me need to check
 OUT = ROOT / "baseline.txt"
 
 MODEL_NAME = os.environ.get("INTENT_MODEL", "sentence-transformers/all-MiniLM-L6-v2") # default is MiniLM
-TEST_SIZE = 0.15 # held-out dataset
-SEED = 0 # makes the random split reproducible
+VAL_SIZE = 0.15 # validation split carved from train.jsonl (train.py watches it each epoch)
+SEED = 56 # makes the random split reproducible
 
-# Note: train.py must use same TEST_SIZE and SEED so both see the same split so you can fairly compare baseline vs trained model accuracy
+# Note: train.py must use same VAL_SIZE and SEED so both train on the same 85%, then both get scored on test.jsonl
 
 # HELPER FUNCTIONS ------------------------------------------------
 
@@ -56,14 +60,30 @@ def load_rows(path):
                 labels.append(row["intents"][0])
     return texts, labels
 
+# Returns (texts, labels) from test.jsonl, quits if it's missing or shares sentences with train.jsonl
+def load_test(train_texts):
+    if not TEST_DATA.exists():
+        sys.exit(f"No {TEST_DATA.relative_to(ROOT)} yet. Write it by hand, same format as train.jsonl.")
+    texts, labels = load_rows(TEST_DATA)
+
+    # a test sentence that's also in train.jsonl should be flagged
+    seen = {t.strip().lower() for t in train_texts}
+    overlap = [t for t in texts if t.strip().lower() in seen]
+    if overlap:
+        sys.exit("These test.jsonl sentences are also in train.jsonl, remove one copy:\n  " + "\n  ".join(overlap))
+    return texts, labels
+
 # MAIN LOOP ---------------------------------------------------------
 
 def main():
     texts, labels = load_rows(DATA)
-    train_x, test_x, train_y, test_y = train_test_split(
-        texts, labels, test_size=TEST_SIZE, stratify=labels, random_state=SEED
+
+    # only the 85% train part is used here and ze 15% val part is for train.py's per-epoch checks
+    train_x, _, train_y, _ = train_test_split(
+        texts, labels, test_size=VAL_SIZE, stratify=labels, random_state=SEED
     )
-    print(f"{MODEL_NAME}: {len(train_x)} train / {len(test_x)} test sentences")
+    test_x, test_y = load_test(texts)
+    print(f"{MODEL_NAME}: {len(train_x)} train / {len(test_x)} test sentences (test from {TEST_DATA.name})")
 
     # Loads (downloads weights of) pre-trained model from Hugging Face and sets it up so you can call .encode() on sentences (which outputs vectors)
     encoder = SentenceTransformer(MODEL_NAME)
@@ -96,7 +116,7 @@ def main():
     report = (
         f"model: {MODEL_NAME}\n"
         f"accuracy: {acc:.3f}  macro-F1: {macro_f1:.3f}  "
-        f"(train {len(train_x)}, test {len(test_x)})\n\n"
+        f"(train {len(train_x)}, test {len(test_x)} from {TEST_DATA.name})\n\n"
         + classification_report(test_y, pred, zero_division=0)
     )
     print(report)

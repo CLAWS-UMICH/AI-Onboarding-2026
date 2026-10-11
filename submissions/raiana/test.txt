@@ -1,0 +1,31 @@
+{"text": "how much oxygen do I have", "selected_intent": "get_oxy_pri_storage", "confidence": 0.943}
+navigate to Ithaca
+{"text": "navigate to Ithaca", "selected_intent": "Set_navigation_target", "confidence": 0.871, "slot": "Ithaca"}
+drop a pin called rock clusters
+{"text": "drop a pin called rock clusters", "selected_intent": "Add_waypoint", "confidence": 0.906, "slot": "rock clusters"}
+drop a pin called
+{"text": "drop a pin called", "selected_intent": "Add_waypoint", "confidence": 0.824, "slot": null}
+get rid of the crater waypoint 
+{"text": "get rid of the crater waypoint", "selected_intent": "Delete_waypoint", "confidence": 0.93, "slot": "crater"}
+where is the lander
+{"text": "where is the lander", "selected_intent": "Get_coordinates", "confidence": 0.828, "slot": "lander"}
+I finished sample collection
+{"text": "I finished sample collection", "selected_intent": "Complete_task", "confidence": 0.866, "slot": "sample collection"}
+bring out ze map
+{"text": "bring out ze map", "selected_intent": "open_menu_navigation", "confidence": 0.669}
+how's my heart
+{"text": "how's my heart", "selected_intent": "unhandled", "confidence": 0.41}
+how's my heartbeat
+{"text": "how's my heartbeat", "selected_intent": "get_heart_rate", "confidence": 0.954}
+any alarms 
+{"text": "any alarms", "selected_intent": "get_warnings", "confidence": 0.939}
+how long have I been out here
+{"text": "how long have I been out here", "selected_intent": "get_eva_elapsed_time", "confidence": 0.955}
+It's been days mother
+{"text": "It's been days mother", "selected_intent": "unhandled", "confidence": 0.946}
+Moan
+{"text": "Moan", "selected_intent": "unhandled", "confidence": 0.852}
+Put more pressure
+{"text": "Put more pressure", "selected_intent": "unhandled", "confidence": 0.285}
+Close it
+{"text": "Close it", "selected_intent": "close_menu", "confidence": 0.945}

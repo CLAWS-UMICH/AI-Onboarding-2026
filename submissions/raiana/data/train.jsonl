@@ -211,6 +211,7 @@
 {"text": "is co2 building up in my suit pressure wise", "intents": ["get_suit_pressure_co2"], "source": "llm"}
 {"text": "carbon dioxide pressure inside my suit", "intents": ["get_suit_pressure_co2"], "source": "llm"}
 {"text": "suit co2 pressure check please", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "co two pressure in my suit", "intents": ["get_suit_pressure_co2"], "source": "llm"}
 {"text": "suit trace gas pressure", "intents": ["get_suit_pressure_other"], "source": "llm"}
 {"text": "what's the trace gas pressure in my suit", "intents": ["get_suit_pressure_other"], "source": "llm"}
 {"text": "suit other gas pressure", "intents": ["get_suit_pressure_other"], "source": "llm"}
@@ -423,6 +424,7 @@
 {"text": "scrubber b storage level", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
 {"text": "second scrubber b co2 level", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
 {"text": "scrubber b how full", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "how much co two in scrubber b", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
 {"text": "uh how hot is it in the suit", "intents": ["get_temperature"], "source": "llm"}
 {"text": "suit temperature", "intents": ["get_temperature"], "source": "llm"}
 {"text": "what's the temperature in my suit", "intents": ["get_temperature"], "source": "llm"}
@@ -661,7 +663,7 @@
 {"text": "elapsed mission time", "intents": ["get_eva_elapsed_time"], "source": "llm"}
 {"text": "total time on eva", "intents": ["get_eva_elapsed_time"], "source": "llm"}
 {"text": "how far into the walk are we time wise", "intents": ["get_eva_elapsed_time"], "source": "llm"}
-{"text": "met please", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "met please", "intents": ["unhandled"], "source": "llm"}
 {"text": "eva time check", "intents": ["get_eva_elapsed_time"], "source": "llm"}
 {"text": "primary battery level", "intents": ["get_primary_battery_level"], "source": "llm"}
 {"text": "how much primary battery is left", "intents": ["get_primary_battery_level"], "source": "llm"}
@@ -1131,6 +1133,12 @@
 {"text": "do I have enough oxygen", "intents": ["get_oxy_pri_storage"], "source": "llm"}
 {"text": "oxygen left", "intents": ["get_oxy_pri_storage"], "source": "llm"}
 {"text": "oxygen", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "main oxygen tank how much left", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "tank one o2 remaining", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "how much oxygen in the main tank", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "o2 left in tank number one", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "first oxygen tank level", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "main o2 supply", "intents": ["get_oxy_pri_storage"], "source": "llm"}
 {"text": "battery", "intents": ["get_primary_battery_level"], "source": "llm"}
 {"text": "battery level", "intents": ["get_primary_battery_level"], "source": "llm"}
 {"text": "how much battery is left", "intents": ["get_primary_battery_level"], "source": "llm"}
@@ -1149,3 +1157,92 @@
 {"text": "navigation", "intents": ["open_menu_navigation"], "source": "llm"}
 {"text": "map", "intents": ["open_menu_navigation"], "source": "llm"}
 {"text": "scrubber a", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "how much co two in scrubber a", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "is my chest thumping too hard", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "throw ze map on screen", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "kill this window", "intents": ["close_menu"], "source": "llm"}
+{"text": "am I in trouble", "intents": ["get_warnings"], "source": "llm"}
+{"text": "feeling sweaty what's it at in here", "intents": ["get_temperature"], "source": "llm"}
+{"text": "what's the eva timer read", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "argh", "intents": ["unhandled"], "source": "llm"}
+{"text": "crank the fan", "intents": ["unhandled"], "source": "llm"}
+{"text": "reserve battery charge left", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "how's the alternate battery", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "second battery percent", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "charge left on the backup battery", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "battery two charge", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "how much power in the spare battery", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "battery number two percent", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "alternate battery level", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "is the reserve battery getting low", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "reserve o2 how full", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "how much is in the auxiliary oxygen", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "backup oxygen tank how much left", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "tank two o2 remaining", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "how much oxygen in the spare tank", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "o2 left in tank number two", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "alternate oxygen tank level", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "aux o2 supply", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "second oxygen tank psi", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "how pressurized is the backup tank", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "how pressurized is tank two", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "pressure in the spare o2 tank", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "oxygen tank number two pressure", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "reserve o2 tank pressure reading", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "alternate tank psi", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "alternate fan rpm", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "rpm on the backup fan", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "fan two speed", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "how fast is the spare fan going", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "rpm on fan number two", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "how many rpm on the aux fan", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "is fan two spinning fast enough", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "first oxygen tank psi", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "main oxygen tank psi", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "how pressurized is tank one", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "is the main tank holding pressure ok", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "oxygen tank number one pressure", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "first o2 tank pressure reading", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "main tank psi", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "first fan how fast", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "main fan rpm", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "fan one speed", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "how fast is the main fan going", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "rpm on fan number one", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "main blower rpm", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "is fan one spinning", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "main battery charge left", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "charge left on the main battery", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "battery one charge", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "what percent is the main battery", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "battery number one percent", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "first battery level", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "is the main battery getting low", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "lower the temp", "intents": ["unhandled"], "source": "llm"}
+{"text": "boost my oxygen", "intents": ["unhandled"], "source": "llm"}
+{"text": "turn off the alarms", "intents": ["unhandled"], "source": "llm"}
+{"text": "slow the fan down", "intents": ["unhandled"], "source": "llm"}
+{"text": "heat it up in here", "intents": ["unhandled"], "source": "llm"}
+{"text": "detour please", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "path's blocked find a different way", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "gas side of the coolant psi", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "am I chewing through oxygen", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "how fast is my o2 draining", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "cool me down", "intents": ["unhandled"], "source": "llm"}
+{"text": "drop the temperature", "intents": ["unhandled"], "source": "llm"}
+{"text": "set the suit to 20 degrees", "intents": ["unhandled"], "source": "llm"}
+{"text": "can you make it less hot", "intents": ["unhandled"], "source": "llm"}
+{"text": "give me more oxygen", "intents": ["unhandled"], "source": "llm"}
+{"text": "increase my o2 flow", "intents": ["unhandled"], "source": "llm"}
+{"text": "switch to the other oxygen tank", "intents": ["unhandled"], "source": "llm"}
+{"text": "refill my oxygen", "intents": ["unhandled"], "source": "llm"}
+{"text": "raise the suit pressure", "intents": ["unhandled"], "source": "llm"}
+{"text": "vent some pressure", "intents": ["unhandled"], "source": "llm"}
+{"text": "charge my battery", "intents": ["unhandled"], "source": "llm"}
+{"text": "switch to the reserve battery", "intents": ["unhandled"], "source": "llm"}
+{"text": "turn the fan up", "intents": ["unhandled"], "source": "llm"}
+{"text": "shut off the fan", "intents": ["unhandled"], "source": "llm"}
+{"text": "silence that warning", "intents": ["unhandled"], "source": "llm"}
+{"text": "reset the alarms", "intents": ["unhandled"], "source": "llm"}
+{"text": "add more coolant", "intents": ["unhandled"], "source": "llm"}
+{"text": "flush scrubber A", "intents": ["unhandled"], "source": "llm"}

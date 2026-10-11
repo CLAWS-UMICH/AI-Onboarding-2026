@@ -16,12 +16,12 @@ STEPS -----------------------------------------------------------
 1. Push-to-talk: Enter starts recording, Enter again stops (capped at MAX_SECONDS)
 2. Whisper (faster-whisper, runs on CPU) turns the audio into text
    - initial_prompt with domain words so it writes "CO2", "UIA", "scrubber" the way our data does
-   - vad_filter skips silence, so an empty recording gives no text instead of a made-up sentence
+   - vad_filter skips silence, so an empty recording gives no text instead of un made-up sentence hehe
 3. predict() from predict.py picks the intent (+ slot for the five name intents)
 4. Speak a short reply from REPLIES (no telemetry here, so it says what it would show, not the value)
 5. Usage (pip install faster-whisper sounddevice, plus pyttsx3 on Windows/Linux):
-     python code/voice.py                  talk into the mic, Ctrl+C quits
-     python code/voice.py clip.wav ...     transcribe 16-bit .wav files instead (no mic needed)
+     python code/voice.py                  - talk into the mic, Ctrl+C quits
+     python code/voice.py clip.wav ...     - transcribe 16-bit .wav files instead (no mic needed)
 """
 
 import subprocess
@@ -35,7 +35,7 @@ from predict import predict
 
 RATE = 16000 # Whisper expects 16 kHz mono
 MAX_SECONDS = 10
-WHISPER_SIZE = "base.en" # "small.en" is more accurate but slower
+WHISPER_SIZE = "base.en" # "small.en" is more accurate but slower apparently
 HINT = "EVA, UIA, HUD, O2, CO2, scrubber A, scrubber B, coolant, waypoint, RPM, airlock, primary, secondary"
 
 # What to say back for each intent; {slot} is filled in for the five name intents
@@ -79,11 +79,11 @@ REPLIES = {
 }
 
 
-# Reply sentence for a predict() result
+# Reply sentence for a predict()
 def reply_for(result):
     template = REPLIES.get(result["selected_intent"], "Sorry, say that again.")
     if "{slot}" in template and not result.get("slot"):
-        return "Which one? I didn't catch the name."
+        return "Which one? I didn't get the name"
     return template.format(slot=result.get("slot"))
 
 
@@ -98,9 +98,9 @@ def speak(text):
         engine.runAndWait()
 
 
-# Record from the default mic until Enter is pressed (or MAX_SECONDS), return float32 samples
+# Record from the default mic until Enter is pressed (or MAX_SECONDS hit), return float32 samples
 def record():
-    import sounddevice as sd # imported here so file mode works without a mic library
+    import sounddevice as sd # imported here so file mode works without importing mic library
 
     chunks = []
     stop = threading.Event()
@@ -132,13 +132,13 @@ def load_wav(path):
     return audio.astype(np.float32)
 
 
-# Speech -> text. audio is a float32 array at RATE
+# Speech -> text. audio is a float32 array at RATE hehe
 def transcribe(stt, audio):
     segments, _ = stt.transcribe(audio, language="en", initial_prompt=HINT, vad_filter=True)
     return " ".join(s.text for s in segments).strip()
 
 
-# Transcribe, classify, print and speak one utterance
+# Transcribe, classify, print and speak un utterance
 def handle(stt, audio):
     text = transcribe(stt, audio)
     if not text:
@@ -167,7 +167,7 @@ def main():
             print("listening...")
             handle(stt, record())
     except (KeyboardInterrupt, EOFError):
-        print("\nbye")
+        print("\nbye-bye")
 
 
 if __name__ == "__main__":

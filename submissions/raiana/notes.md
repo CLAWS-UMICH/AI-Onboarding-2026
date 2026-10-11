@@ -10,7 +10,7 @@
 | Sentence | Predicted | Confidence | Correct? |
 |---|---|---|---|
 | how much oxygen do I have | get_oxy_pri_storage | 0.943 | Yes |
-| navigate to Ithaca | Set_navigation_target (slot: Olympus Ridge) | 0.856 | Yes |
+| navigate to Ithaca | Set_navigation_target (slot: Ithaca) | 0.856 | Yes |
 | drop a pin called rock cluster | Add_waypoint (slot: rock cluster) | 0.911 | Yes |
 | get rid of the crater waypoint | Delete_waypoint (slot: crater) | 0.930 | Yes |
 | where is the lander | Get_coordinates (slot: lander) | 0.828 | Yes |

@@ -28,6 +28,7 @@ from transformers import AutoModel, AutoTokenizer
 
 MODEL_NAME = os.environ.get("INTENT_MODEL", "sentence-transformers/all-MiniLM-L6-v2") # default is MiniLM
 MAX_TOKENS = 64 # training sentences are 2-20 words, so 64 tokens is enuff
+MIN_CONF = 0.5 # unhandled below this confidence
 
 # Note: baseline.py, train.py and predict.py should all use this same MODEL_NAME
 

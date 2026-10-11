@@ -4,10 +4,11 @@ STEPS -----------------------------------------------------------
 *Made by Claude so ik what to do*
 
 1. Read runs/history.json (written by train.py, one entry per epoch)
-2. Left plot: train loss vs held-out loss per epoch
-   - held-out loss rising while train loss keeps falling = overfitting, use fewer epochs
+2. Left plot: train loss vs validation loss per epoch
+   - validation loss rising while train loss keeps falling = overfitting, use fewer epochs
    - both still falling at the last epoch = could train longer
-3. Right plot: held-out accuracy + macro-F1 per epoch, with the baseline accuracy as a dashed line
+3. Right plot: validation accuracy + macro-F1 per epoch, with ze baseline's test accuracy as a dashed line
+   (rough reference only: the curves are on the validation split, the baseline is on test.jsonl)
 4. Saves runs/learning_curves.png
 5. Usage:
      python code/train.py          writes runs/history.json
@@ -51,17 +52,17 @@ def main():
 
     # Loss curves: ze gap between these two is what shows overfitting
     loss_ax.plot(epochs, [row["train_loss"] for row in history], marker="o", label="train")
-    loss_ax.plot(epochs, [row["test_loss"] for row in history], marker="o", label="held-out")
+    loss_ax.plot(epochs, [row["val_loss"] for row in history], marker="o", label="validation")
     loss_ax.set(xlabel="epoch", ylabel="cross-entropy loss", title="Loss")
     loss_ax.legend()
 
-    # Score curves on the held-out testing stuff
-    score_ax.plot(epochs, [row["accuracy"] for row in history], marker="o", label="accuracy")
-    score_ax.plot(epochs, [row["macro_f1"] for row in history], marker="o", label="macro-F1")
+    # Score curves on the validation split
+    score_ax.plot(epochs, [row["val_accuracy"] for row in history], marker="o", label="val accuracy")
+    score_ax.plot(epochs, [row["val_macro_f1"] for row in history], marker="o", label="val macro-F1")
     base = baseline_accuracy()
     if base is not None:
-        score_ax.axhline(base, linestyle="--", color="gray", label=f"baseline acc ({base:.3f})")
-    score_ax.set(xlabel="epoch", ylabel="score", title="Held-out score")
+        score_ax.axhline(base, linestyle="--", color="gray", label=f"baseline test acc ({base:.3f})")
+    score_ax.set(xlabel="epoch", ylabel="score", title="Validation score")
     score_ax.legend()
 
     for ax in (loss_ax, score_ax):
