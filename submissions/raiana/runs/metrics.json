@@ -1,0 +1,16 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "accuracy": 0.9623655913978495,
+  "macro_f1": 0.9650917386424632,
+  "weighted_f1": 0.9627115002290318,
+  "val_accuracy": 0.973404255319149,
+  "val_macro_f1": 0.978208586904239,
+  "train_rows": 1060,
+  "val_rows": 188,
+  "test_rows": 186,
+  "epochs": 4,
+  "batch": 8,
+  "lr": 0.0001,
+  "warmup": 0.4,
+  "seed": 56
+}
