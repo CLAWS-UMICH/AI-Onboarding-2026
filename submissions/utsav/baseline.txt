@@ -1,0 +1,48 @@
+model: sentence-transformers/all-mpnet-base-v2
+method: frozen embeddings + logistic regression
+split: train=1413 val=189 test=283 (evaluated on test)
+accuracy: 0.9293
+macro_f1: 0.9295
+
+                             precision    recall  f1-score   support
+
+        get_oxy_pri_storage      1.000     1.000     1.000         7
+        get_oxy_sec_storage      1.000     1.000     1.000         8
+       get_oxy_pri_pressure      1.000     1.000     1.000         8
+       get_oxy_sec_pressure      1.000     1.000     1.000         8
+      get_suit_pressure_oxy      0.778     1.000     0.875         7
+      get_suit_pressure_co2      1.000     0.875     0.933         8
+    get_suit_pressure_other      1.000     0.875     0.933         8
+    get_suit_pressure_total      1.000     1.000     1.000         8
+    get_helmet_pressure_co2      1.000     0.857     0.923         7
+            get_fan_pri_rpm      0.778     1.000     0.875         7
+            get_fan_sec_rpm      1.000     0.750     0.857         8
+ get_scrubber_a_co2_storage      0.750     0.750     0.750         8
+ get_scrubber_b_co2_storage      0.778     1.000     0.875         7
+            get_temperature      0.875     0.875     0.875         8
+        get_coolant_storage      1.000     1.000     1.000         8
+   get_coolant_gas_pressure      1.000     1.000     1.000         7
+get_coolant_liquid_pressure      1.000     0.875     0.933         8
+             get_heart_rate      0.875     1.000     0.933         7
+        get_oxy_consumption      1.000     1.000     1.000         8
+         get_co2_production      1.000     1.000     1.000         7
+       get_eva_elapsed_time      1.000     1.000     1.000         8
+  get_primary_battery_level      0.750     0.857     0.800         7
+get_secondary_battery_level      0.857     0.750     0.800         8
+               get_warnings      0.900     1.000     0.947         9
+           open_menu_vitals      0.889     1.000     0.941         8
+       open_menu_navigation      0.889     1.000     0.941         8
+            open_menu_tasks      1.000     0.875     0.933         8
+              open_menu_uia      1.000     0.857     0.923         7
+                 close_menu      0.875     0.875     0.875         8
+            Get_coordinates      0.800     1.000     0.889         8
+      Set_navigation_target      1.000     0.750     0.857         8
+         reroute_navigation      1.000     1.000     1.000         8
+               Add_waypoint      1.000     1.000     1.000         8
+            Delete_waypoint      1.000     1.000     1.000         7
+              Complete_task      0.875     0.875     0.875         8
+                  unhandled      1.000     0.846     0.917        13
+
+                   accuracy                          0.929       283
+                  macro avg      0.935     0.932     0.930       283
+               weighted avg      0.937     0.929     0.929       283
