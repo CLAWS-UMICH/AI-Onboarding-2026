@@ -1,0 +1,216 @@
+model: sentence-transformers/all-mpnet-base-v2 (frozen) + LogisticRegression
+train 1629 / val 288
+
+== val: accuracy 0.903, macro-F1 0.915, n=288
+                             precision    recall  f1-score   support
+
+        get_oxy_pri_storage       0.86      0.86      0.86         7
+        get_oxy_sec_storage       0.83      0.62      0.71         8
+       get_oxy_pri_pressure       0.89      1.00      0.94         8
+       get_oxy_sec_pressure       1.00      1.00      1.00         8
+      get_suit_pressure_oxy       0.86      0.86      0.86         7
+      get_suit_pressure_co2       1.00      0.86      0.92         7
+    get_suit_pressure_other       0.88      1.00      0.93         7
+    get_suit_pressure_total       1.00      1.00      1.00         7
+    get_helmet_pressure_co2       1.00      1.00      1.00         7
+            get_fan_pri_rpm       0.78      1.00      0.88         7
+            get_fan_sec_rpm       1.00      0.71      0.83         7
+ get_scrubber_a_co2_storage       1.00      1.00      1.00         7
+ get_scrubber_b_co2_storage       1.00      1.00      1.00         8
+            get_temperature       1.00      1.00      1.00         8
+        get_coolant_storage       1.00      1.00      1.00         7
+   get_coolant_gas_pressure       1.00      1.00      1.00         7
+get_coolant_liquid_pressure       1.00      1.00      1.00         7
+             get_heart_rate       1.00      1.00      1.00         7
+        get_oxy_consumption       0.88      1.00      0.93         7
+         get_co2_production       1.00      1.00      1.00         7
+       get_eva_elapsed_time       1.00      1.00      1.00         8
+  get_primary_battery_level       0.88      0.88      0.88         8
+get_secondary_battery_level       0.70      0.88      0.78         8
+               get_warnings       0.75      0.75      0.75         8
+           open_menu_vitals       1.00      1.00      1.00         8
+       open_menu_navigation       1.00      1.00      1.00         7
+            open_menu_tasks       1.00      0.86      0.92         7
+              open_menu_uia       1.00      0.75      0.86         8
+                 close_menu       1.00      0.62      0.77         8
+            Get_coordinates       0.73      1.00      0.84         8
+      Set_navigation_target       1.00      0.88      0.93         8
+         reroute_navigation       1.00      1.00      1.00         7
+               Add_waypoint       1.00      0.75      0.86         8
+            Delete_waypoint       1.00      1.00      1.00         8
+              Complete_task       0.75      0.75      0.75         8
+                  unhandled       0.70      0.81      0.75        26
+
+                   accuracy                           0.90       288
+                  macro avg       0.93      0.91      0.92       288
+               weighted avg       0.91      0.90      0.90       288
+
+misses (28):
+  'label this spot hematite bluff': true Add_waypoint, got Get_coordinates
+  'am i running low on reserve oxygen': true get_oxy_sec_storage, got get_oxy_consumption
+  'mark this spot as basalt ridge': true Add_waypoint, got Get_coordinates
+  'i already looked at the coordinates': true unhandled, got Get_coordinates
+  'o2 two percent': true get_oxy_sec_storage, got get_oxy_pri_storage
+  'comm check one two one two': true unhandled, got get_warnings
+  'put vitals away': true close_menu, got unhandled
+  'copy we are at the sample site': true unhandled, got Complete_task
+  'whats left in oh two tank one': true get_oxy_pri_storage, got get_oxy_sec_storage
+  'wrapped up the gas analyzer task': true Complete_task, got get_suit_pressure_other
+  'get this off my visor': true close_menu, got unhandled
+  'okay houston standby clear the screen': true close_menu, got unhandled
+  'tell me how fast fan two is turning': true get_fan_sec_rpm, got get_fan_pri_rpm
+  'hmm uh yeah you I a screen': true open_menu_uia, got unhandled
+  'the warnings cleared a while ago': true unhandled, got get_warnings
+  'uh hmm whats wrong with the suit': true get_warnings, got unhandled
+  "what's the o2 partial pressure in here": true get_suit_pressure_oxy, got get_oxy_pri_pressure
+  'check the secondary fan': true get_fan_sec_rpm, got get_fan_pri_rpm
+  'copy copy charlie pull up the UIA': true open_menu_uia, got unhandled
+  'EV1 battery swap complete over': true Complete_task, got get_secondary_battery_level
+  'ev2 read me the battery level already': true get_primary_battery_level, got get_secondary_battery_level
+  'battery to level': true get_secondary_battery_level, got get_primary_battery_level
+  'alpha bravo charlie testing': true unhandled, got Complete_task
+  'oh two secondary level': true get_oxy_sec_storage, got get_secondary_battery_level
+  'is anything wrong with my suit': true get_warnings, got unhandled
+  'point me to the antenna mast': true Set_navigation_target, got unhandled
+  'okay houston standby pull up the task list': true open_menu_tasks, got unhandled
+  'p p c o two': true get_suit_pressure_co2, got get_suit_pressure_oxy
+
+== clean: accuracy 0.980, macro-F1 0.983, n=150
+                             precision    recall  f1-score   support
+
+        get_oxy_pri_storage       1.00      1.00      1.00         4
+        get_oxy_sec_storage       1.00      1.00      1.00         4
+       get_oxy_pri_pressure       1.00      1.00      1.00         4
+       get_oxy_sec_pressure       1.00      1.00      1.00         4
+      get_suit_pressure_oxy       1.00      1.00      1.00         4
+      get_suit_pressure_co2       1.00      1.00      1.00         4
+    get_suit_pressure_other       1.00      1.00      1.00         4
+    get_suit_pressure_total       1.00      1.00      1.00         4
+    get_helmet_pressure_co2       1.00      1.00      1.00         4
+            get_fan_pri_rpm       1.00      1.00      1.00         4
+            get_fan_sec_rpm       1.00      1.00      1.00         4
+ get_scrubber_a_co2_storage       1.00      1.00      1.00         4
+ get_scrubber_b_co2_storage       1.00      1.00      1.00         4
+            get_temperature       1.00      1.00      1.00         4
+        get_coolant_storage       1.00      1.00      1.00         4
+   get_coolant_gas_pressure       1.00      1.00      1.00         4
+get_coolant_liquid_pressure       1.00      1.00      1.00         4
+             get_heart_rate       1.00      1.00      1.00         4
+        get_oxy_consumption       1.00      1.00      1.00         4
+         get_co2_production       1.00      1.00      1.00         4
+       get_eva_elapsed_time       1.00      1.00      1.00         4
+  get_primary_battery_level       0.80      1.00      0.89         4
+get_secondary_battery_level       1.00      0.75      0.86         4
+               get_warnings       1.00      0.75      0.86         4
+           open_menu_vitals       1.00      1.00      1.00         4
+       open_menu_navigation       1.00      1.00      1.00         4
+            open_menu_tasks       1.00      1.00      1.00         4
+              open_menu_uia       0.80      1.00      0.89         4
+                 close_menu       1.00      1.00      1.00         4
+            Get_coordinates       1.00      1.00      1.00         4
+      Set_navigation_target       1.00      1.00      1.00         4
+         reroute_navigation       1.00      1.00      1.00         4
+               Add_waypoint       1.00      1.00      1.00         4
+            Delete_waypoint       1.00      1.00      1.00         4
+              Complete_task       1.00      1.00      1.00         4
+                  unhandled       0.90      0.90      0.90        10
+
+                   accuracy                           0.98       150
+                  macro avg       0.99      0.98      0.98       150
+               weighted avg       0.98      0.98      0.98       150
+
+misses (3):
+  'batt two percent please': true get_secondary_battery_level, got get_primary_battery_level
+  "what's wrong with my suit": true get_warnings, got unhandled
+  'what does the UIA panel do': true unhandled, got open_menu_uia
+
+== attack: accuracy 0.700, macro-F1 0.722, n=150
+                             precision    recall  f1-score   support
+
+        get_oxy_pri_storage       0.00      0.00      0.00         4
+        get_oxy_sec_storage       0.50      0.50      0.50         4
+       get_oxy_pri_pressure       0.33      0.33      0.33         3
+       get_oxy_sec_pressure       1.00      0.67      0.80         3
+      get_suit_pressure_oxy       1.00      1.00      1.00         4
+      get_suit_pressure_co2       0.00      0.00      0.00         3
+    get_suit_pressure_other       1.00      1.00      1.00         3
+    get_suit_pressure_total       1.00      0.75      0.86         4
+    get_helmet_pressure_co2       0.60      0.75      0.67         4
+            get_fan_pri_rpm       0.67      0.67      0.67         3
+            get_fan_sec_rpm       1.00      0.75      0.86         4
+ get_scrubber_a_co2_storage       0.60      0.75      0.67         4
+ get_scrubber_b_co2_storage       0.75      0.75      0.75         4
+            get_temperature       1.00      1.00      1.00         3
+        get_coolant_storage       0.50      0.33      0.40         3
+   get_coolant_gas_pressure       0.60      1.00      0.75         3
+get_coolant_liquid_pressure       1.00      0.67      0.80         3
+             get_heart_rate       1.00      1.00      1.00         3
+        get_oxy_consumption       0.80      1.00      0.89         4
+         get_co2_production       1.00      0.75      0.86         4
+       get_eva_elapsed_time       1.00      0.67      0.80         3
+  get_primary_battery_level       0.60      0.75      0.67         4
+get_secondary_battery_level       0.50      0.50      0.50         4
+               get_warnings       1.00      0.67      0.80         3
+           open_menu_vitals       0.50      0.67      0.57         3
+       open_menu_navigation       0.67      1.00      0.80         4
+            open_menu_tasks       1.00      1.00      1.00         4
+              open_menu_uia       1.00      0.50      0.67         4
+                 close_menu       0.50      0.33      0.40         3
+            Get_coordinates       0.75      0.75      0.75         4
+      Set_navigation_target       1.00      1.00      1.00         4
+         reroute_navigation       0.80      1.00      0.89         4
+               Add_waypoint       1.00      1.00      1.00         4
+            Delete_waypoint       1.00      1.00      1.00         3
+              Complete_task       1.00      0.75      0.86         4
+                  unhandled       0.47      0.56      0.51        25
+
+                   accuracy                           0.70       150
+                  macro avg       0.75      0.72      0.72       150
+               weighted avg       0.71      0.70      0.70       150
+
+misses (45):
+  'alpha bravo romeo give juliet me primary oxygen': true get_oxy_pri_storage, got unhandled
+  'uh um oh two one level how much is left': true get_oxy_pri_storage, got get_oxy_sec_storage
+  'oh two status': true get_oxy_pri_storage, got unhandled
+  'am I running low on oxygen': true get_oxy_pri_storage, got get_oxy_consumption
+  'O2 sec level': true get_oxy_sec_storage, got get_oxy_pri_storage
+  'primary oxygen no wait secondary oxygen level': true get_oxy_sec_storage, got get_oxy_pri_storage
+  'oh two prime press': true get_oxy_pri_pressure, got unhandled
+  'tank one press sure reading': true get_oxy_pri_pressure, got unhandled
+  'O2 sec press': true get_oxy_sec_pressure, got unhandled
+  'carbon dioxide in my suit not the helmet': true get_suit_pressure_co2, got get_helmet_pressure_co2
+  'pp see oh too': true get_suit_pressure_co2, got unhandled
+  'whats my ceeoh two': true get_suit_pressure_co2, got unhandled
+  'total pressure not oxygen just total': true get_suit_pressure_total, got get_oxy_pri_pressure
+  'helmut CO2': true get_helmet_pressure_co2, got get_suit_pressure_co2
+  'primary fan yankee': true get_fan_pri_rpm, got unhandled
+  'fan too rpm': true get_fan_sec_rpm, got get_fan_pri_rpm
+  'scrubber bravo no sorry scrubber alpha': true get_scrubber_a_co2_storage, got get_scrubber_b_co2_storage
+  'scrubber alpha correction bravo': true get_scrubber_b_co2_storage, got get_scrubber_a_co2_storage
+  'coolant level not pressure': true get_coolant_storage, got get_coolant_gas_pressure
+  'cool ant how much left': true get_coolant_storage, got get_oxy_sec_storage
+  'coolant gas correction liquid pressure': true get_coolant_liquid_pressure, got get_coolant_gas_pressure
+  'how much see oh two am I making': true get_co2_production, got unhandled
+  'how long we been out tango': true get_eva_elapsed_time, got unhandled
+  'secondary battery wait no primary': true get_primary_battery_level, got get_secondary_battery_level
+  'battery too percent': true get_secondary_battery_level, got get_primary_battery_level
+  'primary battery scratch that secondary': true get_secondary_battery_level, got get_primary_battery_level
+  'whats rong': true get_warnings, got unhandled
+  'vidals screen': true open_menu_vitals, got unhandled
+  'you eye ay screen': true open_menu_uia, got unhandled
+  'u i a': true open_menu_uia, got unhandled
+  'dismiss it delta': true close_menu, got unhandled
+  'open vitals no actually close it': true close_menu, got open_menu_vitals
+  'what are the cord nets for Moraine Gap': true Get_coordinates, got unhandled
+  'mark battery swap task done': true Complete_task, got get_secondary_battery_level
+  "don't show the map": true unhandled, got open_menu_navigation
+  'I checked scrubber A earlier': true unhandled, got get_scrubber_a_co2_storage
+  'I like this nav display': true unhandled, got open_menu_navigation
+  "don't reroute me": true unhandled, got reroute_navigation
+  'I was at basalt knoll an hour ago': true unhandled, got Get_coordinates
+  'pressure reading': true unhandled, got get_oxy_pri_pressure
+  'no need to open vitals': true unhandled, got open_menu_vitals
+  'helmet uh': true unhandled, got get_helmet_pressure_co2
+  'I closed the panel already': true unhandled, got close_menu
+  'how does ppco2 get measured': true unhandled, got get_suit_pressure_co2
+  'uh coolant': true unhandled, got get_coolant_storage

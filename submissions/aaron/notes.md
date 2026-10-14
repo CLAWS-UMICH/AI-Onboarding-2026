@@ -38,7 +38,10 @@
 - [x] Data generation: 2,115 raw train rows (35 intents x 55 + 190 unhandled) + 450 test rows (150 each; `test_final` came out ~85% clean-style, ~15% attack-style)
 - [x] Critic pass: 2,115 -> 1,997 (118 dropped: unnatural "X not Y" phrasing, templated fillers, statements that aren't requests, near-duplicates; 1 relabel). "EV1 checking X" rows dropped (ambiguous: report vs request).
 - [x] `dedup.py`: dropped 80 train rows with MPNet cosine >= 0.95 to a same-label test row (different-label matches are contrast pairs, kept). Final `data/train.jsonl`: 1,917 rows, 44-55 per intent, 173 unhandled. `validate.py`: 0 problems.
-- [ ] `common.py`, `baseline.py`, `train.py`, `predict.py`
+- [x] `common.py`: shared load, stratified 85/15 split (seeds 42/43/44), scoring, confusion plot. Self-check passes (1,629 train / 288 val).
+- [x] `baseline.py` (frozen MPNet + logistic regression): val 0.903 / clean 0.980 / attack 0.700 accuracy (macro-F1 0.915 / 0.983 / 0.722). Attack misses: speech-to-text spellings ("oh two", "vidals"), corrections ("A no wait B"), negation and past tense.
+- [ ] `train.py`, `predict.py`
+- Voice stretch: skipped (onboarding scope).
 - [ ] Improvement loop (max 3 rounds)
 - [ ] Experiments: SetFit, Laya
 - [ ] Final results on `test_final`

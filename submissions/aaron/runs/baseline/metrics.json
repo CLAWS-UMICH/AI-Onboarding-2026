@@ -1,0 +1,16 @@
+{
+ "model": "sentence-transformers/all-mpnet-base-v2",
+ "method": "frozen + logistic regression",
+ "val": {
+  "accuracy": 0.9028,
+  "macro_f1": 0.9154
+ },
+ "clean": {
+  "accuracy": 0.98,
+  "macro_f1": 0.9831
+ },
+ "attack": {
+  "accuracy": 0.7,
+  "macro_f1": 0.7223
+ }
+}
