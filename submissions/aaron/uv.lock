@@ -11,6 +11,7 @@ name = "aaron"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "laya" },
     { name = "matplotlib" },
     { name = "scikit-learn" },
     { name = "sentence-transformers" },
@@ -20,6 +21,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "laya", specifier = ">=0.4.7" },
     { name = "matplotlib", specifier = ">=3.11.2" },
     { name = "scikit-learn", specifier = ">=1.9.1" },
     { name = "sentence-transformers", specifier = ">=6.1.0" },
@@ -668,6 +670,23 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/f4/ce/a7dc71353dd06a4cbe02222773f52d4a28c81e5a452a75797f8ed113dc99/kiwisolver-1.5.1-pp311-pypy311_pp73-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:5daa1f19e097050b9c4d9a78fcc9263cb96c9dfae08037ddc1b7c4ad1889f2a2", size = 79891, upload-time = "2026-08-28T10:28:22.936Z" },
     { url = "https://files.pythonhosted.org/packages/10/b1/d61c61a84ff85d1a36a99df2c152b59ffedb1d356c598902aba44abcdb60/kiwisolver-1.5.1-pp311-pypy311_pp73-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:cdaeeb6c350106df6bf9d873395973e5f066a9713200b72cd64f55d0a3eafab6", size = 77605, upload-time = "2026-08-28T10:28:24.322Z" },
     { url = "https://files.pythonhosted.org/packages/d3/52/5aef56f21a460a6e43ab3cdfc7697d59d7b87deb0ec97a0f7b91aa4a521b/kiwisolver-1.5.1-pp311-pypy311_pp73-win_amd64.whl", hash = "sha256:17851e5dad4484be0cbccbde3b15331deae036de9aebd45eed964487802b172f", size = 98465, upload-time = "2026-08-28T10:28:25.696Z" },
+]
+
+[[package]]
+name = "laya"
+version = "0.4.7"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "huggingface-hub" },
+    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
+    { name = "numpy", version = "2.5.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
+    { name = "safetensors" },
+    { name = "torch" },
+    { name = "transformers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ed/ba/477174d38f2acc252cb1414499369b2127cf74784a5ffaf51e8743400c82/laya-0.4.7.tar.gz", hash = "sha256:c3f567f21ce9860eb063c67b35316d5498881e6856f6d58f2b05ce4311e8b2c9", size = 1194323, upload-time = "2026-10-14T05:27:58.872Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/3e/6e/4034dff73797ebe6ed7f0ae55bc85d866a6daa4778fdcad25a83827cc353/laya-0.4.7-py3-none-any.whl", hash = "sha256:c16f6e8b124baefa0d3d08a4eeb72c72ac54b06281155f383f7c8b7f37b91b50", size = 400060, upload-time = "2026-10-14T05:27:56.774Z" },
 ]
 
 [[package]]

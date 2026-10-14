@@ -1,0 +1,9 @@
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 5 files:  80%|████████  | 4/5 [00:00<00:00, 23.94it/s]Fetching 5 files:  80%|████████  | 4/5 [00:20<00:00, 23.94it/s]Fetching 5 files: 100%|██████████| 5/5 [00:30<00:00,  7.92s/it]Fetching 5 files: 100%|██████████| 5/5 [00:30<00:00,  6.03s/it]
+/home/aaron/Dev/Projects/AI-Onboarding-2026/submissions/aaron/.venv/lib/python3.13/site-packages/laya/agent.py:2144: RuntimeWarning: laya: this checkpoint ships invalid temperatures or values outside [0.5, 5]; using choice:11+=0.10058280825614929 -> 0.5. Treat confidence from the affected entries as uncalibrated.
+  return Agent(model_id_or_path, device=device, token=token, subfolder=subfolder, fast=fast,
+[W1014 18:07:06.029752255 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 759169024 bytes (free: 331743232, total: 8272019456).
+[W1014 18:07:06.053933707 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 759169024 bytes (free: 163971072, total: 8272019456).
+[W1014 18:07:06.352224912 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 759169024 bytes (free: 166068224, total: 8272019456).
+/home/aaron/Dev/Projects/AI-Onboarding-2026/submissions/aaron/.venv/lib/python3.13/site-packages/laya/agent.py:1257: RuntimeWarning: Warning: GPU memory exceeded during inference. Retrying this request on CPU...
+  warnings.warn("Warning: GPU memory exceeded during inference. "

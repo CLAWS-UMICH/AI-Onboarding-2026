@@ -3,6 +3,7 @@
 import torch
 import torch.nn as nn
 from sentence_transformers import SentenceTransformer
+from sentence_transformers.util import batch_to_device
 
 from common import LABELS
 
@@ -24,10 +25,11 @@ class IntentModel(nn.Module):
         self.encoder = SentenceTransformer(MODEL, device=DEVICE)
         self.encoder.max_seq_length = MAX_LEN
         self.head = nn.Linear(
-            self.encoder.get_sentence_embedding_dimension(), len(LABELS)
+            self.encoder.get_embedding_dimension(), len(LABELS)
         )
 
     def forward(self, texts):
         """list of sentences -> logits (raw scores), shape [batch, 36]."""
-        features = {k: v.to(DEVICE) for k, v in self.encoder.tokenize(texts).items()}
+        # preprocess() also returns non-tensor entries; batch_to_device only moves the tensors.
+        features = batch_to_device(self.encoder.preprocess(texts), DEVICE)
         return self.head(self.encoder(features)["sentence_embedding"])
