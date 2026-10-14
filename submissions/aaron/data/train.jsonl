@@ -1,0 +1,1917 @@
+{"text": "what's my primary oxygen at", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "primary o2", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "how much oxygen is left in the primary tank", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "main o2 level", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "o2 one percent", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "ev1 request primary oxygen status over", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "houston ev2 confirm tank one o2 remaining", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "say again primary o2 level", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "verify main oxygen percentage", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "how full is my primary tank", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "give me primary oxygen level", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "need my primary o2 now", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "primary ox remaining", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "oh two one level", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "whats left in oh two tank one", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "i need to know how much primary oxygen i have", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "show me the main oxygen supply percentage", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "tank one how full", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "uh primary oxygen how much is left", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "alpha bravo give me primary o2 remaining", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "um copy that what's main o2 at now", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "ev1 uh say again tank one oxygen percent over", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "houston copy request primary ox level", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "how's my oxygen", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "o2 status", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "how's my o2 looking", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "oxygen level", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "how much o2 do i have left", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "whats my oxygen percentage", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "primary oxygen percent remaining", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "how full is the main o2 tank", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "primary o2 tank level", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "read me primary oxygen storage", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "check tank one oxygen level", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "how much is left in my main oxygen", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "give me the main tank o2 percentage", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "quick primary o2 check", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "running low on main oxygen tell me the level", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "primary o2 level now please", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "hey how much oxygen is in tank one", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "primary oxygen storage", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "o two primary level", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "oh two main tank percent remaining", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "i'd like the primary o2 readout", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "main ox percent", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "what percent is my primary oxygen", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "status on main o2 supply", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "confirm primary o2 remaining over", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "how much primary oxygen do i have", "intents": ["get_oxy_pri_storage"], "source": "llm"}
+{"text": "what's my secondary oxygen at", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "secondary o2", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "how much oxygen is left in the secondary tank", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "backup o2 level", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "o2 two percent", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "ev1 request secondary oxygen status over", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "houston ev2 confirm tank two o2 remaining", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "say again secondary o2 level", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "verify backup oxygen percentage", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "how full is my reserve tank", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "give me secondary oxygen level", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "need my backup o2 now", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "secondary ox remaining", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "oh two tank two level", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "whats left in the reserve oxygen", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "i need to know how much backup oxygen i have", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "show me the reserve oxygen supply percentage", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "tank two how full", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "uh secondary oxygen how much is left", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "charlie delta give me backup o2 remaining", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "um copy what's reserve o2 at now", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "ev2 uh say again tank two oxygen percent over", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "houston copy request secondary ox level", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "o2 two", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "how's my backup oxygen", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "am i running low on reserve oxygen", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "secondary oxygen level", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "how much backup o2 do i have left", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "whats my secondary oxygen percentage", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "secondary oxygen percent remaining", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "how full is the backup o2 tank", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "secondary o2 tank level", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "read me secondary oxygen storage", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "secondary o2 percent", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "check tank two oxygen level", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "how much is left in my backup oxygen", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "o2 two remaining", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "give me the backup tank o2 percentage", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "quick secondary o2 check", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "switching to backup soon what's the reserve o2 level", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "secondary o2 level now please", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "hey how much oxygen is in tank two", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "secondary oxygen storage", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "oh two secondary level", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "oh two backup tank percent remaining", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "i'd like the secondary o2 readout", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "reserve ox percent", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "what percent is my backup oxygen", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "status on reserve o2 supply", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "confirm backup o2 remaining over", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "how much secondary oxygen do i have", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "reserve tank how much oxygen remains", "intents": ["get_oxy_sec_storage"], "source": "llm"}
+{"text": "primary o2 pressure", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "tank one pressure", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "what's the pressure in the primary oxygen tank", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "ev1 request primary oxygen tank pressure over", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "houston verify tank one psi", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "say again primary o2 pressure", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "confirm main oxygen tank pressure", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "o2 one pressure", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "oh two primary psi", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "what psi is my main tank holding", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "need primary o2 pressure now", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "give me the primary ox pressure reading", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "how much pressure is in tank one", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "uh what's my primary tank psi", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "um alpha check primary oxygen pressure", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "copy ev1 primary o2 tank psi please", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "houston uh request main o2 pressure reading over", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "primary oxygen pressure reading", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "read out tank one psi", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "pressure on the primary oxygen tank", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "what's the main o2 tank at in psi", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "primary oxygen pressure status", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "is my primary tank pressure okay", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "i need the pressure on o2 tank one", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "show primary o2 pressure", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "pressure check primary oxygen", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "main oxygen tank pressure", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "primary o2 tank psi", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "tank one o2 pressure reading please", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "how's my primary o2 pressure", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "check tank one oxygen pressure", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "what's my primary o2 pressure at", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "give me main oxygen pressure", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "o2 one psi", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "verify main oxygen psi", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "primary ox psi", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "how much pressure in my main oxygen", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "read me primary oxygen pressure", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "quick primary o2 psi check", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "primary o2 pressure dropping give me a number", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "pressure reading on oxygen tank one", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "oh two tank one pressure", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "what pressure is the primary o2 bottle at", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "primary bottle psi", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "need psi on the main oxygen tank", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "tell me the primary o2 pressure", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "say again tank one psi over", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "tank one psi now", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "primary oxygen pressure please", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "bravo uh main tank o2 pressure", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "houston ev1 what's my primary o2 tank pressure reading", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "primary oxygen tank pressure in psi", "intents": ["get_oxy_pri_pressure"], "source": "llm"}
+{"text": "secondary o2 pressure", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "what's the pressure in the secondary oxygen tank", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "backup o2 psi", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "ev2 request secondary oxygen tank pressure over", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "houston verify tank two psi", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "say again secondary o2 pressure", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "confirm backup oxygen tank pressure", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "o2 two pressure", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "oh two secondary psi", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "what psi is my reserve tank holding", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "need secondary o2 pressure now", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "give me the backup ox pressure reading", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "how much pressure is in tank two", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "uh what's my secondary tank psi", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "um delta check backup oxygen pressure", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "copy ev2 secondary o2 tank psi please", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "houston uh request reserve o2 pressure reading over", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "secondary oxygen pressure reading", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "read out tank two psi", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "pressure on the backup oxygen tank", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "what's the reserve o2 tank at in psi", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "secondary oxygen pressure status", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "is my backup tank pressure okay", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "i need the pressure on o2 tank two", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "show secondary o2 pressure", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "pressure check reserve oxygen", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "backup oxygen tank pressure", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "secondary o2 tank psi", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "tank two o2 pressure reading please", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "how's my secondary o2 pressure", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "reserve o2 tank pressure", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "check tank two oxygen pressure", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "what's my backup o2 pressure at", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "give me secondary oxygen pressure", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "o2 two psi", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "verify reserve oxygen psi", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "secondary ox psi", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "how much pressure in my backup oxygen", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "read me secondary oxygen pressure", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "quick backup o2 psi check", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "secondary o2 pressure looks low give me a number", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "pressure reading on oxygen tank two", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "oh two tank two pressure", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "what pressure is the secondary o2 bottle at", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "backup bottle psi", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "need psi on the reserve oxygen tank", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "tell me the backup o2 pressure", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "say again tank two psi over", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "tank two psi now", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "secondary oxygen pressure please", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "charlie uh reserve tank o2 pressure", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "before i switch over what's the secondary tank pressure", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "secondary oxygen tank pressure in psi", "intents": ["get_oxy_sec_pressure"], "source": "llm"}
+{"text": "suit oxygen pressure", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "suit ppo2", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "what's my suit o2 partial pressure", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "pp o2 reading", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "oxygen partial pressure in the suit", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "ev1 request suit ppo2 over", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "houston verify suit oxygen partial pressure", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "say again ppo2", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "confirm suit o2 pressure", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "how much oxygen pressure is inside my suit", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "give me the suit o2 partial", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "need suit ppo2 now", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "p p o two", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "what's the o2 partial pressure in here", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "uh what's the suit oxygen pressure looking like", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "um copy request suit o2 partial pressure reading", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "alpha charlie give me ppo2", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "houston ev2 uh request suit oxygen pressure reading over", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "copy that ppo2 what's it reading", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "is my suit o2 partial pressure okay", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "suit o2 pressure reading", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "show suit oxygen partial pressure", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "i need the oxygen partial pressure inside the suit", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "inside suit o2 pressure", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "what's the o2 pressure in my suit atmosphere", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "pp oh two in the suit", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "suit ox pressure", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "am i getting enough oxygen pressure in the suit", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "feel lightheaded check suit oxygen partial pressure", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "suit o2 psi", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "suit oxygen pressure reading please", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "o2 pressure inside the suit", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "what's my suit oxygen pressure at", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "check suit oxygen pressure", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "suit o2 partial pressure", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "give me suit oxygen partial pressure", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "read me suit ppo2", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "how's my suit o2 pressure", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "verify suit oxygen psi", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "ppo2 check", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "ppo2 status over", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "oxygen partial pressure", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "o2 partial pressure reading", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "tell me the oxygen partial pressure", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "what's ppo2 showing", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "houston ev1 say again suit o2 partial pressure", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "suit oxygen partial pressure now", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "pp oh two now", "intents": ["get_suit_pressure_oxy"], "source": "llm"}
+{"text": "suit co2", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "suit ppco2", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "what's my co2", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "co2 level", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "my co2", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "how's my co2 looking", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "suit co2 partial pressure", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "co2 partial pressure in the suit", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "ev1 request suit ppco2 over", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "houston verify suit co2 pressure", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "say again ppco2", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "confirm suit carbon dioxide pressure", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "how much co2 is in my suit", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "give me suit co2 partial", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "need suit co2 now", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "p p c o two", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "carbon dioxide partial pressure suit", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "uh how's the suit co2 doing", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "um copy what's my co2 at", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "alpha bravo give me ppco2", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "houston ev2 uh request suit carbon dioxide reading over", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "copy that ppco2 what's it reading", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "is my suit co2 okay", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "suit co2 reading", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "show suit carbon dioxide partial pressure", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "headache coming on check my co2", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "suit c o two", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "what's the co2 in my suit atmosphere", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "co2 pressure in the suit", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "suit co2 psi", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "suit carbon dioxide level", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "co2 in my suit", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "what's the suit co2 at", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "check suit co2 pressure", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "read me suit ppco2", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "verify suit co2 psi", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "how's my suit co2 pressure", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "tell me the co2 partial pressure", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "ppco2 check", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "ppco2 status over", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "co2 partial pressure", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "carbon dioxide level in the suit", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "what's ppco2 showing", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "houston ev1 say again suit co2 partial pressure", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "quick co2 check", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "give me the suit co2 partial pressure right away", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "breathing hard what's my co2", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "co2 reading please", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "carbon dioxide in my suit how high", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "pp c o two now", "intents": ["get_suit_pressure_co2"], "source": "llm"}
+{"text": "trace gas", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "trace gases in the suit", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "other gases", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "suit contaminants", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "what's the trace gas pressure", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "any contaminants in my suit atmosphere", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "ev1 request trace gas reading over", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "houston verify suit other gas pressure", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "say again trace gas level", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "confirm suit contaminant levels", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "how much other gas is in the suit", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "give me the other gases partial pressure", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "need trace gas reading now", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "other gas pressure in the suit", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "uh trace gases please", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "um copy check suit contaminants", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "alpha bravo give me trace gas", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "houston ev2 uh request other gases reading over", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "copy what's the contaminant level", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "are there any trace gases building up", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "smells weird in here check trace gases", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "show suit trace gas pressure", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "i need the other gas pressure inside the suit", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "partial pressure of other gases", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "what else is in my suit air besides oxygen and co2", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "suit nitrogen and trace gas reading", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "trace gas psi", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "contaminant check", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "check suit other gases pressure", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "what's the trace gas in my suit at", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "read me suit other gases", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "verify suit trace gas psi", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "how's my suit trace gas pressure", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "tell me the trace gas partial pressure", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "trace gas check", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "trace gas status over", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "trace gases what are they reading", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "houston ev1 say again suit other gases", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "quick contaminant check on the suit", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "need the suit trace gas pressure quick", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "any contaminants", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "other gas reading", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "what's the contaminant pressure in my suit", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "is there anything toxic in my suit air", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "trace contaminant level", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "gas contaminants in the suit please", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "other gases in my suit how much", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "trace gas readout", "intents": ["get_suit_pressure_other"], "source": "llm"}
+{"text": "suit pressure", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "suit psi", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "total pressure", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "total suit pressure", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "how's my suit pressure", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "suit pressure check", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "ev1 request suit pressure over", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "houston verify total suit pressure", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "say again suit pressure", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "confirm suit psi", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "give me total suit psi", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "need suit pressure now", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "is my suit holding pressure", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "uh what's the suit pressure doing", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "um copy total pressure reading", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "alpha bravo give me suit psi", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "houston ev2 uh request total suit pressure reading over", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "copy that what's suit pressure reading", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "suit pressure reading", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "show total suit pressure", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "i think i have a leak what's my suit pressure", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "total pressure inside the suit", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "suit internal pressure", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "what pressure is my suit at", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "how much pressure is in my suit", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "am i losing suit pressure", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "ears popping check suit pressure", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "suit total psi", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "check total suit pressure", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "read me suit pressure", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "verify suit pressure psi", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "suit psi check", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "suit pressure status over", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "houston ev1 say again total suit psi", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "need total suit pressure right away", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "bravo uh suit psi", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "pressure in the suit overall", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "what's my suit at in psi", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "read out total psi for the suit", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "full suit pressure reading", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "suit pressurization level", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "total suit pressure in psi", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "give me the suit pressure", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "suit pressure nominal or not", "intents": ["get_suit_pressure_total"], "source": "llm"}
+{"text": "helmet co2", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "co2 in my helmet", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "what's the co2 in my helmet", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "helmet carbon dioxide", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "helmet co2 level", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "ev1 request helmet co2 over", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "houston verify helmet co2 pressure", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "say again helmet co2", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "confirm helmet carbon dioxide level", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "need helmet co2 now", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "helmet c o two", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "co2 building up in my helmet check it", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "uh is the helmet co2 high", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "um copy read helmet carbon dioxide", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "alpha bravo give me helmet co2", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "houston ev2 uh request helmet co2 reading over", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "copy that what's helmet co2 reading", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "is my helmet co2 okay", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "show helmet co2 pressure", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "visor feels stuffy what's the helmet co2", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "carbon dioxide inside the helmet", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "co2 near my face in the helmet", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "helmet ppco2", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "what's the co2 pressure in my helmet", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "helmet co2 partial pressure", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "how's my helmet co2 looking", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "co2 level in the helmet", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "headache check co2 in my helmet", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "helmet co2 psi", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "check helmet co2 pressure", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "what's the helmet co2 at", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "read me helmet ppco2", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "verify carbon dioxide in my helmet", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "how's my helmet co2 pressure", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "helmet carbon dioxide partial pressure", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "tell me the helmet co2", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "helmet co2 check", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "helmet co2 status over", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "helmet co2 number", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "houston ev1 say again helmet carbon dioxide", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "what is helmet co2 right now", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "bravo uh helmet co2", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "co2 in the helmet how high", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "co2 inside my helmet please", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "am i rebreathing co2 in the helmet", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "helmet air co2 level", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "helmet co2 pressure", "intents": ["get_helmet_pressure_co2"], "source": "llm"}
+{"text": "copy that", "intents": ["unhandled"], "source": "llm"}
+{"text": "standby", "intents": ["unhandled"], "source": "llm"}
+{"text": "roger moving to site two", "intents": ["unhandled"], "source": "llm"}
+{"text": "houston ev1 comm check", "intents": ["unhandled"], "source": "llm"}
+{"text": "say again your last", "intents": ["unhandled"], "source": "llm"}
+{"text": "loud and clear", "intents": ["unhandled"], "source": "llm"}
+{"text": "copy all houston", "intents": ["unhandled"], "source": "llm"}
+{"text": "wilco", "intents": ["unhandled"], "source": "llm"}
+{"text": "roger that ev2", "intents": ["unhandled"], "source": "llm"}
+{"text": "affirmative proceeding to the ridge", "intents": ["unhandled"], "source": "llm"}
+{"text": "negative houston we are still at the outcrop", "intents": ["unhandled"], "source": "llm"}
+{"text": "stand by one", "intents": ["unhandled"], "source": "llm"}
+{"text": "houston ev1 how do you read", "intents": ["unhandled"], "source": "llm"}
+{"text": "read you five by five", "intents": ["unhandled"], "source": "llm"}
+{"text": "copy you are go for egress", "intents": ["unhandled"], "source": "llm"}
+{"text": "ev1 copy holding position", "intents": ["unhandled"], "source": "llm"}
+{"text": "roger understood heading out now", "intents": ["unhandled"], "source": "llm"}
+{"text": "copy we are at the sample site", "intents": ["unhandled"], "source": "llm"}
+{"text": "houston copy your last transmission", "intents": ["unhandled"], "source": "llm"}
+{"text": "understood will hold until your call", "intents": ["unhandled"], "source": "llm"}
+{"text": "roger that im on the ladder now", "intents": ["unhandled"], "source": "llm"}
+{"text": "ev2 copy i see you at the rover", "intents": ["unhandled"], "source": "llm"}
+{"text": "breaking up houston say again", "intents": ["unhandled"], "source": "llm"}
+{"text": "comm check one two one two", "intents": ["unhandled"], "source": "llm"}
+{"text": "copy break break", "intents": ["unhandled"], "source": "llm"}
+{"text": "ev1 acknowledging the timeline update", "intents": ["unhandled"], "source": "llm"}
+{"text": "roger copy the hold", "intents": ["unhandled"], "source": "llm"}
+{"text": "houston copy we are starting the traverse", "intents": ["unhandled"], "source": "llm"}
+{"text": "mic check this is ev2", "intents": ["unhandled"], "source": "llm"}
+{"text": "roger houston ev1 is clear of the hatch", "intents": ["unhandled"], "source": "llm"}
+{"text": "copy that ill wait for ev2", "intents": ["unhandled"], "source": "llm"}
+{"text": "houston this is ev1 radio check", "intents": ["unhandled"], "source": "llm"}
+{"text": "roger in work", "intents": ["unhandled"], "source": "llm"}
+{"text": "good copy on your last", "intents": ["unhandled"], "source": "llm"}
+{"text": "copy ev1 out", "intents": ["unhandled"], "source": "llm"}
+{"text": "nice view out here", "intents": ["unhandled"], "source": "llm"}
+{"text": "my visor's fogging a bit", "intents": ["unhandled"], "source": "llm"}
+{"text": "this rock is huge", "intents": ["unhandled"], "source": "llm"}
+{"text": "wow the earth looks tiny from here", "intents": ["unhandled"], "source": "llm"}
+{"text": "the shadows are really long today", "intents": ["unhandled"], "source": "llm"}
+{"text": "my arms are getting tired", "intents": ["unhandled"], "source": "llm"}
+{"text": "these gloves make everything so clumsy", "intents": ["unhandled"], "source": "llm"}
+{"text": "dust is getting all over my boots", "intents": ["unhandled"], "source": "llm"}
+{"text": "the ground here is pretty soft", "intents": ["unhandled"], "source": "llm"}
+{"text": "okay im climbing over this boulder", "intents": ["unhandled"], "source": "llm"}
+{"text": "man this slope is steeper than it looked", "intents": ["unhandled"], "source": "llm"}
+{"text": "im just walking toward the crater edge", "intents": ["unhandled"], "source": "llm"}
+{"text": "the sun glare is rough on my visor", "intents": ["unhandled"], "source": "llm"}
+{"text": "this regolith is super fine", "intents": ["unhandled"], "source": "llm"}
+{"text": "hands are a little sore from the tools", "intents": ["unhandled"], "source": "llm"}
+{"text": "taking a quick breather", "intents": ["unhandled"], "source": "llm"}
+{"text": "i can see the lander from up here", "intents": ["unhandled"], "source": "llm"}
+{"text": "beautiful horizon this morning", "intents": ["unhandled"], "source": "llm"}
+{"text": "im picking up the hammer now", "intents": ["unhandled"], "source": "llm"}
+{"text": "my legs feel heavy after that hike", "intents": ["unhandled"], "source": "llm"}
+{"text": "pretty quiet out here", "intents": ["unhandled"], "source": "llm"}
+{"text": "there's a weird glint over by those rocks", "intents": ["unhandled"], "source": "llm"}
+{"text": "im kneeling down to look at this layer", "intents": ["unhandled"], "source": "llm"}
+{"text": "long day so far", "intents": ["unhandled"], "source": "llm"}
+{"text": "looks like a dried up channel over there", "intents": ["unhandled"], "source": "llm"}
+{"text": "okay setting the bag down", "intents": ["unhandled"], "source": "llm"}
+{"text": "my fingers are kind of numb inside these gloves", "intents": ["unhandled"], "source": "llm"}
+{"text": "the stars are not visible with this glare", "intents": ["unhandled"], "source": "llm"}
+{"text": "just looking around for a second", "intents": ["unhandled"], "source": "llm"}
+{"text": "this terrain is really uneven", "intents": ["unhandled"], "source": "llm"}
+{"text": "oxygen hose is snagged on my arm", "intents": ["unhandled"], "source": "llm"}
+{"text": "my battery pack is heavy", "intents": ["unhandled"], "source": "llm"}
+{"text": "heart's pounding after that climb", "intents": ["unhandled"], "source": "llm"}
+{"text": "the map display looks really clean today", "intents": ["unhandled"], "source": "llm"}
+{"text": "whoever designed the vitals panel did a nice job", "intents": ["unhandled"], "source": "llm"}
+{"text": "the fan sounds a bit louder than in training", "intents": ["unhandled"], "source": "llm"}
+{"text": "coolant line rubbed against my shoulder", "intents": ["unhandled"], "source": "llm"}
+{"text": "my helmet is scratched on the left side", "intents": ["unhandled"], "source": "llm"}
+{"text": "the task list is longer than i expected", "intents": ["unhandled"], "source": "llm"}
+{"text": "the uia panel has dust on it", "intents": ["unhandled"], "source": "llm"}
+{"text": "there's a smudge on the hud near the compass", "intents": ["unhandled"], "source": "llm"}
+{"text": "the backup tank bracket feels loose", "intents": ["unhandled"], "source": "llm"}
+{"text": "scrubber housing has some scratches", "intents": ["unhandled"], "source": "llm"}
+{"text": "the nav arrow is a nice touch", "intents": ["unhandled"], "source": "llm"}
+{"text": "my suit feels stiff at the knees", "intents": ["unhandled"], "source": "llm"}
+{"text": "i love how bright the hud is", "intents": ["unhandled"], "source": "llm"}
+{"text": "breathing pretty hard after that run", "intents": ["unhandled"], "source": "llm"}
+{"text": "the battery cover is covered in dust", "intents": ["unhandled"], "source": "llm"}
+{"text": "these waypoint icons are kind of cute", "intents": ["unhandled"], "source": "llm"}
+{"text": "the checklist font is small", "intents": ["unhandled"], "source": "llm"}
+{"text": "oxygen fitting looks fine to me", "intents": ["unhandled"], "source": "llm"}
+{"text": "the warning tone in training was so annoying", "intents": ["unhandled"], "source": "llm"}
+{"text": "my suit smells like plastic", "intents": ["unhandled"], "source": "llm"}
+{"text": "the umbilical is coiled near the airlock", "intents": ["unhandled"], "source": "llm"}
+{"text": "the drill bit is stuck in the rock", "intents": ["unhandled"], "source": "llm"}
+{"text": "the radio antenna on ev2 is bent", "intents": ["unhandled"], "source": "llm"}
+{"text": "my pulse always goes up on ladders", "intents": ["unhandled"], "source": "llm"}
+{"text": "station three looks smaller than on the map", "intents": ["unhandled"], "source": "llm"}
+{"text": "heard the fan kick on just now", "intents": ["unhandled"], "source": "llm"}
+{"text": "ev2's oxygen hose is tangled with the tether", "intents": ["unhandled"], "source": "llm"}
+{"text": "no need to check my o2", "intents": ["unhandled"], "source": "llm"}
+{"text": "leave the vitals closed", "intents": ["unhandled"], "source": "llm"}
+{"text": "don't pull up the task list", "intents": ["unhandled"], "source": "llm"}
+{"text": "no don't show the uia panel", "intents": ["unhandled"], "source": "llm"}
+{"text": "i don't need my heart rate right now", "intents": ["unhandled"], "source": "llm"}
+{"text": "don't reroute us", "intents": ["unhandled"], "source": "llm"}
+{"text": "keep the map off for now", "intents": ["unhandled"], "source": "llm"}
+{"text": "no need for the battery numbers", "intents": ["unhandled"], "source": "llm"}
+{"text": "don't add a waypoint there", "intents": ["unhandled"], "source": "llm"}
+{"text": "don't bother with the scrubber readings", "intents": ["unhandled"], "source": "llm"}
+{"text": "no don't mark that task done", "intents": ["unhandled"], "source": "llm"}
+{"text": "skip the warnings for now", "intents": ["unhandled"], "source": "llm"}
+{"text": "don't change the nav target", "intents": ["unhandled"], "source": "llm"}
+{"text": "i don't want the vitals up", "intents": ["unhandled"], "source": "llm"}
+{"text": "leave the checklist alone", "intents": ["unhandled"], "source": "llm"}
+{"text": "don't delete that waypoint", "intents": ["unhandled"], "source": "llm"}
+{"text": "no need to show the elapsed time", "intents": ["unhandled"], "source": "llm"}
+{"text": "don't read me the suit pressure", "intents": ["unhandled"], "source": "llm"}
+{"text": "i checked my o2 earlier", "intents": ["unhandled"], "source": "llm"}
+{"text": "houston already told me the fan speed", "intents": ["unhandled"], "source": "llm"}
+{"text": "i looked at the map a minute ago", "intents": ["unhandled"], "source": "llm"}
+{"text": "saw my heart rate on the last break", "intents": ["unhandled"], "source": "llm"}
+{"text": "ev2 read me the battery level already", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "i had the vitals open earlier", "intents": ["unhandled"], "source": "llm"}
+{"text": "my co2 was fine last time i looked", "intents": ["unhandled"], "source": "llm"}
+{"text": "houston gave us the coolant numbers before egress", "intents": ["unhandled"], "source": "llm"}
+{"text": "i checked the scrubbers at the airlock", "intents": ["unhandled"], "source": "llm"}
+{"text": "the warnings cleared a while ago", "intents": ["unhandled"], "source": "llm"}
+{"text": "we set the nav target back at the lander", "intents": ["unhandled"], "source": "llm"}
+{"text": "i already looked at the coordinates", "intents": ["unhandled"], "source": "llm"}
+{"text": "the temperature was normal this morning", "intents": ["unhandled"], "source": "llm"}
+{"text": "i read the secondary tank pressure at the hatch", "intents": ["unhandled"], "source": "llm"}
+{"text": "we got the elapsed time from houston", "intents": ["unhandled"], "source": "llm"}
+{"text": "i saw the suit pressure during prebreathe", "intents": ["unhandled"], "source": "llm"}
+{"text": "battery was at ninety when we left", "intents": ["unhandled"], "source": "llm"}
+{"text": "i opened the checklist back at the rover", "intents": ["unhandled"], "source": "llm"}
+{"text": "ev2 mentioned his pulse was high", "intents": ["unhandled"], "source": "llm"}
+{"text": "we rerouted around that ridge yesterday", "intents": ["unhandled"], "source": "llm"}
+{"text": "what does scrubber a do", "intents": ["unhandled"], "source": "llm"}
+{"text": "why are there two batteries", "intents": ["unhandled"], "source": "llm"}
+{"text": "how does the coolant loop work", "intents": ["unhandled"], "source": "llm"}
+{"text": "what's the difference between primary and secondary oxygen", "intents": ["unhandled"], "source": "llm"}
+{"text": "what is ppco2 exactly", "intents": ["unhandled"], "source": "llm"}
+{"text": "how does the scrubber actually remove co2", "intents": ["unhandled"], "source": "llm"}
+{"text": "what does the uia do", "intents": ["unhandled"], "source": "llm"}
+{"text": "why do we have a backup tank", "intents": ["unhandled"], "source": "llm"}
+{"text": "what's trace gas made of", "intents": ["unhandled"], "source": "llm"}
+{"text": "how does the hud know my heart rate", "intents": ["unhandled"], "source": "llm"}
+{"text": "what powers the fans", "intents": ["unhandled"], "source": "llm"}
+{"text": "how long do the batteries last in general", "intents": ["unhandled"], "source": "llm"}
+{"text": "who designed this suit", "intents": ["unhandled"], "source": "llm"}
+{"text": "why is helmet co2 tracked separately", "intents": ["unhandled"], "source": "llm"}
+{"text": "pressure", "intents": ["unhandled"], "source": "llm"}
+{"text": "uh", "intents": ["unhandled"], "source": "llm"}
+{"text": "hmm okay", "intents": ["unhandled"], "source": "llm"}
+{"text": "wait", "intents": ["unhandled"], "source": "llm"}
+{"text": "the um", "intents": ["unhandled"], "source": "llm"}
+{"text": "scrubber", "intents": ["unhandled"], "source": "llm"}
+{"text": "uh hold on", "intents": ["unhandled"], "source": "llm"}
+{"text": "hmm", "intents": ["unhandled"], "source": "llm"}
+{"text": "okay so", "intents": ["unhandled"], "source": "llm"}
+{"text": "what was i", "intents": ["unhandled"], "source": "llm"}
+{"text": "let me think", "intents": ["unhandled"], "source": "llm"}
+{"text": "huh", "intents": ["unhandled"], "source": "llm"}
+{"text": "mm hmm", "intents": ["unhandled"], "source": "llm"}
+{"text": "uh what", "intents": ["unhandled"], "source": "llm"}
+{"text": "so yeah", "intents": ["unhandled"], "source": "llm"}
+{"text": "alpha bravo charlie testing", "intents": ["unhandled"], "source": "llm"}
+{"text": "ev2 this is ev1 over", "intents": ["unhandled"], "source": "llm"}
+{"text": "delta echo foxtrot", "intents": ["unhandled"], "source": "llm"}
+{"text": "houston ev1 over", "intents": ["unhandled"], "source": "llm"}
+{"text": "niner niner niner testing", "intents": ["unhandled"], "source": "llm"}
+{"text": "alpha alpha alpha", "intents": ["unhandled"], "source": "llm"}
+{"text": "ev1 to ev2 radio check over", "intents": ["unhandled"], "source": "llm"}
+{"text": "this is ev2 standing by over", "intents": ["unhandled"], "source": "llm"}
+{"text": "bravo zulu ev2", "intents": ["unhandled"], "source": "llm"}
+{"text": "charlie charlie testing one two", "intents": ["unhandled"], "source": "llm"}
+{"text": "ev1 ev1 this is houston over", "intents": ["unhandled"], "source": "llm"}
+{"text": "x ray yankee zulu end of test", "intents": ["unhandled"], "source": "llm"}
+{"text": "fan speed", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "whats the fan speed", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "check fan speed", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "how fast is the fan turning", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "give me fan speed now", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "uh what's my fan speed at", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "ev1 request primary fan rpm over", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "houston ev2 verify fan one speed", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "say again primary fan rpm", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "confirm main blower rpm", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "fan one", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "main fan", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "primary blower speed", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "how fast is fan one spinning", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "what's the primary fan doing rpm wise", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "is the main fan spinning ok", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "need primary fan rpm now", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "whats the rpm reading for fan one", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "read out the primary fan rpm", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "i need to see the primary fan speed", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "show me fan one revs", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "pri fan rpm", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "primary fan are pee em", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "fan number one speed check", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "what's fan one at", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "uh what's the main fan running at", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "hey how's the primary fan doing", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "copy ev1 alpha bravo primary fan rpm over", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "um okay so uh primary fan speed please", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "houston houston fan one rpm say again", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "roger roger check primary fan rpm", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "copy that give me the main blower rpm", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "what is the primary fan rpm", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "is fan one spinning up", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "check the primary fan", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "primary fan status", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "read me fan one speed", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "how fast is the main fan going", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "main fan rpm over", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "fan one revolutions per minute", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "primary circulation fan speed", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "i want the primary fan rpm on screen", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "tell me how fast fan one is turning", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "is the primary fan up to speed", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "first fan rpm", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "ev2 to ev1 fan one rpm please", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "blower one rpm", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "i need the rpm on fan one before we move", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "current speed of the primary fan", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "verify primary fan is spinning", "intents": ["get_fan_pri_rpm"], "source": "llm"}
+{"text": "fan two rpm", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "backup fan", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "secondary blower speed", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "how fast is fan two spinning", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "whats the secondary fan doing rpm wise", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "need secondary fan rpm now", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "pull up fan two rpm", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "ev1 request secondary fan rpm over", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "houston ev2 verify fan two speed", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "say again secondary fan rpm", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "confirm backup blower rpm", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "fan to rpm", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "secondary fan are pee em", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "sec fan rpm", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "what's fan two at", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "uh what's the backup fan running at", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "hey how's the secondary fan doing", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "is fan two still spinning", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "check the secondary fan", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "secondary fan status", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "read me fan two speed", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "how fast is the backup fan going", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "fan two revolutions per minute", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "secondary circulation fan speed", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "i want the secondary fan rpm on screen", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "tell me how fast fan two is turning", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "is the secondary fan up to speed", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "blower two rpm", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "current speed of the secondary fan", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "verify secondary fan is spinning", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "i need the rpm on fan two before we switch over", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "houston requesting fan number two speed", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "the backup fan sounds weird whats its rpm", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "need backup blower speed right now", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "show me the speed of fan number two", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "give me secondary fan revs", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "fan two how fast", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "EV2 say again secondary blower RPM over", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "backup fan speed please", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "what rpm is the secondary fan at", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "check rpm fan two", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "copy ev1 charlie delta fan two rpm over", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "um okay uh secondary fan speed please", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "roger roger check backup fan rpm", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "copy that give me the secondary blower rpm", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "is the secondary fan spinning fast enough", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "secondary fan speed read out", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "how many rpm on the backup blower", "intents": ["get_fan_sec_rpm"], "source": "llm"}
+{"text": "scrubber alpha", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "scrubber a co2", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "scrubber aco2", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "scrubber a co2 level", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "how full is scrubber a", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "how much co2 is in scrubber alpha", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "ev1 request scrubber alpha status over", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "verify scrubber alpha", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "say again scrubber a co2", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "confirm scrubber alpha storage", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "houston ev2 check scrubber a co2 storage", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "scrubber ay co2", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "scrubber a how full", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "need scrubber a reading now", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "houston scrubber alpha percentage", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "co2 in scrubber a", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "scrubber a co2 storage percent", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "what's the co2 storage on scrubber a", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "how much has scrubber alpha soaked up", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "is scrubber a getting full", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "is scrubber a saturated yet", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "check scrubber a", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "show me scrubber alpha", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "give me scrubber a levels", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "uh how's scrubber a doing", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "scrubber a status please", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "pull up the co2 on scrubber a", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "how much co2 is scrubber a storing", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "scrubber a capacity left", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "i need to know how full scrubber a is", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "tell me what scrubber alpha is at", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "scrubber a co2 percentage over", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "scrubber alpha co2 storage reading", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "whats the alpha scrubber got in it", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "alpha scrubber reading", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "scrubber a co2 fill level", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "what percent is scrubber a at", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "co2 stored in scrubber alpha", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "scrubber a fill", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "EV1 scrubber alpha co2 over", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "scrubber a co2 readout", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "is scrubber alpha near capacity", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "copy houston uh scrubber alpha co2 level over", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "okay um what's scrubber alpha storing", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "copy that scrubber alpha co2 storage", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "uh hmm scrubber a reading", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "how much co2 has scrubber a captured", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "scrubber a canister co2 level", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "read me scrubber alpha", "intents": ["get_scrubber_a_co2_storage"], "source": "llm"}
+{"text": "scrubber b", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "scrubber bravo", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "scrubber b co2", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "scrubber bco2", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "scrubber bee co2", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "how full is scrubber b", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "how much co2 is in scrubber bravo", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "ev1 request scrubber bravo status over", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "verify scrubber bravo", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "say again scrubber b co2", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "confirm scrubber bravo storage", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "houston ev2 check scrubber b co2 storage", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "scrubber be how full", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "whats scrubber b holding", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "need scrubber b reading now", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "houston scrubber bravo percentage", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "co2 in scrubber b", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "scrubber b co2 storage percent", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "what's the co2 storage on scrubber b", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "how much has scrubber bravo soaked up", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "is scrubber b getting full", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "is scrubber b saturated yet", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "check scrubber b", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "show me scrubber bravo", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "give me scrubber b levels", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "uh how's scrubber b doing", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "scrubber b status please", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "pull up the co2 on scrubber b", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "how much co2 is scrubber b storing", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "scrubber b capacity left", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "i need to know how full scrubber b is", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "tell me what scrubber bravo is at", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "scrubber b co2 percentage over", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "scrubber bravo co2 storage reading", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "the b scrubber co2", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "bravo scrubber reading", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "scrubber b co2 fill level", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "how loaded is scrubber bravo", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "what percent is scrubber b at", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "co2 stored in scrubber bravo", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "scrubber bee fill", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "EV2 scrubber bravo co2 over", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "scrubber b co2 readout", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "is scrubber bravo near capacity", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "copy houston uh scrubber bravo co2 level over", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "okay um what's scrubber bravo storing", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "copy that scrubber bravo co2 storage", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "uh hmm scrubber b reading", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "how much co2 has scrubber b captured", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "scrubber b canister co2 level", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "read me scrubber bravo", "intents": ["get_scrubber_b_co2_storage"], "source": "llm"}
+{"text": "temp", "intents": ["get_temperature"], "source": "llm"}
+{"text": "temperature", "intents": ["get_temperature"], "source": "llm"}
+{"text": "what's the temperature", "intents": ["get_temperature"], "source": "llm"}
+{"text": "how hot is it in here", "intents": ["get_temperature"], "source": "llm"}
+{"text": "how cold is it in the suit", "intents": ["get_temperature"], "source": "llm"}
+{"text": "uh how hot is it", "intents": ["get_temperature"], "source": "llm"}
+{"text": "suit temperature please", "intents": ["get_temperature"], "source": "llm"}
+{"text": "check suit temp", "intents": ["get_temperature"], "source": "llm"}
+{"text": "give me the temp", "intents": ["get_temperature"], "source": "llm"}
+{"text": "ev1 request suit temperature over", "intents": ["get_temperature"], "source": "llm"}
+{"text": "houston verify suit temp", "intents": ["get_temperature"], "source": "llm"}
+{"text": "say again temperature", "intents": ["get_temperature"], "source": "llm"}
+{"text": "confirm internal temp", "intents": ["get_temperature"], "source": "llm"}
+{"text": "whats my suit temp at", "intents": ["get_temperature"], "source": "llm"}
+{"text": "internal suit temperature", "intents": ["get_temperature"], "source": "llm"}
+{"text": "i'm sweating whats the temp in here", "intents": ["get_temperature"], "source": "llm"}
+{"text": "it feels cold what's the suit temperature", "intents": ["get_temperature"], "source": "llm"}
+{"text": "need suit temp now", "intents": ["get_temperature"], "source": "llm"}
+{"text": "temp check", "intents": ["get_temperature"], "source": "llm"}
+{"text": "whats the temp inside right now", "intents": ["get_temperature"], "source": "llm"}
+{"text": "how warm is my suit", "intents": ["get_temperature"], "source": "llm"}
+{"text": "is it getting hot in the suit", "intents": ["get_temperature"], "source": "llm"}
+{"text": "what's the inside temperature reading", "intents": ["get_temperature"], "source": "llm"}
+{"text": "read me the suit temperature", "intents": ["get_temperature"], "source": "llm"}
+{"text": "show suit temp", "intents": ["get_temperature"], "source": "llm"}
+{"text": "temperature in degrees", "intents": ["get_temperature"], "source": "llm"}
+{"text": "how many degrees inside the suit", "intents": ["get_temperature"], "source": "llm"}
+{"text": "suit temp reading over", "intents": ["get_temperature"], "source": "llm"}
+{"text": "internal temp status", "intents": ["get_temperature"], "source": "llm"}
+{"text": "copy houston uh suit temp over", "intents": ["get_temperature"], "source": "llm"}
+{"text": "um okay is it hot or cold in here", "intents": ["get_temperature"], "source": "llm"}
+{"text": "roger ev2 alpha check temp", "intents": ["get_temperature"], "source": "llm"}
+{"text": "copy that give me suit temperature", "intents": ["get_temperature"], "source": "llm"}
+{"text": "uh hmm how hot is it in the suit", "intents": ["get_temperature"], "source": "llm"}
+{"text": "what temperature is it inside my suit", "intents": ["get_temperature"], "source": "llm"}
+{"text": "am i overheating whats the temp", "intents": ["get_temperature"], "source": "llm"}
+{"text": "temperature check over", "intents": ["get_temperature"], "source": "llm"}
+{"text": "temp readout", "intents": ["get_temperature"], "source": "llm"}
+{"text": "tell me the suit temperature", "intents": ["get_temperature"], "source": "llm"}
+{"text": "is my suit too warm", "intents": ["get_temperature"], "source": "llm"}
+{"text": "how hot is my suit running", "intents": ["get_temperature"], "source": "llm"}
+{"text": "ev2 to houston suit temp request", "intents": ["get_temperature"], "source": "llm"}
+{"text": "i need a temperature reading", "intents": ["get_temperature"], "source": "llm"}
+{"text": "suit internal temp now", "intents": ["get_temperature"], "source": "llm"}
+{"text": "temperature status quick", "intents": ["get_temperature"], "source": "llm"}
+{"text": "how chilly is it in here", "intents": ["get_temperature"], "source": "llm"}
+{"text": "check temp please", "intents": ["get_temperature"], "source": "llm"}
+{"text": "pull up suit temperature", "intents": ["get_temperature"], "source": "llm"}
+{"text": "verify internal temperature", "intents": ["get_temperature"], "source": "llm"}
+{"text": "what is my suit temperature", "intents": ["get_temperature"], "source": "llm"}
+{"text": "current suit temp", "intents": ["get_temperature"], "source": "llm"}
+{"text": "coolant level", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "how much coolant", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "coolant percent", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "coolant storage", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "whats my coolant at", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "ev1 request coolant level over", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "houston verify coolant storage", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "say again coolant level", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "confirm coolant remaining", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "give me a coolant level update", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "need coolant level now", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "am i running low on coolant", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "how full is the coolant tank", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "coolant tank level", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "water loop level", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "how much water is in the cooling loop", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "coolant storage percent", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "co lant level", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "coolant reserve", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "read me coolant level", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "show coolant storage", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "coolant level reading over", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "uh hows my coolant", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "what percent coolant do i have", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "coolant quantity", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "is the coolant getting low", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "coolant supply check", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "copy houston uh coolant level over", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "um okay how much coolant have i got", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "roger ev2 bravo check coolant storage", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "copy that give me coolant remaining", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "uh hmm is there enough coolant left", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "how much coolant do i have left in storage", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "coolant storage level quick", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "coolant fill level", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "coolant how much", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "i need to know my coolant level", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "coolant stores", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "coolant storage status", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "check the coolant reserve", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "coolant tank how full", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "ev2 coolant level check", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "coolant left", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "how is my coolant supply", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "coolant amount please", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "pull up coolant storage", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "cooling water level", "intents": ["get_coolant_storage"], "source": "llm"}
+{"text": "coolant gas pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "coolant gas", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "coolant gas psi", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "gas side coolant pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "check coolant gas pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "whats the coolant gas pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "ev1 request coolant gas pressure over", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "houston verify coolant gas pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "say again coolant gas pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "confirm coolant gas psi", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "coolant gas pressure update", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "need coolant gas pressure now", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "pressure on the coolant gas loop", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "coolant gas pressure reading", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "can i get the coolant gas pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "uh whats the coolant gas at", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "read me coolant gas pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "show coolant gas pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "cool and gas pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "coolant gas pressure over", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "coolant gas pressure status", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "quick look at coolant gas pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "copy houston uh coolant gas pressure over", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "um okay what's the gas loop pressure on the coolant", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "roger ev2 charlie check coolant gas psi", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "copy that give me coolant gas pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "uh hmm is the coolant gas pressure holding", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "what psi is the coolant gas at", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "coolant gas side psi", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "pressure of the coolant gas", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "how much pressure on the coolant gas", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "i need the coolant gas pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "coolant vapor pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "coolant gas line pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "check the gas side of the coolant", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "ev2 coolant gas pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "is coolant gas pressure nominal", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "give me the gas pressure on the coolant", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "coolant gas pressure readout", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "pull up coolant gas pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "coolant gas pee ess eye", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "coolant gas pressure ev1", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "display coolant gas pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "what does the coolant gas pressure read", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "current coolant gas pressure", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "coolant gas pressure looking ok", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "what's my coolant gas psi", "intents": ["get_coolant_gas_pressure"], "source": "llm"}
+{"text": "water loop pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "coolant liquid", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "liquid side coolant pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "check coolant liquid pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "whats the coolant liquid pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "ev1 request coolant liquid pressure over", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "houston verify water loop pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "say again coolant liquid pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "confirm coolant liquid psi", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "coolant liquid pressure update", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "need water loop pressure now", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "coolant liquid loop pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "pressure on the coolant liquid loop", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "coolant liquid pressure reading", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "can i get the coolant liquid pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "liquid pressure in the coolant loop", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "read me coolant liquid pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "show water loop pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "cool and liquid pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "coolant liquid pressure over", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "water loop psi", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "quick look at coolant liquid pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "copy houston uh coolant liquid pressure over", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "um okay what's the water loop running at for pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "roger ev2 delta check coolant liquid psi", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "copy that give me coolant liquid pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "uh hmm is the coolant liquid pressure holding", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "what psi is the coolant liquid at", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "coolant liquid side psi", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "pressure of the coolant liquid", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "i need the coolant liquid pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "tell me coolant liquid pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "cooling water pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "coolant liquid line pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "check the liquid side of the coolant", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "water loop pressure check", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "ev2 coolant liquid pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "is coolant liquid pressure nominal", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "give me the liquid pressure on the coolant", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "water loop pressure readout", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "pull up coolant liquid pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "coolant liquid pressure status", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "display water loop pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "coolant liquid pressure ev1", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "current coolant liquid pressure", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "water loop pressure looking ok", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "what's my water loop psi", "intents": ["get_coolant_liquid_pressure"], "source": "llm"}
+{"text": "heart rate", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "pulse", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "bpm", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "how fast is my heart beating", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "my heart rate please", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "ev1 request heart rate over", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "houston verify ev1 pulse", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "say again heart rate", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "confirm bpm", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "heart rate update", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "need my heart rate now", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "my heart is pounding whats my pulse", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "uh what's my pulse at", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "hr check", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "heart rate reading", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "read me my heart rate", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "show my bpm", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "pulse rate", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "heartrate", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "heart beat per minute", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "copy houston uh heart rate over", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "um okay my pulse please", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "roger ev2 alpha check heart rate", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "copy that give me my bpm", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "uh hmm is my heart racing", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "how hard is my heart working", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "is my heart rate too high", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "heart rate status", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "pulse check over", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "i need to know my heart rate", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "tell me my pulse", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "current heart rate", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "beats per minute", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "my bpm now", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "whats my pulse doing", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "pulse reading please", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "heart rate ev1", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "check heart rate", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "heart rate readout", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "pull up my heart rate", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "display heart rate", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "how's my heart doing", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "am i too winded whats my heart rate", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "give me my pulse", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "take my pulse", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "show me heart rate", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "what's the heart rate on ev2", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "heart rate over", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "pulse status", "intents": ["get_heart_rate"], "source": "llm"}
+{"text": "o2 consumption", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "oxygen consumption", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "burn rate", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "o2 burn rate", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "whats my o2 consumption rate", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "ev1 request oxygen consumption over", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "houston verify o2 consumption", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "say again o2 burn rate", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "confirm oxygen usage rate", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "oxygen consumption update", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "need my o2 consumption now", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "how quickly am i going through oxygen", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "how much oxygen am i using per minute", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "uh what's my burn rate", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "oxy consumption", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "oh two consumption", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "o2 usage rate", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "read me oxygen consumption", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "show o2 consumption", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "oxygen consumption reading over", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "copy houston uh o2 consumption over", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "um okay how much o2 am i going through", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "roger ev2 bravo check burn rate", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "copy that give me o2 usage rate", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "uh hmm how fast am i using o2", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "am i using oxygen too fast", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "oxygen draw rate", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "how fast is my oxygen going down", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "i need my oxygen consumption", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "tell me my o2 consumption", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "current o2 consumption", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "how fast is the o2 draining per minute", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "o2 consumption status", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "how hard am i breathing through my o2", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "metabolic oxygen rate", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "liters of oxygen per minute", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "pull up oxygen consumption", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "display o2 consumption", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "o2 consumption ev1", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "oxygen burn", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "what's my oxygen usage", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "check o2 consumption", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "o2 use per hour", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "how fast am i using oh two", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "oxygen consumption check", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "what rate am i consuming oxygen at", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "o2 consumption over", "intents": ["get_oxy_consumption"], "source": "llm"}
+{"text": "co2 production", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "how fast am i producing co2", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "co2 output rate", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "whats my co2 production", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "ev1 request co2 production over", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "houston verify co2 production rate", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "say again co2 production", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "confirm co2 output rate", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "co2 production update", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "need my co2 production now", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "how much carbon dioxide am i exhaling", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "how much co2 am i breathing out", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "uh what's my co2 output", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "c o 2 production", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "carbon dioxide production", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "read me co2 production", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "show co2 production", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "co2 production reading over", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "copy houston uh co2 production over", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "um okay how much co2 is my body putting out", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "roger ev2 charlie check co2 output", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "copy that give me co2 production rate", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "uh hmm how much co2 am i making", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "am i producing too much co2", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "co2 generation rate", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "how fast is my body making co2", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "tell me my co2 production", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "current co2 production", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "quick co2 output number", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "co2 production status", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "metabolic co2 output", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "co2 exhale rate", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "pull up co2 production", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "display co2 production", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "co2 production ev1", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "what's my carbon dioxide output", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "check co2 production", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "how much co2 am i giving off", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "co2 production check", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "what rate am i producing carbon dioxide", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "co2 production over", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "co2 production per minute", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "how much co2 do i exhale per minute", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "my co2 production rate please", "intents": ["get_co2_production"], "source": "llm"}
+{"text": "elapsed time", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "eva clock", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "how long have i been out", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "mission elapsed time", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "how long have we been on eva", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "time on eva", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "ev1 request elapsed time over", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "houston verify eva time", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "say again elapsed time", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "confirm eva clock", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "elapsed time update", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "need the eva clock now", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "how long have i been outside", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "uh how long have we been out here", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "eva time", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "met check", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "read me the eva clock", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "show elapsed time", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "elapsed time reading over", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "copy houston uh eva clock over", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "um okay what time are we at on this eva", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "roger ev2 delta check eva time", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "copy that give me elapsed time", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "uh hmm has it been two hours out here yet", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "how many minutes into the eva are we", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "how many hours have we been out", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "time since egress", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "time since eva start", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "i need the elapsed time", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "tell me the eva time", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "current eva time", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "hours and minutes on eva so far", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "eva clock status", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "how much time has passed on this eva", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "eva duration so far", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "pull up eva clock", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "display elapsed time", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "elapsed time ev1", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "ee vee ay clock", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "eva elapsed", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "check the eva clock", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "how long has this eva been going", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "how long have i been walking out here", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "time elapsed since start", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "eva clock over", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "how far into the eva are we", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "eva run time", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "what's our time on eva", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "how long has ev2 been out", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "elapsed eva time please", "intents": ["get_eva_elapsed_time"], "source": "llm"}
+{"text": "battery", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "batt", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "charge", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "battery level", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "how's my battery", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "how's the charge holding up", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "whats my charge at", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "battery check", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "primary battery", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "main battery level", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "primary battery level", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "battery one", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "main batt", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "how much charge on the primary battery", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "ev1 request primary battery level over", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "houston verify batt one", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "say again primary battery", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "confirm main batt", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "primary battery update", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "need main battery level now", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "uh whats my primary batt at", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "primary power level", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "primary battery percent", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "read me battery one", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "show primary battery", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "primary battery reading over", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "copy houston uh primary batt over", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "um okay main battery please", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "roger ev2 alpha check battery one", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "copy that give me primary battery", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "uh hmm battery one level", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "am i running low on primary battery", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "how much juice in the main battery", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "battery won", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "is the main battery getting low", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "i need the primary battery level", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "tell me battery one level", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "current primary battery level", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "quick read on battery one", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "main battery status", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "pull up primary battery", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "display battery one", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "primary battery ev1", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "check the main battery", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "first battery level", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "primary charge level", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "battery one percent left", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "how much primary battery is left", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "batt one over", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "primary battery how much", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "main battery remaining", "intents": ["get_primary_battery_level"], "source": "llm"}
+{"text": "secondary battery", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "batt two", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "backup battery level", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "battery two", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "how much charge on the secondary battery", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "ev1 request secondary battery level over", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "houston verify batt two", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "say again secondary battery", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "confirm backup batt", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "secondary battery update", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "need backup battery level now", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "uh whats my secondary batt at", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "secondary power level", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "secondary battery percent", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "read me battery two", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "show secondary battery", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "secondary battery reading over", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "copy houston uh secondary batt over", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "um okay backup battery please", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "roger ev2 bravo check battery two", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "copy that give me secondary battery", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "uh hmm battery two level", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "am i running low on secondary battery", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "how much juice in the backup battery", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "battery to level", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "is the backup battery getting low", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "i need the secondary battery level", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "tell me battery two level", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "current secondary battery level", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "quick read on battery two", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "backup battery status", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "pull up secondary battery", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "display battery two", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "secondary battery ev1", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "check the backup battery", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "second battery level", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "secondary charge level", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "battery two percent left", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "how much secondary battery is left", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "batt two over", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "secondary battery how much", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "backup battery remaining", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "reserve battery level", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "spare battery charge", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "sec batt", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "batt two status", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "how's the backup battery", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "secondary battery charge", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "what's battery number two at", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "backup batt percent please", "intents": ["get_secondary_battery_level"], "source": "llm"}
+{"text": "warnings", "intents": ["get_warnings"], "source": "llm"}
+{"text": "any warnings", "intents": ["get_warnings"], "source": "llm"}
+{"text": "cautions", "intents": ["get_warnings"], "source": "llm"}
+{"text": "alarms", "intents": ["get_warnings"], "source": "llm"}
+{"text": "whats wrong", "intents": ["get_warnings"], "source": "llm"}
+{"text": "check warnings", "intents": ["get_warnings"], "source": "llm"}
+{"text": "show warnings", "intents": ["get_warnings"], "source": "llm"}
+{"text": "warnings any warnings", "intents": ["get_warnings"], "source": "llm"}
+{"text": "ev1 request caution and warning status over", "intents": ["get_warnings"], "source": "llm"}
+{"text": "houston verify any active alarms", "intents": ["get_warnings"], "source": "llm"}
+{"text": "say again warnings", "intents": ["get_warnings"], "source": "llm"}
+{"text": "confirm no cautions", "intents": ["get_warnings"], "source": "llm"}
+{"text": "any faults", "intents": ["get_warnings"], "source": "llm"}
+{"text": "active faults", "intents": ["get_warnings"], "source": "llm"}
+{"text": "master alarm what is it", "intents": ["get_warnings"], "source": "llm"}
+{"text": "why is my alarm going off", "intents": ["get_warnings"], "source": "llm"}
+{"text": "what's that alarm", "intents": ["get_warnings"], "source": "llm"}
+{"text": "uh is anything wrong", "intents": ["get_warnings"], "source": "llm"}
+{"text": "something's beeping whats wrong", "intents": ["get_warnings"], "source": "llm"}
+{"text": "is anything flagged red", "intents": ["get_warnings"], "source": "llm"}
+{"text": "need warnings now", "intents": ["get_warnings"], "source": "llm"}
+{"text": "read me the warnings", "intents": ["get_warnings"], "source": "llm"}
+{"text": "show active cautions", "intents": ["get_warnings"], "source": "llm"}
+{"text": "caution and warning summary", "intents": ["get_warnings"], "source": "llm"}
+{"text": "copy houston uh any warnings over", "intents": ["get_warnings"], "source": "llm"}
+{"text": "um okay are any alarms active", "intents": ["get_warnings"], "source": "llm"}
+{"text": "roger ev2 check cautions", "intents": ["get_warnings"], "source": "llm"}
+{"text": "copy that give me active warnings", "intents": ["get_warnings"], "source": "llm"}
+{"text": "uh hmm whats wrong with the suit", "intents": ["get_warnings"], "source": "llm"}
+{"text": "is anything wrong with my suit", "intents": ["get_warnings"], "source": "llm"}
+{"text": "do i have any alerts", "intents": ["get_warnings"], "source": "llm"}
+{"text": "active alerts", "intents": ["get_warnings"], "source": "llm"}
+{"text": "list the alarms", "intents": ["get_warnings"], "source": "llm"}
+{"text": "what warnings are up", "intents": ["get_warnings"], "source": "llm"}
+{"text": "i need the warning list", "intents": ["get_warnings"], "source": "llm"}
+{"text": "tell me any faults", "intents": ["get_warnings"], "source": "llm"}
+{"text": "current warnings", "intents": ["get_warnings"], "source": "llm"}
+{"text": "warning status quick", "intents": ["get_warnings"], "source": "llm"}
+{"text": "alarm status", "intents": ["get_warnings"], "source": "llm"}
+{"text": "pull up warnings", "intents": ["get_warnings"], "source": "llm"}
+{"text": "display cautions", "intents": ["get_warnings"], "source": "llm"}
+{"text": "warnings ev1", "intents": ["get_warnings"], "source": "llm"}
+{"text": "c and w check", "intents": ["get_warnings"], "source": "llm"}
+{"text": "any red lines", "intents": ["get_warnings"], "source": "llm"}
+{"text": "what's the alert", "intents": ["get_warnings"], "source": "llm"}
+{"text": "any issues flagged", "intents": ["get_warnings"], "source": "llm"}
+{"text": "what's going wrong", "intents": ["get_warnings"], "source": "llm"}
+{"text": "any problems with the suit", "intents": ["get_warnings"], "source": "llm"}
+{"text": "alerts please", "intents": ["get_warnings"], "source": "llm"}
+{"text": "fault list", "intents": ["get_warnings"], "source": "llm"}
+{"text": "warnings over", "intents": ["get_warnings"], "source": "llm"}
+{"text": "any cautions or warnings", "intents": ["get_warnings"], "source": "llm"}
+{"text": "what is the suit complaining about", "intents": ["get_warnings"], "source": "llm"}
+{"text": "pull up vitals", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "vitals", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "open the vitals panel", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "show me my vitals", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "bring up biomed", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "EV1 request vitals display over", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "can you open the vitals screen", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "vitals page please", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "display my vitals", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "open vitals", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "hey bring up the vitals menu real quick", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "I need to see my vitals", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "vitals screen now", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "show biomed data", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "houston EV2 request biomed panel on the HUD", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "open vital signs", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "put my vitals on the display", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "pull up the vitals page for me", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "vitals menu", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "could you show the biomedical panel", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "I want the vitals display up", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "need vitals up now", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "vitals vitals pull them up", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "vital signs screen please", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "go to vitals", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "switch to the vitals panel", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "bring vitals up on the hud", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "show me the body stats page", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "open the health monitor panel", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "EV1 vitals panel please", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "can I get the vitals screen up", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "vital screen", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "pull up my biomed screen", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "display biomedical readouts", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "I'd like to look at my vitals", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "get my vitals up fast", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "open the vitals menu", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "show vitals panel", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "bring vitals back up", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "actually make that vitals", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "show me the vitals panel instead", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "vitals screen on", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "vitals page up", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "open vitals panel again", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "uh copy alpha bravo pull up vitals", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "EV2 copy that um open the vitals screen over", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "okay okay houston standby show me vitals", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "roger um vitals panel please", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "uh hey so can you uh bring up vitals", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "confirm vitals display EV1", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "request biomed page over", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "vitals on visor", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "biomed", "intents": ["open_menu_vitals"], "source": "llm"}
+{"text": "nav screen", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "map", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "pull up navigation", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "show me the map", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "bring up the nav panel", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "EV1 request nav display over", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "open navigation menu", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "can you show the map page", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "display the map", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "nav menu please", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "I need the map up", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "map screen now", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "navigation", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "put the map on the hud", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "Houston EV2 request map display", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "could you bring up the navigation screen", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "map please", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "show navigation panel", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "open the nav page", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "I'd like to see the map", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "pull up the map real quick", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "switch to navigation", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "go to the map screen", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "nav display on", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "open up the map view", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "show me the terrain map", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "bring the map up for me", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "navigation panel up", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "nav screen please over", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "need the map now", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "map map pull up the map", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "can I see the map", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "open the navigation display", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "nav", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "confirm map display EV2", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "bring up the map instead", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "open the nav panel", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "actually make that the map", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "show the nav screen", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "nav page again", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "uh copy alpha bravo open the map", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "EV1 copy um nav screen please over", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "roger roger houston bring up the map", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "okay uh hmm show navigation", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "tango tango um pull up nav display", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "request navigation page over", "intents": ["open_menu_navigation"], "source": "llm"}
+{"text": "show tasks", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "procedures", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "tasks", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "pull up the task list", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "open the tasks menu", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "bring up my checklist", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "EV1 request task list display over", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "what's on my checklist", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "show me the procedures page", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "task panel please", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "can you open the checklist", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "display mission tasks", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "I need the task list up", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "checklist now", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "open the task screen", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "houston EV2 request checklist on the HUD", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "bring up procedures", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "open up the to do list", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "show the mission checklist", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "go to tasks", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "switch to the task panel", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "pull up procedures for this EVA", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "put the checklist on the display", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "I'd like to see my tasks", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "tasks page please", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "checklist please over", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "let me see the task list", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "task screen up", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "open the procedures panel", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "what's next on the checklist", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "checklist", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "confirm task display EV1", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "what do I still have to do today", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "show me the task list", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "pull up tasks instead", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "bring up the checklist again", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "tasks menu please", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "open checklist page", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "show checklist", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "go back to the task list", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "open the tasks panel", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "task screen", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "uh copy alpha open the checklist", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "EV2 roger um show tasks over", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "okay houston standby pull up the task list", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "uh hmm yeah tasks menu please", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "bravo bravo copy display procedures", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "request mission checklist over", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "tasks up now", "intents": ["open_menu_tasks"], "source": "llm"}
+{"text": "UIA panel", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "you I a panel", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "open the UIA", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "umbilical interface", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "pull up the UIA screen", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "show me the umbilical interface panel", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "bring up the airlock panel", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "open UIA menu", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "EV1 request UIA display over", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "can you open the you eye a screen", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "UIA please", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "display the UIA", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "I need the UIA panel up", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "airlock interface screen", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "open the umbilical panel", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "UIA page", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "houston EV2 request UIA panel", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "show the UIA controls", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "bring up the umbilical interface assembly", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "go to UIA", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "switch to the UIA screen", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "put UIA on the hud", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "open the airlock menu", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "uia display now", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "pull up you eye eh", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "yuia panel", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "I'd like the UIA screen", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "open the UIA page please", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "need UIA up now", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "umbilical screen", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "show airlock interface", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "open u i a", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "can I get the UIA panel", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "bring up the UIA for egress", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "pull up the umbilical page", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "UIA", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "confirm UIA display EV2", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "open the UIA panel", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "show UIA", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "UIA panel instead", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "bring the UIA back up", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "actually make that the UIA", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "show the UIA panel again", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "uh copy alpha bravo UIA panel please", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "EV1 roger um open UIA over", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "okay houston standby bring up the umbilical interface", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "hmm uh yeah you I a screen", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "copy copy charlie pull up the UIA", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "request umbilical page over", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "airlock panel", "intents": ["open_menu_uia"], "source": "llm"}
+{"text": "close it", "intents": ["close_menu"], "source": "llm"}
+{"text": "dismiss", "intents": ["close_menu"], "source": "llm"}
+{"text": "clear the screen", "intents": ["close_menu"], "source": "llm"}
+{"text": "go back", "intents": ["close_menu"], "source": "llm"}
+{"text": "close", "intents": ["close_menu"], "source": "llm"}
+{"text": "close the menu", "intents": ["close_menu"], "source": "llm"}
+{"text": "hide that panel", "intents": ["close_menu"], "source": "llm"}
+{"text": "get rid of this screen", "intents": ["close_menu"], "source": "llm"}
+{"text": "close the current window", "intents": ["close_menu"], "source": "llm"}
+{"text": "EV1 request close display over", "intents": ["close_menu"], "source": "llm"}
+{"text": "can you close this", "intents": ["close_menu"], "source": "llm"}
+{"text": "dismiss the panel", "intents": ["close_menu"], "source": "llm"}
+{"text": "back", "intents": ["close_menu"], "source": "llm"}
+{"text": "clear the hud", "intents": ["close_menu"], "source": "llm"}
+{"text": "take that off the screen", "intents": ["close_menu"], "source": "llm"}
+{"text": "close the page", "intents": ["close_menu"], "source": "llm"}
+{"text": "I'm done with this screen", "intents": ["close_menu"], "source": "llm"}
+{"text": "that's enough close it", "intents": ["close_menu"], "source": "llm"}
+{"text": "put it away", "intents": ["close_menu"], "source": "llm"}
+{"text": "close window", "intents": ["close_menu"], "source": "llm"}
+{"text": "shut the panel", "intents": ["close_menu"], "source": "llm"}
+{"text": "minimize this", "intents": ["close_menu"], "source": "llm"}
+{"text": "clear display", "intents": ["close_menu"], "source": "llm"}
+{"text": "houston EV2 clear my HUD", "intents": ["close_menu"], "source": "llm"}
+{"text": "get this off my visor", "intents": ["close_menu"], "source": "llm"}
+{"text": "close that menu please", "intents": ["close_menu"], "source": "llm"}
+{"text": "dismiss window", "intents": ["close_menu"], "source": "llm"}
+{"text": "back out of this", "intents": ["close_menu"], "source": "llm"}
+{"text": "exit", "intents": ["close_menu"], "source": "llm"}
+{"text": "hide menu", "intents": ["close_menu"], "source": "llm"}
+{"text": "collapse the panel", "intents": ["close_menu"], "source": "llm"}
+{"text": "I don't need this panel anymore close it", "intents": ["close_menu"], "source": "llm"}
+{"text": "close the vitals menu", "intents": ["close_menu"], "source": "llm"}
+{"text": "hide vitals panel", "intents": ["close_menu"], "source": "llm"}
+{"text": "put vitals away", "intents": ["close_menu"], "source": "llm"}
+{"text": "close the map", "intents": ["close_menu"], "source": "llm"}
+{"text": "hide the nav screen", "intents": ["close_menu"], "source": "llm"}
+{"text": "close tasks", "intents": ["close_menu"], "source": "llm"}
+{"text": "close the UIA panel", "intents": ["close_menu"], "source": "llm"}
+{"text": "hide UIA", "intents": ["close_menu"], "source": "llm"}
+{"text": "close the checklist", "intents": ["close_menu"], "source": "llm"}
+{"text": "dismiss the map", "intents": ["close_menu"], "source": "llm"}
+{"text": "close vitals", "intents": ["close_menu"], "source": "llm"}
+{"text": "uh copy alpha close it", "intents": ["close_menu"], "source": "llm"}
+{"text": "EV2 roger um dismiss panel over", "intents": ["close_menu"], "source": "llm"}
+{"text": "okay houston standby clear the screen", "intents": ["close_menu"], "source": "llm"}
+{"text": "hmm uh yeah go back", "intents": ["close_menu"], "source": "llm"}
+{"text": "copy that bravo close the menu", "intents": ["close_menu"], "source": "llm"}
+{"text": "confirm close display EV1", "intents": ["close_menu"], "source": "llm"}
+{"text": "screen off", "intents": ["close_menu"], "source": "llm"}
+{"text": "close close close", "intents": ["close_menu"], "source": "llm"}
+{"text": "where is shadow crest", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "coords for the lander", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "coordinates of basalt ridge", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "what are the coordinates for station 4", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "give me the location of marker 12", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "delta-9 coordinates", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "where's echo site", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "position of the rover", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "habitat coords", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "EV1 request coordinates for copper hollow over", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "location of Gray Mesa please", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "what's the position of Iron Gully", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "obsidian flats where is that", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "I need the coords for sulfur basin", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "tell me where Granite Spur is", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "where exactly is Dusty Saddle", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "read me the coordinates of red canyon", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "coords ash plateau", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "station 7 location", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "what's the lat long for marker 3", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "grid reference for alpha-7", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "kilo-2 position please", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "houston EV2 say coordinates for bravo site", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "where is foxtrot ridge located", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "get coordinates for the airlock", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "location of the antenna mast", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "where's the sample cache at", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "twin peaks coordinates please over", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "glass dunes where", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "coordinates Pumice Point", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "find the coordinates of Hematite Bluff", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "where's the rover parked", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "need the position of Olivine Wash now", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "what are regolith bowl's coords", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "lava tube 2 location", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "give me coords on cinder cone", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "confirm position of west vent EV1", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "coordinates for crater rim", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "where is station 3", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "what's the location of salt pan", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "get the coords of frost ledge", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "where is ember gap", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "show me the coordinates for the lander", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "what's the position of tango-4", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "location for the solar array", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "where's boulder field", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "what are the coordinates of quartz hill", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "uh copy alpha bravo where is north scarp", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "EV1 roger um coords for dark hollow over", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "okay houston standby give me the coordinates of sierra point", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "hmm uh yeah location of station niner", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "copy that charlie where is the habitat", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "the comms tower coordinates please", "intents": ["Get_coordinates"], "source": "llm"}
+{"text": "take me to shadow crest", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "set nav to station 5", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "navigate to basalt ridge", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "guide me to the lander", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "go to copper hollow", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "head to marker 12", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "set destination delta-9", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "route me to echo site", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "EV1 request navigation to the habitat over", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "how do I get to gray mesa", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "lead me to iron gully", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "I want to go to Obsidian Flats", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "set course for sulfur basin", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "take me back to the rover", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "plot a route to granite spur", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "nav target dusty saddle", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "red canyon set it as the destination", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "get me to ash plateau", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "directions to station 7", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "bring me to marker 3", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "houston EV2 set nav target alpha-7", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "make kilo-2 my destination", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "walk me to bravo site", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "I need to get to foxtrot ridge now", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "steer me toward the airlock", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "point me to the antenna mast", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "navigate sample cache", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "take me over to twin peaks", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "change destination to glass dunes", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "set the nav target to hematite bluff", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "can you take me to olivine wash", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "route to regolith bowl", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "lava tube 2 take me there", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "head for cinder cone", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "confirm nav target west vent EV1", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "guide me back to the comms tower", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "take me to crater rim", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "navigate to station 3", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "go to salt pan", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "set target Frost Ledge", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "take me to ember gap", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "navigate to the lander", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "set nav to tango-4", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "guide me to the solar array", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "start navigation to quartz hill", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "I'm heading to boulder field set it up", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "uh copy alpha bravo take me to north scarp", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "EV1 roger um navigate to Dark Hollow over", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "okay houston standby set nav to sierra point", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "hmm uh yeah route me to station niner", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "copy that charlie head to the habitat", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "Magnetite Knoll navigate", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "destination drill site", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "need directions to the cargo pallet", "intents": ["Set_navigation_target"], "source": "llm"}
+{"text": "reroute", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "find another way", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "new route please", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "find a different path", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "this path is blocked reroute", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "EV1 request reroute over", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "can you find another route", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "is there another way to get there", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "route around these rocks", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "avoid this slope find a new path", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "recompute path", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "path's blocked find me another", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "I need a new route now", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "houston EV2 requesting alternate route", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "try a different route", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "the way ahead is too steep reroute me", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "go around", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "detour please", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "find me a safer path", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "recalculate", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "plot an alternate path", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "show me another way there", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "get me there a different way", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "change the route", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "different route", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "that route won't work give me another", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "alternate path now", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "re route", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "reroot navigation", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "recalculate nav route over", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "take a different path to the same spot", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "same destination new route", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "confirm reroute EV1", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "this ridge is impassable recompute", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "reroute navigation", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "send me there instead", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "send me another way instead", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "reroute to avoid the crater", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "find another way to the target", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "reroute me there", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "plot a different route there", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "uh copy alpha bravo reroute", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "EV1 roger um find another way over", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "okay houston standby recalculate the route", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "hmm uh yeah give me a new path", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "copy that charlie route me around it", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "too much loose regolith here detour", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "can we go a different way", "intents": ["reroute_navigation"], "source": "llm"}
+{"text": "drop a waypoint called kilo-5", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "add waypoint Shadow Crest", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "mark this spot as basalt ridge", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "pin copper hollow", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "place a marker at Gray Mesa", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "new waypoint iron gully", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "EV1 request add waypoint Obsidian Flats over", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "can you add a waypoint named sulfur basin", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "create a marker called granite spur", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "drop a pin here call it Dusty Saddle", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "save this location as Red Canyon", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "ash plateau add it as a waypoint", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "add station 7 to the map", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "set a waypoint at delta-9", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "I want a waypoint here named echo site", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "houston EV2 add waypoint foxtrot ridge", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "tag this point as bravo site", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "mark it as tango-4", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "new pin twin peaks", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "add a point for glass dunes", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "drop marker pumice point", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "label this spot hematite bluff", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "add olivine wash as a waypoint please", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "stick a pin on regolith bowl", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "waypoint lava tube 2", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "add waypoint cinder cone now", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "make a waypoint called the antenna mast", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "create waypoint sample cache", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "I'd like to add a marker named salt pan", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "drop a point here frost ledge", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "confirm new waypoint west vent EV1", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "add waypoint crater rim", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "add a waypoint at station 3", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "add the ember gap waypoint", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "add marker 12", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "add a pin for Quartz Hill", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "add the lander as a waypoint", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "add the solar array marker", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "add a waypoint for boulder field", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "add a waypoint for the habitat", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "uh copy alpha bravo drop a waypoint north scarp", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "EV1 roger um add waypoint dark hollow over", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "okay houston standby mark this as sierra point", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "hmm uh yeah pin station niner", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "copy that charlie new waypoint magnetite knoll", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "log this spot as the drill site", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "waypoint here comms tower", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "add a nav point named cargo pallet", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "mark this as obsidian two", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "remember this spot as ridge camp", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "save a waypoint for the airlock", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "put down a marker named sinkhole", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "waypoint please call it echo two", "intents": ["Add_waypoint"], "source": "llm"}
+{"text": "remove the shadow crest waypoint", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "delete waypoint basalt ridge", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "remove pin copper hollow", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "clear the gray mesa marker", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "get rid of the iron gully waypoint", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "delete marker 12", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "erase delta-9", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "EV1 request delete waypoint echo site over", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "can you remove the waypoint called obsidian flats", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "take sulfur basin off the map", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "scrap the granite spur waypoint", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "waypoint dusty saddle delete", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "red canyon pin remove it", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "delete the ash plateau marker please", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "remove station 7 from the map", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "clear marker 3", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "houston EV2 delete waypoint alpha-7", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "kill the bravo site waypoint", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "unpin foxtrot ridge", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "lose the twin peaks waypoint", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "remove glass dunes", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "trash the pumice point pin", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "erase the hematite bluff marker", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "delete olivine wash waypoint now", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "wipe regolith bowl from the map", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "remove waypoint lava tube 2", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "cinder cone waypoint delete please", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "get the salt pan pin off the map", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "clear the waypoint named frost ledge", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "confirm delete waypoint west vent EV1", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "the antenna mast marker is stale delete it", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "delete waypoint crater rim", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "delete the waypoint at station 3", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "remove the ember gap waypoint", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "remove the pin for quartz hill", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "delete the lander waypoint", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "delete waypoint kilo-5", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "remove the solar array marker", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "delete the waypoint for boulder field", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "remove the habitat waypoint", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "delete the tango-4 marker", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "uh copy alpha bravo delete waypoint north scarp", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "EV1 roger um remove dark hollow waypoint over", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "okay houston standby clear the sierra point pin", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "hmm uh yeah erase station niner", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "copy that charlie delete the rover marker", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "magnetite knoll waypoint get rid of it", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "drop the drill site waypoint from the map", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "remove comms tower pin", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "nuke the cargo pallet marker", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "we don't need ridge camp delete that waypoint", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "delete sinkhole", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "erase waypoint echo two", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "the sample cache pin can go remove it", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "unmark obsidian two", "intents": ["Delete_waypoint"], "source": "llm"}
+{"text": "mark the regolith core complete", "intents": ["Complete_task"], "source": "llm"}
+{"text": "finished the grab sample", "intents": ["Complete_task"], "source": "llm"}
+{"text": "core drill done", "intents": ["Complete_task"], "source": "llm"}
+{"text": "mark sample bag seal complete", "intents": ["Complete_task"], "source": "llm"}
+{"text": "camera calibration is done", "intents": ["Complete_task"], "source": "llm"}
+{"text": "I'm done with the panel inspection", "intents": ["Complete_task"], "source": "llm"}
+{"text": "finished the antenna deployment", "intents": ["Complete_task"], "source": "llm"}
+{"text": "complete rock collection", "intents": ["Complete_task"], "source": "llm"}
+{"text": "seismometer setup complete", "intents": ["Complete_task"], "source": "llm"}
+{"text": "EV1 battery swap complete over", "intents": ["Complete_task"], "source": "llm"}
+{"text": "check off tool inventory", "intents": ["Complete_task"], "source": "llm"}
+{"text": "drill bit change done", "intents": ["Complete_task"], "source": "llm"}
+{"text": "can you mark photo survey as complete", "intents": ["Complete_task"], "source": "llm"}
+{"text": "regolith scoop finished", "intents": ["Complete_task"], "source": "llm"}
+{"text": "I just finished the radiation reading", "intents": ["Complete_task"], "source": "llm"}
+{"text": "flag placement done mark it", "intents": ["Complete_task"], "source": "llm"}
+{"text": "dust cleanup complete", "intents": ["Complete_task"], "source": "llm"}
+{"text": "houston EV2 hatch check complete", "intents": ["Complete_task"], "source": "llm"}
+{"text": "tick off UIA prep", "intents": ["Complete_task"], "source": "llm"}
+{"text": "glove inspection done", "intents": ["Complete_task"], "source": "llm"}
+{"text": "spectrometer scan finished", "intents": ["Complete_task"], "source": "llm"}
+{"text": "mark the beacon install as done", "intents": ["Complete_task"], "source": "llm"}
+{"text": "rover tie-down complete", "intents": ["Complete_task"], "source": "llm"}
+{"text": "we're done with the trench dig", "intents": ["Complete_task"], "source": "llm"}
+{"text": "set magnetometer reading to complete", "intents": ["Complete_task"], "source": "llm"}
+{"text": "sample labeling is finished", "intents": ["Complete_task"], "source": "llm"}
+{"text": "light bar mount done", "intents": ["Complete_task"], "source": "llm"}
+{"text": "comm relay setup complete check it off", "intents": ["Complete_task"], "source": "llm"}
+{"text": "I completed the soil sample", "intents": ["Complete_task"], "source": "llm"}
+{"text": "all done with the core sample", "intents": ["Complete_task"], "source": "llm"}
+{"text": "wrapped up the gas analyzer task", "intents": ["Complete_task"], "source": "llm"}
+{"text": "water sampling task complete", "intents": ["Complete_task"], "source": "llm"}
+{"text": "finish task antenna alignment", "intents": ["Complete_task"], "source": "llm"}
+{"text": "close out the boot inspection task", "intents": ["Complete_task"], "source": "llm"}
+{"text": "confirm tether check complete EV1", "intents": ["Complete_task"], "source": "llm"}
+{"text": "complete the soil sample task", "intents": ["Complete_task"], "source": "llm"}
+{"text": "mark the core drill task done", "intents": ["Complete_task"], "source": "llm"}
+{"text": "check off camera calibration on the list", "intents": ["Complete_task"], "source": "llm"}
+{"text": "task complete panel inspection", "intents": ["Complete_task"], "source": "llm"}
+{"text": "complete task seismometer setup", "intents": ["Complete_task"], "source": "llm"}
+{"text": "mark battery swap done in the checklist", "intents": ["Complete_task"], "source": "llm"}
+{"text": "finished the tool inventory task", "intents": ["Complete_task"], "source": "llm"}
+{"text": "photo survey task done", "intents": ["Complete_task"], "source": "llm"}
+{"text": "complete the flag placement task", "intents": ["Complete_task"], "source": "llm"}
+{"text": "close out the rock collection task", "intents": ["Complete_task"], "source": "llm"}
+{"text": "uh copy alpha bravo regolith scoop done", "intents": ["Complete_task"], "source": "llm"}
+{"text": "EV1 roger um mark hatch check complete over", "intents": ["Complete_task"], "source": "llm"}
+{"text": "okay houston standby glove inspection finished", "intents": ["Complete_task"], "source": "llm"}
+{"text": "hmm uh yeah dust cleanup is done", "intents": ["Complete_task"], "source": "llm"}
+{"text": "copy that charlie check off spectrometer scan", "intents": ["Complete_task"], "source": "llm"}
+{"text": "heat probe insertion done", "intents": ["Complete_task"], "source": "llm"}
+{"text": "suit leak check finished mark it", "intents": ["Complete_task"], "source": "llm"}
+{"text": "done with the visor cleaning", "intents": ["Complete_task"], "source": "llm"}
+{"text": "lidar sweep complete", "intents": ["Complete_task"], "source": "llm"}
