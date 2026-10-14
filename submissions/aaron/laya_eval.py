@@ -30,7 +30,7 @@ evals = {"val": (Xval, yval), "clean": load_test("clean"), "attack": load_test("
 
 metrics = {"model": CHECKPOINT, "method": "zero-shot (no training)"}
 for name, (x, y) in evals.items():
-    results = agent.predict_batch(x, QUESTION)
+    results = agent.predict_batch(x, QUESTION, batch_size=16)  # all at once runs out of GPU memory
     pred = [r["answers"]["intent"]["choice"] for r in results]
     metrics[name] = score(x, y, pred, title=f"laya {name}")
 

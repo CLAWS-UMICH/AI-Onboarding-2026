@@ -40,8 +40,13 @@
 - [x] `dedup.py`: dropped 80 train rows with MPNet cosine >= 0.95 to a same-label test row (different-label matches are contrast pairs, kept). Final `data/train.jsonl`: 1,917 rows, 44-55 per intent, 173 unhandled. `validate.py`: 0 problems.
 - [x] `common.py`: shared load, stratified 85/15 split (seeds 42/43/44), scoring, confusion plot. Self-check passes (1,629 train / 288 val).
 - [x] `baseline.py` (frozen MPNet + logistic regression): val 0.903 / clean 0.980 / attack 0.700 accuracy (macro-F1 0.915 / 0.983 / 0.722). Attack misses: speech-to-text spellings ("oh two", "vidals"), corrections ("A no wait B"), negation and past tense.
-- [ ] `train.py`, `predict.py`
+- [x] `train.py` v1 (head lr 1e-3, 10 epochs, smoothing 0.1), 3 seeds: val 0.927 / clean 0.922 / attack 0.787. Underfit: train acc 0.93 and still rising at epoch 10, no early stop; one-word pairs collapse (fan secondary -> primary, scrubber B -> A). Beats baseline on attack (+8.7) and unhandled, loses on clean (-5.8).
+- [x] `predict.py` written (threshold, pair "or", split on "and", stop-word slot extraction, CLI loop).
+- [x] Laya zero-shot (`convaiinnovations/laya`, 36 intent descriptions as options): val 0.226 / clean 0.213 / attack 0.227. Misses mostly go to `unhandled` (79 of 118 clean misses) or the first option `get_oxy_pri_storage` (28): label/position bias, matching the model card's warning that base checkpoints are near chance zero-shot. Not worth pursuing without fine-tuning.
 - Voice stretch: skipped (onboarding scope).
+- [x] Tuning screen (8 runs, seed 42, choose by val macro-F1 only, logs in `runs/tune/`): v1 was undertrained. Raising head lr (1e-3 -> 1e-2), encoder lr (2e-5 -> 5e-5) or epochs (10 -> 20) each fix it: val F1 0.910 -> 0.989-0.994, clean 0.920 -> 1.000, attack 0.780 -> 0.82-0.87. Removing label smoothing hurt (0.896). No run overfit (val loss fell every epoch, train-val gap <= 0.011). Top 5 configs tied within one val example (288 rows); tie rule picks h5 (head 1e-2, enc 5e-5, 20 ep max, best ep 4, gap -0.002). Needs multi-seed confirmation.
+- [x] Confirm (3 seeds): H5 val F1 0.993 +- 0.003, clean 0.996, attack 0.864 +- 0.019; H7 val F1 0.993 +- 0.001, clean 1.000, attack 0.880 +- 0.007. Tie on val; H7 wins on lower seed spread. Chosen: `--lr-head 1e-2 --lr-encoder 5e-5 --epochs 10`. Val accuracy vs unhandled threshold is flat from 0.2 to 0.5 (within one val example).
+- [ ] Official run, set threshold
 - [ ] Improvement loop (max 3 rounds)
 - [ ] Experiments: SetFit, Laya
 - [ ] Final results on `test_final`

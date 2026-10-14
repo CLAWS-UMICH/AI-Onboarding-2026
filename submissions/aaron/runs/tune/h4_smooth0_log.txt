@@ -1,0 +1,238 @@
+device cuda, train 1629 / val 288, out /home/aaron/Dev/Projects/AI-Onboarding-2026/submissions/aaron/runs/tune/h4_smooth0
+epochs 10, lr_encoder 2e-05, lr_head 0.001, smoothing 0.0, seeds [42]
+
+######## seed 42
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 21897.49it/s]
+{'epoch': 1, 'train_loss': 3.5189, 'train_acc': 0.2284, 'val_loss': 3.3517, 'val_acc': 0.6146, 'val_macro_f1': 0.5935}
+{'epoch': 2, 'train_loss': 3.0552, 'train_acc': 0.6814, 'val_loss': 2.6841, 'val_acc': 0.7917, 'val_macro_f1': 0.7451}
+{'epoch': 3, 'train_loss': 2.4007, 'train_acc': 0.8048, 'val_loss': 2.0668, 'val_acc': 0.8125, 'val_macro_f1': 0.7773}
+{'epoch': 4, 'train_loss': 1.863, 'train_acc': 0.8496, 'val_loss': 1.6203, 'val_acc': 0.8681, 'val_macro_f1': 0.8285}
+{'epoch': 5, 'train_loss': 1.4721, 'train_acc': 0.8711, 'val_loss': 1.2947, 'val_acc': 0.8993, 'val_macro_f1': 0.8667}
+{'epoch': 6, 'train_loss': 1.1971, 'train_acc': 0.9012, 'val_loss': 1.0749, 'val_acc': 0.8889, 'val_macro_f1': 0.8563}
+{'epoch': 7, 'train_loss': 1.0159, 'train_acc': 0.9141, 'val_loss': 0.9419, 'val_acc': 0.9167, 'val_macro_f1': 0.8956}
+{'epoch': 8, 'train_loss': 0.9009, 'train_acc': 0.9104, 'val_loss': 0.853, 'val_acc': 0.9167, 'val_macro_f1': 0.8935}
+{'epoch': 9, 'train_loss': 0.8311, 'train_acc': 0.9239, 'val_loss': 0.8037, 'val_acc': 0.9132, 'val_macro_f1': 0.889}
+{'epoch': 10, 'train_loss': 0.7975, 'train_acc': 0.9269, 'val_loss': 0.7893, 'val_acc': 0.9028, 'val_macro_f1': 0.8711}
+early stop: no val improvement for 3 epochs
+
+== seed 42 val: accuracy 0.917, macro-F1 0.896, n=288
+                             precision    recall  f1-score   support
+
+        get_oxy_pri_storage       1.00      0.57      0.73         7
+        get_oxy_sec_storage       0.73      1.00      0.84         8
+       get_oxy_pri_pressure       1.00      1.00      1.00         8
+       get_oxy_sec_pressure       1.00      1.00      1.00         8
+      get_suit_pressure_oxy       1.00      1.00      1.00         7
+      get_suit_pressure_co2       1.00      1.00      1.00         7
+    get_suit_pressure_other       1.00      1.00      1.00         7
+    get_suit_pressure_total       1.00      1.00      1.00         7
+    get_helmet_pressure_co2       1.00      1.00      1.00         7
+            get_fan_pri_rpm       0.70      1.00      0.82         7
+            get_fan_sec_rpm       1.00      0.57      0.73         7
+ get_scrubber_a_co2_storage       0.47      1.00      0.64         7
+ get_scrubber_b_co2_storage       0.00      0.00      0.00         8
+            get_temperature       1.00      1.00      1.00         8
+        get_coolant_storage       1.00      1.00      1.00         7
+   get_coolant_gas_pressure       1.00      1.00      1.00         7
+get_coolant_liquid_pressure       1.00      1.00      1.00         7
+             get_heart_rate       1.00      1.00      1.00         7
+        get_oxy_consumption       1.00      1.00      1.00         7
+         get_co2_production       1.00      1.00      1.00         7
+       get_eva_elapsed_time       1.00      1.00      1.00         8
+  get_primary_battery_level       0.50      1.00      0.67         8
+get_secondary_battery_level       0.00      0.00      0.00         8
+               get_warnings       1.00      1.00      1.00         8
+           open_menu_vitals       1.00      1.00      1.00         8
+       open_menu_navigation       1.00      1.00      1.00         7
+            open_menu_tasks       1.00      1.00      1.00         7
+              open_menu_uia       1.00      1.00      1.00         8
+                 close_menu       1.00      0.75      0.86         8
+            Get_coordinates       1.00      1.00      1.00         8
+      Set_navigation_target       1.00      1.00      1.00         8
+         reroute_navigation       1.00      1.00      1.00         7
+               Add_waypoint       1.00      1.00      1.00         8
+            Delete_waypoint       1.00      1.00      1.00         8
+              Complete_task       1.00      1.00      1.00         8
+                  unhandled       0.93      1.00      0.96        26
+
+                   accuracy                           0.92       288
+                  macro avg       0.90      0.91      0.90       288
+               weighted avg       0.90      0.92      0.90       288
+
+misses (24):
+  'check the backup battery': true get_secondary_battery_level, got get_primary_battery_level
+  'backup batt percent please': true get_secondary_battery_level, got get_primary_battery_level
+  'check scrubber b': true get_scrubber_b_co2_storage, got get_scrubber_a_co2_storage
+  'secondary battery how much': true get_secondary_battery_level, got get_primary_battery_level
+  'co2 stored in scrubber bravo': true get_scrubber_b_co2_storage, got get_scrubber_a_co2_storage
+  'how loaded is scrubber bravo': true get_scrubber_b_co2_storage, got get_scrubber_a_co2_storage
+  'put vitals away': true close_menu, got unhandled
+  'whats left in oh two tank one': true get_oxy_pri_storage, got get_oxy_sec_storage
+  'say again scrubber b co2': true get_scrubber_b_co2_storage, got get_scrubber_a_co2_storage
+  'batt two': true get_secondary_battery_level, got get_primary_battery_level
+  'battery two percent left': true get_secondary_battery_level, got get_primary_battery_level
+  'backup fan speed please': true get_fan_sec_rpm, got get_fan_pri_rpm
+  'need backup battery level now': true get_secondary_battery_level, got get_primary_battery_level
+  "uh how's scrubber b doing": true get_scrubber_b_co2_storage, got get_scrubber_a_co2_storage
+  'get this off my visor': true close_menu, got unhandled
+  'tell me how fast fan two is turning': true get_fan_sec_rpm, got get_fan_pri_rpm
+  'ev1 request scrubber bravo status over': true get_scrubber_b_co2_storage, got get_scrubber_a_co2_storage
+  "how's my o2 looking": true get_oxy_pri_storage, got get_oxy_sec_storage
+  'how full is scrubber b': true get_scrubber_b_co2_storage, got get_scrubber_a_co2_storage
+  'roger roger check backup fan rpm': true get_fan_sec_rpm, got get_fan_pri_rpm
+  'battery to level': true get_secondary_battery_level, got get_primary_battery_level
+  'is the backup battery getting low': true get_secondary_battery_level, got get_primary_battery_level
+  'confirm scrubber bravo storage': true get_scrubber_b_co2_storage, got get_scrubber_a_co2_storage
+  'ev1 uh say again tank one oxygen percent over': true get_oxy_pri_storage, got get_oxy_sec_storage
+
+== seed 42 clean: accuracy 0.907, macro-F1 0.880, n=150
+                             precision    recall  f1-score   support
+
+        get_oxy_pri_storage       1.00      0.50      0.67         4
+        get_oxy_sec_storage       0.67      1.00      0.80         4
+       get_oxy_pri_pressure       0.80      1.00      0.89         4
+       get_oxy_sec_pressure       1.00      0.75      0.86         4
+      get_suit_pressure_oxy       1.00      1.00      1.00         4
+      get_suit_pressure_co2       1.00      1.00      1.00         4
+    get_suit_pressure_other       1.00      1.00      1.00         4
+    get_suit_pressure_total       1.00      1.00      1.00         4
+    get_helmet_pressure_co2       1.00      1.00      1.00         4
+            get_fan_pri_rpm       0.57      1.00      0.73         4
+            get_fan_sec_rpm       1.00      0.25      0.40         4
+ get_scrubber_a_co2_storage       0.50      1.00      0.67         4
+ get_scrubber_b_co2_storage       0.00      0.00      0.00         4
+            get_temperature       1.00      1.00      1.00         4
+        get_coolant_storage       1.00      1.00      1.00         4
+   get_coolant_gas_pressure       1.00      1.00      1.00         4
+get_coolant_liquid_pressure       1.00      1.00      1.00         4
+             get_heart_rate       1.00      1.00      1.00         4
+        get_oxy_consumption       1.00      1.00      1.00         4
+         get_co2_production       1.00      1.00      1.00         4
+       get_eva_elapsed_time       1.00      1.00      1.00         4
+  get_primary_battery_level       0.50      1.00      0.67         4
+get_secondary_battery_level       0.00      0.00      0.00         4
+               get_warnings       1.00      1.00      1.00         4
+           open_menu_vitals       1.00      1.00      1.00         4
+       open_menu_navigation       1.00      1.00      1.00         4
+            open_menu_tasks       1.00      1.00      1.00         4
+              open_menu_uia       1.00      1.00      1.00         4
+                 close_menu       1.00      1.00      1.00         4
+            Get_coordinates       1.00      1.00      1.00         4
+      Set_navigation_target       1.00      1.00      1.00         4
+         reroute_navigation       1.00      1.00      1.00         4
+               Add_waypoint       1.00      1.00      1.00         4
+            Delete_waypoint       1.00      1.00      1.00         4
+              Complete_task       1.00      1.00      1.00         4
+                  unhandled       1.00      1.00      1.00        10
+
+                   accuracy                           0.91       150
+                  macro avg       0.89      0.90      0.88       150
+               weighted avg       0.89      0.91      0.88       150
+
+misses (14):
+  "how's my oxygen looking": true get_oxy_pri_storage, got get_oxy_sec_storage
+  'how full is O2 one right now': true get_oxy_pri_storage, got get_oxy_sec_storage
+  'show me the psi on oxygen tank two': true get_oxy_sec_pressure, got get_oxy_pri_pressure
+  'secondary fan rpm': true get_fan_sec_rpm, got get_fan_pri_rpm
+  "what's fan two doing": true get_fan_sec_rpm, got get_fan_pri_rpm
+  'read out the second fan speed': true get_fan_sec_rpm, got get_fan_pri_rpm
+  'scrubber B CO2 level': true get_scrubber_b_co2_storage, got get_scrubber_a_co2_storage
+  'how full is scrubber bravo': true get_scrubber_b_co2_storage, got get_scrubber_a_co2_storage
+  'give me the scrubber B reading': true get_scrubber_b_co2_storage, got get_scrubber_a_co2_storage
+  'EV2 verify scrubber bravo storage': true get_scrubber_b_co2_storage, got get_scrubber_a_co2_storage
+  'secondary battery level': true get_secondary_battery_level, got get_primary_battery_level
+  'check the backup battery charge': true get_secondary_battery_level, got get_primary_battery_level
+  'how much power is in battery two': true get_secondary_battery_level, got get_primary_battery_level
+  'batt two percent please': true get_secondary_battery_level, got get_primary_battery_level
+
+== seed 42 attack: accuracy 0.767, macro-F1 0.734, n=150
+                             precision    recall  f1-score   support
+
+        get_oxy_pri_storage       0.33      0.25      0.29         4
+        get_oxy_sec_storage       0.44      1.00      0.62         4
+       get_oxy_pri_pressure       0.50      0.33      0.40         3
+       get_oxy_sec_pressure       0.67      0.67      0.67         3
+      get_suit_pressure_oxy       0.80      1.00      0.89         4
+      get_suit_pressure_co2       0.00      0.00      0.00         3
+    get_suit_pressure_other       1.00      1.00      1.00         3
+    get_suit_pressure_total       0.75      0.75      0.75         4
+    get_helmet_pressure_co2       0.60      0.75      0.67         4
+            get_fan_pri_rpm       0.75      1.00      0.86         3
+            get_fan_sec_rpm       1.00      0.75      0.86         4
+ get_scrubber_a_co2_storage       0.57      1.00      0.73         4
+ get_scrubber_b_co2_storage       1.00      0.25      0.40         4
+            get_temperature       1.00      1.00      1.00         3
+        get_coolant_storage       0.50      0.33      0.40         3
+   get_coolant_gas_pressure       0.75      1.00      0.86         3
+get_coolant_liquid_pressure       0.67      0.67      0.67         3
+             get_heart_rate       1.00      1.00      1.00         3
+        get_oxy_consumption       0.67      1.00      0.80         4
+         get_co2_production       1.00      0.75      0.86         4
+       get_eva_elapsed_time       1.00      1.00      1.00         3
+  get_primary_battery_level       0.50      1.00      0.67         4
+get_secondary_battery_level       0.00      0.00      0.00         4
+               get_warnings       1.00      0.67      0.80         3
+           open_menu_vitals       0.67      0.67      0.67         3
+       open_menu_navigation       0.75      0.75      0.75         4
+            open_menu_tasks       1.00      0.75      0.86         4
+              open_menu_uia       1.00      0.50      0.67         4
+                 close_menu       0.75      1.00      0.86         3
+            Get_coordinates       1.00      0.75      0.86         4
+      Set_navigation_target       1.00      1.00      1.00         4
+         reroute_navigation       0.80      1.00      0.89         4
+               Add_waypoint       0.80      1.00      0.89         4
+            Delete_waypoint       1.00      1.00      1.00         3
+              Complete_task       1.00      1.00      1.00         4
+                  unhandled       0.87      0.80      0.83        25
+
+                   accuracy                           0.77       150
+                  macro avg       0.75      0.76      0.73       150
+               weighted avg       0.77      0.77      0.75       150
+
+misses (35):
+  'uh um oh two one level how much is left': true get_oxy_pri_storage, got get_oxy_sec_storage
+  'oh two status': true get_oxy_pri_storage, got get_oxy_sec_storage
+  'am I running low on oxygen': true get_oxy_pri_storage, got get_oxy_sec_storage
+  'oh two prime press': true get_oxy_pri_pressure, got get_oxy_sec_pressure
+  'tank one press sure reading': true get_oxy_pri_pressure, got get_oxy_pri_storage
+  'O2 sec press': true get_oxy_sec_pressure, got get_oxy_consumption
+  'carbon dioxide in my suit not the helmet': true get_suit_pressure_co2, got get_helmet_pressure_co2
+  'pp see oh too': true get_suit_pressure_co2, got get_suit_pressure_oxy
+  'whats my ceeoh two': true get_suit_pressure_co2, got get_oxy_pri_storage
+  'total pressure not oxygen just total': true get_suit_pressure_total, got get_oxy_pri_pressure
+  'helmut CO2': true get_helmet_pressure_co2, got get_suit_pressure_co2
+  'fan too rpm': true get_fan_sec_rpm, got get_fan_pri_rpm
+  'scrubber bee': true get_scrubber_b_co2_storage, got get_scrubber_a_co2_storage
+  'scrubber B not A': true get_scrubber_b_co2_storage, got get_scrubber_a_co2_storage
+  'scrubber alpha correction bravo': true get_scrubber_b_co2_storage, got get_scrubber_a_co2_storage
+  'coolant level not pressure': true get_coolant_storage, got get_coolant_liquid_pressure
+  'cool ant how much left': true get_coolant_storage, got get_oxy_sec_storage
+  'coolant gas correction liquid pressure': true get_coolant_liquid_pressure, got get_coolant_gas_pressure
+  'how much see oh two am I making': true get_co2_production, got get_oxy_consumption
+  'backup bat charge': true get_secondary_battery_level, got get_primary_battery_level
+  'battery too percent': true get_secondary_battery_level, got get_primary_battery_level
+  'backup power level': true get_secondary_battery_level, got get_primary_battery_level
+  'primary battery scratch that secondary': true get_secondary_battery_level, got get_primary_battery_level
+  'whats rong': true get_warnings, got unhandled
+  'vidals screen': true open_menu_vitals, got unhandled
+  'nav menu not a reroute just the map': true open_menu_navigation, got reroute_navigation
+  "show tasks don't mark anything": true open_menu_tasks, got close_menu
+  'u i a': true open_menu_uia, got unhandled
+  'open uia not vitals': true open_menu_uia, got open_menu_vitals
+  'what are the cord nets for Moraine Gap': true Get_coordinates, got Add_waypoint
+  'oxygen hmm': true unhandled, got get_oxy_sec_storage
+  'I like this nav display': true unhandled, got open_menu_navigation
+  'pressure reading': true unhandled, got get_suit_pressure_total
+  'helmet uh': true unhandled, got get_helmet_pressure_co2
+  'uh coolant': true unhandled, got get_coolant_storage
+
+######## summary (mean +- std over seeds)
+  val_accuracy: 0.917 +- 0.000
+  val_macro_f1: 0.896 +- 0.000
+  clean_accuracy: 0.907 +- 0.000
+  clean_macro_f1: 0.880 +- 0.000
+  attack_accuracy: 0.767 +- 0.000
+  attack_macro_f1: 0.734 +- 0.000
+  best epochs: [7]
+  best unhandled threshold on val: 0.2 (acc 0.9167)
