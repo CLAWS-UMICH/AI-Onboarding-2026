@@ -11,11 +11,12 @@ import json
 
 from sentence_transformers import SentenceTransformer, util
 
+from common import HERE, TEST_SETS
+
 THRESHOLD = 0.95  # 0.95+ = one word added/swapped; 0.90-0.95 = real paraphrases
-TESTS = ["data/test_clean.jsonl", "data/test_attack.jsonl", "data/test_final.jsonl"]
 
 
-def load(path):
+def load(path):  # full rows, not common.load's (texts, labels): we rewrite rows as-is
     return [json.loads(line) for line in open(path, encoding="utf-8") if line.strip()]
 
 
@@ -25,7 +26,7 @@ ap.add_argument("--out", default="data/train.jsonl")
 args = ap.parse_args()
 
 train = load(args.candidate)
-tests = [row for path in TESTS for row in load(path)]
+tests = [row for name in TEST_SETS for row in load(HERE / "data" / f"test_{name}.jsonl")]
 
 model = SentenceTransformer("sentence-transformers/all-mpnet-base-v2")
 sim = util.cos_sim(
