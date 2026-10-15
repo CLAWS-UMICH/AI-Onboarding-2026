@@ -1,0 +1,599 @@
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 1853.26it/s]
+/home/aaron/Dev/Projects/AI-Onboarding-2026/submissions/aaron/.venv/lib/python3.13/site-packages/laya/agent.py:2144: RuntimeWarning: laya: this checkpoint ships invalid temperatures or values outside [0.5, 5]; using choice:11+=0.10058280825614929 -> 0.5. Treat confidence from the affected entries as uncalibrated.
+  return Agent(model_id_or_path, device=device, token=token, subfolder=subfolder, fast=fast,
+
+== laya val: accuracy 0.226, macro-F1 0.183, n=288
+                             precision    recall  f1-score   support
+
+        get_oxy_pri_storage       0.12      0.71      0.20         7
+        get_oxy_sec_storage       0.00      0.00      0.00         8
+       get_oxy_pri_pressure       0.00      0.00      0.00         8
+       get_oxy_sec_pressure       0.00      0.00      0.00         8
+      get_suit_pressure_oxy       0.20      0.14      0.17         7
+      get_suit_pressure_co2       0.00      0.00      0.00         7
+    get_suit_pressure_other       0.00      0.00      0.00         7
+    get_suit_pressure_total       0.00      0.00      0.00         7
+    get_helmet_pressure_co2       0.00      0.00      0.00         7
+            get_fan_pri_rpm       1.00      0.14      0.25         7
+            get_fan_sec_rpm       0.00      0.00      0.00         7
+ get_scrubber_a_co2_storage       0.00      0.00      0.00         7
+ get_scrubber_b_co2_storage       0.00      0.00      0.00         8
+            get_temperature       1.00      0.38      0.55         8
+        get_coolant_storage       0.00      0.00      0.00         7
+   get_coolant_gas_pressure       0.00      0.00      0.00         7
+get_coolant_liquid_pressure       0.00      0.00      0.00         7
+             get_heart_rate       0.00      0.00      0.00         7
+        get_oxy_consumption       0.00      0.00      0.00         7
+         get_co2_production       0.00      0.00      0.00         7
+       get_eva_elapsed_time       1.00      0.62      0.77         8
+  get_primary_battery_level       0.75      0.38      0.50         8
+get_secondary_battery_level       0.50      0.12      0.20         8
+               get_warnings       1.00      0.25      0.40         8
+           open_menu_vitals       1.00      0.38      0.55         8
+       open_menu_navigation       0.60      0.86      0.71         7
+            open_menu_tasks       1.00      0.14      0.25         7
+              open_menu_uia       1.00      0.38      0.55         8
+                 close_menu       1.00      0.12      0.22         8
+            Get_coordinates       0.00      0.00      0.00         8
+      Set_navigation_target       1.00      0.12      0.22         8
+         reroute_navigation       0.00      0.00      0.00         7
+               Add_waypoint       1.00      0.12      0.22         8
+            Delete_waypoint       1.00      0.25      0.40         8
+              Complete_task       1.00      0.12      0.22         8
+                  unhandled       0.12      0.96      0.22        26
+
+                   accuracy                           0.23       288
+                  macro avg       0.40      0.17      0.18       288
+               weighted avg       0.39      0.23      0.19       288
+
+misses (223):
+  'cool and liquid pressure': true get_coolant_liquid_pressure, got unhandled
+  'whats my o2 consumption rate': true get_oxy_consumption, got unhandled
+  'copy houston uh suit temp over': true get_temperature, got unhandled
+  'verify suit oxygen psi': true get_suit_pressure_oxy, got unhandled
+  'check the backup battery': true get_secondary_battery_level, got unhandled
+  'label this spot hematite bluff': true Add_waypoint, got unhandled
+  'tasks': true open_menu_tasks, got get_oxy_pri_storage
+  'vitals': true open_menu_vitals, got get_oxy_pri_storage
+  'show me fan one revs': true get_fan_pri_rpm, got unhandled
+  'put the checklist on the display': true open_menu_tasks, got get_oxy_pri_storage
+  "how's my suit trace gas pressure": true get_suit_pressure_other, got get_suit_pressure_oxy
+  'take me to ember gap': true Set_navigation_target, got unhandled
+  'backup batt percent please': true get_secondary_battery_level, got unhandled
+  'ev1 request coolant gas pressure over': true get_coolant_gas_pressure, got unhandled
+  'sample labeling is finished': true Complete_task, got get_oxy_pri_storage
+  'say again secondary fan rpm': true get_fan_sec_rpm, got unhandled
+  'vital screen': true open_menu_vitals, got unhandled
+  'secondary oxygen pressure status': true get_oxy_sec_pressure, got unhandled
+  "um copy what's my co2 at": true get_suit_pressure_co2, got unhandled
+  "uh how's the suit co2 doing": true get_suit_pressure_co2, got unhandled
+  'show me the umbilical interface panel': true open_menu_uia, got unhandled
+  'check scrubber b': true get_scrubber_b_co2_storage, got get_oxy_pri_storage
+  'am i running low on reserve oxygen': true get_oxy_sec_storage, got get_oxy_pri_storage
+  'say again primary o2 level': true get_oxy_pri_storage, got unhandled
+  'need primary o2 pressure now': true get_oxy_pri_pressure, got unhandled
+  'i need the warning list': true get_warnings, got unhandled
+  'mark this spot as basalt ridge': true Add_waypoint, got unhandled
+  'co2 stored in scrubber bravo': true get_scrubber_b_co2_storage, got get_oxy_pri_storage
+  "i think i have a leak what's my suit pressure": true get_suit_pressure_total, got get_suit_pressure_oxy
+  'bring up my checklist': true open_menu_tasks, got get_oxy_pri_storage
+  'coolant gas pressure': true get_coolant_gas_pressure, got get_oxy_pri_storage
+  'directions to station 7': true Set_navigation_target, got open_menu_navigation
+  'houston ev2 uh request other gases reading over': true get_suit_pressure_other, got unhandled
+  'read me helmet ppco2': true get_helmet_pressure_co2, got unhandled
+  'am i losing suit pressure': true get_suit_pressure_total, got unhandled
+  'confirm position of west vent EV1': true Get_coordinates, got unhandled
+  'secondary fan speed read out': true get_fan_sec_rpm, got unhandled
+  'copy that give me coolant liquid pressure': true get_coolant_liquid_pressure, got get_oxy_pri_storage
+  "that's enough close it": true close_menu, got unhandled
+  'position of the rover': true Get_coordinates, got unhandled
+  'pressure of the coolant liquid': true get_coolant_liquid_pressure, got unhandled
+  'bravo uh suit psi': true get_suit_pressure_total, got unhandled
+  "how's my helmet co2 looking": true get_helmet_pressure_co2, got get_oxy_pri_storage
+  'scrubber a capacity left': true get_scrubber_a_co2_storage, got unhandled
+  'primary fan status': true get_fan_pri_rpm, got unhandled
+  'o2 two percent': true get_oxy_sec_storage, got unhandled
+  'whats my coolant at': true get_coolant_storage, got get_oxy_pri_storage
+  'give me total suit psi': true get_suit_pressure_total, got get_suit_pressure_oxy
+  'verify reserve oxygen psi': true get_oxy_sec_pressure, got unhandled
+  'how loaded is scrubber bravo': true get_scrubber_b_co2_storage, got unhandled
+  'put vitals away': true close_menu, got unhandled
+  'o2 consumption': true get_oxy_consumption, got unhandled
+  'how much pressure is in tank one': true get_oxy_pri_pressure, got unhandled
+  'is scrubber alpha near capacity': true get_scrubber_a_co2_storage, got unhandled
+  'temp readout': true get_temperature, got unhandled
+  'suit ppo2': true get_suit_pressure_oxy, got unhandled
+  'suit ppco2': true get_suit_pressure_co2, got unhandled
+  'check o2 consumption': true get_oxy_consumption, got unhandled
+  'confirm reroute EV1': true reroute_navigation, got unhandled
+  'what pressure is the secondary o2 bottle at': true get_oxy_sec_pressure, got unhandled
+  'primary fan are pee em': true get_fan_pri_rpm, got unhandled
+  'exit': true close_menu, got unhandled
+  'uh hmm is there enough coolant left': true get_coolant_storage, got unhandled
+  'put down a marker named sinkhole': true Add_waypoint, got unhandled
+  "path's blocked find me another": true reroute_navigation, got get_oxy_pri_storage
+  'bring me to marker 3': true Set_navigation_target, got get_oxy_pri_storage
+  'stick a pin on regolith bowl': true Add_waypoint, got unhandled
+  'say again scrubber b co2': true get_scrubber_b_co2_storage, got unhandled
+  'batt two': true get_secondary_battery_level, got unhandled
+  'houston EV2 request UIA panel': true open_menu_uia, got unhandled
+  'bring vitals back up': true open_menu_vitals, got get_oxy_pri_storage
+  'battery two percent left': true get_secondary_battery_level, got get_primary_battery_level
+  'try a different route': true reroute_navigation, got open_menu_navigation
+  'backup fan speed please': true get_fan_sec_rpm, got unhandled
+  'first fan rpm': true get_fan_pri_rpm, got unhandled
+  'say again secondary o2 level': true get_oxy_sec_storage, got unhandled
+  'suit pressure': true get_suit_pressure_total, got get_suit_pressure_oxy
+  'bring vitals up on the hud': true open_menu_vitals, got get_oxy_pri_storage
+  'need backup battery level now': true get_secondary_battery_level, got unhandled
+  'copy that give me coolant remaining': true get_coolant_storage, got unhandled
+  'wrapped up the gas analyzer task': true Complete_task, got unhandled
+  'can you find another route': true reroute_navigation, got open_menu_navigation
+  'hmm uh yeah pin station niner': true Add_waypoint, got unhandled
+  "uh how's scrubber b doing": true get_scrubber_b_co2_storage, got unhandled
+  'how fast am i using oh two': true get_oxy_consumption, got unhandled
+  'ev1 request scrubber alpha status over': true get_scrubber_a_co2_storage, got unhandled
+  'open the health monitor panel': true open_menu_vitals, got unhandled
+  'pull up suit temperature': true get_temperature, got get_oxy_pri_storage
+  'coolant reserve': true get_coolant_storage, got get_oxy_pri_storage
+  'open the tasks panel': true open_menu_tasks, got unhandled
+  'elapsed time update': true get_eva_elapsed_time, got unhandled
+  'read out total psi for the suit': true get_suit_pressure_total, got unhandled
+  'quick read on battery one': true get_primary_battery_level, got unhandled
+  'get this off my visor': true close_menu, got get_oxy_pri_storage
+  'my heart is pounding whats my pulse': true get_heart_rate, got unhandled
+  'dismiss': true close_menu, got unhandled
+  "where's the sample cache at": true Get_coordinates, got unhandled
+  'bpm': true get_heart_rate, got unhandled
+  'need the map now': true open_menu_navigation, got unhandled
+  'okay houston standby clear the screen': true close_menu, got unhandled
+  'confirm eva clock': true get_eva_elapsed_time, got get_oxy_pri_storage
+  'show active cautions': true get_warnings, got unhandled
+  'tell me how fast fan two is turning': true get_fan_sec_rpm, got unhandled
+  'alarm status': true get_warnings, got unhandled
+  'the sample cache pin can go remove it': true Delete_waypoint, got unhandled
+  'complete the soil sample task': true Complete_task, got unhandled
+  'helmet c o two': true get_helmet_pressure_co2, got unhandled
+  'remove the pin for quartz hill': true Delete_waypoint, got unhandled
+  'roger ev2 alpha check heart rate': true get_heart_rate, got unhandled
+  'hmm uh yeah you I a screen': true open_menu_uia, got unhandled
+  "before i switch over what's the secondary tank pressure": true get_oxy_sec_pressure, got get_secondary_battery_level
+  'checklist please over': true open_menu_tasks, got get_oxy_pri_storage
+  'current coolant gas pressure': true get_coolant_gas_pressure, got unhandled
+  'uh whats the coolant gas at': true get_coolant_gas_pressure, got get_oxy_pri_storage
+  'verify carbon dioxide in my helmet': true get_helmet_pressure_co2, got unhandled
+  'am i producing too much co2': true get_co2_production, got unhandled
+  'backup o2 level': true get_oxy_sec_storage, got unhandled
+  'ppco2 status over': true get_suit_pressure_co2, got unhandled
+  'need my heart rate now': true get_heart_rate, got unhandled
+  'o2 two pressure': true get_oxy_sec_pressure, got unhandled
+  'uh hmm whats wrong with the suit': true get_warnings, got unhandled
+  'carbon dioxide inside the helmet': true get_helmet_pressure_co2, got unhandled
+  'ev1 request scrubber bravo status over': true get_scrubber_b_co2_storage, got unhandled
+  'give me secondary oxygen pressure': true get_oxy_sec_pressure, got get_oxy_pri_storage
+  "what's the o2 partial pressure in here": true get_suit_pressure_oxy, got unhandled
+  'battery check': true get_primary_battery_level, got get_oxy_pri_storage
+  'what psi is the coolant liquid at': true get_coolant_liquid_pressure, got unhandled
+  'is my primary tank pressure okay': true get_oxy_pri_pressure, got get_oxy_pri_storage
+  'coolant liquid pressure status': true get_coolant_liquid_pressure, got unhandled
+  'how full is scrubber b': true get_scrubber_b_co2_storage, got get_oxy_pri_storage
+  'ev1 request trace gas reading over': true get_suit_pressure_other, got unhandled
+  'quick co2 output number': true get_co2_production, got unhandled
+  'is the main fan spinning ok': true get_fan_pri_rpm, got unhandled
+  'main fan rpm over': true get_fan_pri_rpm, got unhandled
+  'navigate to basalt ridge': true Set_navigation_target, got unhandled
+  'is the secondary fan up to speed': true get_fan_sec_rpm, got unhandled
+  'remove pin copper hollow': true Delete_waypoint, got unhandled
+  'battery won': true get_primary_battery_level, got unhandled
+  'check the secondary fan': true get_fan_sec_rpm, got unhandled
+  "what's the o2 pressure in my suit atmosphere": true get_suit_pressure_oxy, got unhandled
+  'metabolic co2 output': true get_co2_production, got unhandled
+  'tell me my pulse': true get_heart_rate, got unhandled
+  'the nav arrow is a nice touch': true unhandled, got open_menu_navigation
+  'roger roger check backup fan rpm': true get_fan_sec_rpm, got unhandled
+  'confirm UIA display EV2': true open_menu_uia, got unhandled
+  'burn rate': true get_oxy_consumption, got unhandled
+  'EV1 battery swap complete over': true Complete_task, got get_oxy_pri_storage
+  'coolant gas pressure over': true get_coolant_gas_pressure, got unhandled
+  'add waypoint Shadow Crest': true Add_waypoint, got unhandled
+  'delta-9 coordinates': true Get_coordinates, got unhandled
+  'unmark obsidian two': true Delete_waypoint, got unhandled
+  'uh is anything wrong': true get_warnings, got unhandled
+  'is my helmet co2 okay': true get_helmet_pressure_co2, got unhandled
+  'how much juice in the main battery': true get_primary_battery_level, got unhandled
+  'battery to level': true get_secondary_battery_level, got unhandled
+  'complete the flag placement task': true Complete_task, got get_oxy_pri_storage
+  'tell me my o2 consumption': true get_oxy_consumption, got get_oxy_pri_storage
+  'scrubber alpha co2 storage reading': true get_scrubber_a_co2_storage, got get_oxy_pri_storage
+  'oh two backup tank percent remaining': true get_oxy_sec_storage, got unhandled
+  'check co2 production': true get_co2_production, got unhandled
+  'co2 production ev1': true get_co2_production, got unhandled
+  'ppo2 check': true get_suit_pressure_oxy, got unhandled
+  'regolith scoop finished': true Complete_task, got unhandled
+  'coolant storage level quick': true get_coolant_storage, got unhandled
+  'trace contaminant level': true get_suit_pressure_other, got unhandled
+  'coordinates of basalt ridge': true Get_coordinates, got unhandled
+  'give me suit co2 partial': true get_suit_pressure_co2, got get_oxy_pri_storage
+  'check the eva clock': true get_eva_elapsed_time, got unhandled
+  'where is station 3': true Get_coordinates, got get_oxy_pri_storage
+  'suit internal temp now': true get_temperature, got unhandled
+  'need the position of Olivine Wash now': true Get_coordinates, got unhandled
+  'houston verify coolant gas pressure': true get_coolant_gas_pressure, got unhandled
+  'oh two secondary level': true get_oxy_sec_storage, got unhandled
+  'delete waypoint kilo-5': true Delete_waypoint, got unhandled
+  'is the backup battery getting low': true get_secondary_battery_level, got unhandled
+  'main battery level': true get_primary_battery_level, got unhandled
+  'current coolant liquid pressure': true get_coolant_liquid_pressure, got unhandled
+  'I need the UIA panel up': true open_menu_uia, got unhandled
+  'co2 production over': true get_co2_production, got unhandled
+  'is anything wrong with my suit': true get_warnings, got unhandled
+  'how quickly am i going through oxygen': true get_oxy_consumption, got get_oxy_pri_storage
+  'habitat coords': true Get_coordinates, got unhandled
+  'houston verify co2 production rate': true get_co2_production, got unhandled
+  'tank one pressure': true get_oxy_pri_pressure, got unhandled
+  'copy ev1 primary o2 tank psi please': true get_oxy_pri_pressure, got unhandled
+  'check total suit pressure': true get_suit_pressure_total, got unhandled
+  'temperature check over': true get_temperature, got unhandled
+  'other gas pressure in the suit': true get_suit_pressure_other, got unhandled
+  'point me to the antenna mast': true Set_navigation_target, got unhandled
+  'i need to know how full scrubber a is': true get_scrubber_a_co2_storage, got unhandled
+  'helmet co2': true get_helmet_pressure_co2, got unhandled
+  'suit co2': true get_suit_pressure_co2, got unhandled
+  'close out the boot inspection task': true Complete_task, got unhandled
+  'read me my heart rate': true get_heart_rate, got unhandled
+  'how much secondary oxygen do i have': true get_oxy_sec_storage, got get_oxy_pri_storage
+  'what pressure is the primary o2 bottle at': true get_oxy_pri_pressure, got unhandled
+  'okay houston standby pull up the task list': true open_menu_tasks, got unhandled
+  'houston scrubber alpha percentage': true get_scrubber_a_co2_storage, got unhandled
+  'ev1 request secondary oxygen status over': true get_oxy_sec_storage, got unhandled
+  'read me coolant liquid pressure': true get_coolant_liquid_pressure, got unhandled
+  'primary oxygen pressure please': true get_oxy_pri_pressure, got unhandled
+  'ev2 coolant gas pressure': true get_coolant_gas_pressure, got unhandled
+  'screen off': true close_menu, got unhandled
+  'confirm scrubber bravo storage': true get_scrubber_b_co2_storage, got unhandled
+  'recompute path': true reroute_navigation, got get_oxy_pri_storage
+  'give me a coolant level update': true get_coolant_storage, got unhandled
+  'coolant how much': true get_coolant_storage, got unhandled
+  'reroot navigation': true reroute_navigation, got get_oxy_pri_storage
+  'remove the shadow crest waypoint': true Delete_waypoint, got unhandled
+  'heart rate': true get_heart_rate, got unhandled
+  'confirm suit contaminant levels': true get_suit_pressure_other, got unhandled
+  'read me suit other gases': true get_suit_pressure_other, got unhandled
+  'route to regolith bowl': true Set_navigation_target, got unhandled
+  'verify scrubber alpha': true get_scrubber_a_co2_storage, got unhandled
+  'EV1 request reroute over': true reroute_navigation, got unhandled
+  'say again primary o2 pressure': true get_oxy_pri_pressure, got unhandled
+  'confirm suit o2 pressure': true get_suit_pressure_oxy, got unhandled
+  'ev1 uh say again tank one oxygen percent over': true get_oxy_pri_storage, got unhandled
+  'p p c o two': true get_suit_pressure_co2, got unhandled
+  'quick backup o2 psi check': true get_oxy_sec_pressure, got unhandled
+  'tell me the backup o2 pressure': true get_oxy_sec_pressure, got unhandled
+  'need directions to the cargo pallet': true Set_navigation_target, got get_oxy_pri_storage
+  'drop a point here frost ledge': true Add_waypoint, got unhandled
+
+== laya clean: accuracy 0.213, macro-F1 0.195, n=150
+                             precision    recall  f1-score   support
+
+        get_oxy_pri_storage       0.07      0.50      0.12         4
+        get_oxy_sec_storage       0.00      0.00      0.00         4
+       get_oxy_pri_pressure       0.00      0.00      0.00         4
+       get_oxy_sec_pressure       0.00      0.00      0.00         4
+      get_suit_pressure_oxy       0.20      0.25      0.22         4
+      get_suit_pressure_co2       0.00      0.00      0.00         4
+    get_suit_pressure_other       0.00      0.00      0.00         4
+    get_suit_pressure_total       0.00      0.00      0.00         4
+    get_helmet_pressure_co2       0.00      0.00      0.00         4
+            get_fan_pri_rpm       0.00      0.00      0.00         4
+            get_fan_sec_rpm       0.00      0.00      0.00         4
+ get_scrubber_a_co2_storage       0.00      0.00      0.00         4
+ get_scrubber_b_co2_storage       0.00      0.00      0.00         4
+            get_temperature       1.00      0.50      0.67         4
+        get_coolant_storage       0.00      0.00      0.00         4
+   get_coolant_gas_pressure       0.00      0.00      0.00         4
+get_coolant_liquid_pressure       0.00      0.00      0.00         4
+             get_heart_rate       0.00      0.00      0.00         4
+        get_oxy_consumption       0.00      0.00      0.00         4
+         get_co2_production       0.00      0.00      0.00         4
+       get_eva_elapsed_time       1.00      0.50      0.67         4
+  get_primary_battery_level       1.00      0.50      0.67         4
+get_secondary_battery_level       1.00      0.25      0.40         4
+               get_warnings       1.00      0.25      0.40         4
+           open_menu_vitals       0.67      0.50      0.57         4
+       open_menu_navigation       0.44      1.00      0.62         4
+            open_menu_tasks       1.00      0.25      0.40         4
+              open_menu_uia       1.00      0.25      0.40         4
+                 close_menu       0.00      0.00      0.00         4
+            Get_coordinates       1.00      0.50      0.67         4
+      Set_navigation_target       0.00      0.00      0.00         4
+         reroute_navigation       0.00      0.00      0.00         4
+               Add_waypoint       1.00      0.25      0.40         4
+            Delete_waypoint       1.00      0.50      0.67         4
+              Complete_task       0.00      0.00      0.00         4
+                  unhandled       0.09      0.80      0.16        10
+
+                   accuracy                           0.21       150
+                  macro avg       0.32      0.19      0.20       150
+               weighted avg       0.31      0.21      0.19       150
+
+misses (118):
+  'EV2 requesting main O2 level': true get_oxy_pri_storage, got unhandled
+  'how full is O2 one right now': true get_oxy_pri_storage, got unhandled
+  'check the backup oxygen level for me': true get_oxy_sec_storage, got get_oxy_pri_storage
+  'how much secondary O2 do I have left': true get_oxy_sec_storage, got unhandled
+  'what percent is the second oxygen tank at': true get_oxy_sec_storage, got get_oxy_pri_storage
+  'secondary oxygen remaining over': true get_oxy_sec_storage, got unhandled
+  "what's the pressure on the primary O2 tank": true get_oxy_pri_pressure, got get_oxy_pri_storage
+  'tank one pressure please': true get_oxy_pri_pressure, got unhandled
+  'give me psi on the main oxygen tank': true get_oxy_pri_pressure, got unhandled
+  'EV1 request primary oxygen pressure': true get_oxy_pri_pressure, got unhandled
+  'secondary O2 pressure reading': true get_oxy_sec_pressure, got unhandled
+  "what's the backup tank pressure at": true get_oxy_sec_pressure, got unhandled
+  'show me the psi on oxygen tank two': true get_oxy_sec_pressure, got get_oxy_pri_storage
+  'uh can I get pressure for the secondary oxygen tank': true get_oxy_sec_pressure, got get_oxy_pri_pressure
+  'read me the ppO2': true get_suit_pressure_oxy, got unhandled
+  'suit O2 pressure check': true get_suit_pressure_oxy, got unhandled
+  "how's the oxygen pressure inside the suit": true get_suit_pressure_oxy, got unhandled
+  "what's my CO2 reading": true get_suit_pressure_co2, got get_oxy_pri_storage
+  'give me CO2 level': true get_suit_pressure_co2, got get_oxy_pri_storage
+  'give me the suit carbon dioxide partial pressure': true get_suit_pressure_co2, got get_suit_pressure_oxy
+  'ppCO2 reading over': true get_suit_pressure_co2, got get_oxy_pri_storage
+  'any trace gases showing in the suit': true get_suit_pressure_other, got get_oxy_pri_storage
+  'check suit contaminant levels': true get_suit_pressure_other, got unhandled
+  'what are the other gas readings in here': true get_suit_pressure_other, got get_oxy_pri_storage
+  'trace gas pressure inside the suit': true get_suit_pressure_other, got unhandled
+  'suit pressure what is it': true get_suit_pressure_total, got unhandled
+  "what's my total suit pressure": true get_suit_pressure_total, got get_suit_pressure_oxy
+  'how many psi is the suit holding': true get_suit_pressure_total, got unhandled
+  'EV1 requesting overall suit pressure': true get_suit_pressure_total, got unhandled
+  'how much CO2 is in my helmet': true get_helmet_pressure_co2, got unhandled
+  'helmet CO2 reading please': true get_helmet_pressure_co2, got unhandled
+  'check carbon dioxide inside the helmet': true get_helmet_pressure_co2, got unhandled
+  'is the CO2 building up in my helmet': true get_helmet_pressure_co2, got unhandled
+  'fan speed check': true get_fan_pri_rpm, got unhandled
+  'how fast is the primary fan spinning': true get_fan_pri_rpm, got unhandled
+  'fan one rpm': true get_fan_pri_rpm, got unhandled
+  'check the main fan for me': true get_fan_pri_rpm, got unhandled
+  'secondary fan rpm': true get_fan_sec_rpm, got unhandled
+  "what's fan two doing": true get_fan_sec_rpm, got unhandled
+  'is the backup fan spinning okay': true get_fan_sec_rpm, got unhandled
+  'read out the second fan speed': true get_fan_sec_rpm, got unhandled
+  'how much CO2 has scrubber A soaked up': true get_scrubber_a_co2_storage, got get_oxy_pri_storage
+  'scrubber alpha status': true get_scrubber_a_co2_storage, got unhandled
+  'check scrubber A carbon dioxide level': true get_scrubber_a_co2_storage, got unhandled
+  "what's scrubber A holding": true get_scrubber_a_co2_storage, got unhandled
+  'scrubber B CO2 level': true get_scrubber_b_co2_storage, got unhandled
+  'how full is scrubber bravo': true get_scrubber_b_co2_storage, got get_oxy_pri_storage
+  'give me the scrubber B reading': true get_scrubber_b_co2_storage, got unhandled
+  'EV2 verify scrubber bravo storage': true get_scrubber_b_co2_storage, got unhandled
+  'how hot is it in my suit': true get_temperature, got get_suit_pressure_oxy
+  'current internal temp please': true get_temperature, got unhandled
+  'how much coolant do I have left': true get_coolant_storage, got unhandled
+  'coolant level check': true get_coolant_storage, got get_oxy_pri_storage
+  'what percent coolant remaining': true get_coolant_storage, got unhandled
+  'is my coolant running low': true get_coolant_storage, got get_oxy_pri_storage
+  'coolant gas pressure please': true get_coolant_gas_pressure, got unhandled
+  "what's the pressure on the coolant gas side": true get_coolant_gas_pressure, got unhandled
+  'read me gas loop coolant pressure': true get_coolant_gas_pressure, got unhandled
+  'check coolant gas psi': true get_coolant_gas_pressure, got unhandled
+  'coolant liquid pressure': true get_coolant_liquid_pressure, got get_oxy_pri_storage
+  "what's the water loop pressure": true get_coolant_liquid_pressure, got unhandled
+  "how's the liquid coolant pressure holding": true get_coolant_liquid_pressure, got unhandled
+  'give me psi on the liquid coolant line': true get_coolant_liquid_pressure, got unhandled
+  "what's my heart rate": true get_heart_rate, got unhandled
+  'check my pulse': true get_heart_rate, got unhandled
+  'how many bpm am I at': true get_heart_rate, got unhandled
+  'heart rate now': true get_heart_rate, got unhandled
+  'how fast am I using oxygen': true get_oxy_consumption, got unhandled
+  "what's my O2 burn rate": true get_oxy_consumption, got unhandled
+  'oxygen consumption rate please': true get_oxy_consumption, got unhandled
+  'am I going through oxygen quickly': true get_oxy_consumption, got get_oxy_pri_storage
+  'how much CO2 am I putting out': true get_co2_production, got unhandled
+  'CO2 production rate': true get_co2_production, got unhandled
+  "what's my carbon dioxide output right now": true get_co2_production, got unhandled
+  'am I exhaling a lot of CO2': true get_co2_production, got unhandled
+  "what's the EVA clock at": true get_eva_elapsed_time, got get_oxy_pri_storage
+  'how much time since we left the airlock': true get_eva_elapsed_time, got unhandled
+  'battery status': true get_primary_battery_level, got get_oxy_pri_storage
+  'how much charge is left on battery one': true get_primary_battery_level, got unhandled
+  'check the backup battery charge': true get_secondary_battery_level, got unhandled
+  'how much power is in battery two': true get_secondary_battery_level, got unhandled
+  'batt two percent please': true get_secondary_battery_level, got unhandled
+  'are there any cautions or alarms': true get_warnings, got open_menu_vitals
+  "what's wrong with my suit": true get_warnings, got unhandled
+  'read me active alerts': true get_warnings, got unhandled
+  'biomed display please': true open_menu_vitals, got unhandled
+  'bring up vital signs on the hud': true open_menu_vitals, got get_oxy_pri_storage
+  'show my task list': true open_menu_tasks, got unhandled
+  'open up the checklist': true open_menu_tasks, got open_menu_navigation
+  'bring up the procedures list': true open_menu_tasks, got unhandled
+  'UIA panel on screen': true open_menu_uia, got get_oxy_pri_storage
+  'bring up the umbilical interface': true open_menu_uia, got unhandled
+  'pull up the airlock interface panel': true open_menu_uia, got unhandled
+  'close that out': true close_menu, got unhandled
+  'dismiss this panel': true close_menu, got unhandled
+  'clear my display': true close_menu, got unhandled
+  'go back a screen': true close_menu, got unhandled
+  'where is Basalt Knoll': true Get_coordinates, got get_oxy_pri_storage
+  "what's the location of Outpost Juniper": true Get_coordinates, got unhandled
+  'take me to Ember Crater': true Set_navigation_target, got get_oxy_pri_storage
+  'set nav to Sable Ridge': true Set_navigation_target, got get_oxy_pri_storage
+  'navigate to the habitat': true Set_navigation_target, got open_menu_navigation
+  'guide me over to Lantern Gully': true Set_navigation_target, got unhandled
+  'find me a different way through': true reroute_navigation, got unhandled
+  'reroute me': true reroute_navigation, got unhandled
+  'this path is blocked give me a new route': true reroute_navigation, got open_menu_navigation
+  'recalculate the route': true reroute_navigation, got open_menu_navigation
+  'drop a waypoint called Copper Shelf': true Add_waypoint, got unhandled
+  'add waypoint Tern Point': true Add_waypoint, got get_oxy_pri_storage
+  'mark a waypoint here and name it Vesper': true Add_waypoint, got get_oxy_pri_storage
+  'delete waypoint Copper Shelf': true Delete_waypoint, got unhandled
+  'clear the Fallow Crater waypoint': true Delete_waypoint, got get_oxy_pri_storage
+  'mark regolith scoop complete': true Complete_task, got get_oxy_pri_storage
+  'finished the antenna alignment': true Complete_task, got get_oxy_pri_storage
+  'seismometer deployment is done': true Complete_task, got unhandled
+  'check off camera calibration': true Complete_task, got get_oxy_pri_storage
+  'I already checked my oxygen a minute ago': true unhandled, got get_suit_pressure_oxy
+  "don't open the map": true unhandled, got open_menu_navigation
+
+== laya attack: accuracy 0.227, macro-F1 0.138, n=150
+                             precision    recall  f1-score   support
+
+        get_oxy_pri_storage       0.11      0.50      0.17         4
+        get_oxy_sec_storage       0.00      0.00      0.00         4
+       get_oxy_pri_pressure       0.00      0.00      0.00         3
+       get_oxy_sec_pressure       0.00      0.00      0.00         3
+      get_suit_pressure_oxy       0.00      0.00      0.00         4
+      get_suit_pressure_co2       0.00      0.00      0.00         3
+    get_suit_pressure_other       0.00      0.00      0.00         3
+    get_suit_pressure_total       0.00      0.00      0.00         4
+    get_helmet_pressure_co2       0.00      0.00      0.00         4
+            get_fan_pri_rpm       0.00      0.00      0.00         3
+            get_fan_sec_rpm       0.00      0.00      0.00         4
+ get_scrubber_a_co2_storage       0.00      0.00      0.00         4
+ get_scrubber_b_co2_storage       0.00      0.00      0.00         4
+            get_temperature       1.00      0.33      0.50         3
+        get_coolant_storage       0.00      0.00      0.00         3
+   get_coolant_gas_pressure       0.00      0.00      0.00         3
+get_coolant_liquid_pressure       0.00      0.00      0.00         3
+             get_heart_rate       0.00      0.00      0.00         3
+        get_oxy_consumption       0.00      0.00      0.00         4
+         get_co2_production       0.00      0.00      0.00         4
+       get_eva_elapsed_time       0.67      0.67      0.67         3
+  get_primary_battery_level       0.00      0.00      0.00         4
+get_secondary_battery_level       0.00      0.00      0.00         4
+               get_warnings       1.00      0.33      0.50         3
+           open_menu_vitals       0.33      0.33      0.33         3
+       open_menu_navigation       0.43      0.75      0.55         4
+            open_menu_tasks       0.00      0.00      0.00         4
+              open_menu_uia       1.00      0.25      0.40         4
+                 close_menu       0.00      0.00      0.00         3
+            Get_coordinates       1.00      0.25      0.40         4
+      Set_navigation_target       0.00      0.00      0.00         4
+         reroute_navigation       0.00      0.00      0.00         4
+               Add_waypoint       0.00      0.00      0.00         4
+            Delete_waypoint       1.00      0.33      0.50         3
+              Complete_task       1.00      0.50      0.67         4
+                  unhandled       0.17      0.76      0.28        25
+
+                   accuracy                           0.23       150
+                  macro avg       0.21      0.14      0.14       150
+               weighted avg       0.20      0.23      0.16       150
+
+misses (116):
+  'uh um oh two one level how much is left': true get_oxy_pri_storage, got unhandled
+  'oh two status': true get_oxy_pri_storage, got unhandled
+  'EV2 Houston request backup oh two remaining over': true get_oxy_sec_storage, got unhandled
+  'O2 sec level': true get_oxy_sec_storage, got unhandled
+  'secondery oxygen how much left': true get_oxy_sec_storage, got unhandled
+  'primary oxygen no wait secondary oxygen level': true get_oxy_sec_storage, got get_oxy_pri_storage
+  'oh two prime press': true get_oxy_pri_pressure, got unhandled
+  'primary oxy tank psi kilo lima': true get_oxy_pri_pressure, got get_primary_battery_level
+  'tank one press sure reading': true get_oxy_pri_pressure, got unhandled
+  'O2 sec press': true get_oxy_sec_pressure, got unhandled
+  'backup tank pressure not the level': true get_oxy_sec_pressure, got unhandled
+  'sierra echo charlie oxygen pressure secondary tango': true get_oxy_sec_pressure, got unhandled
+  'oxygen pressure inside the suit not the tank': true get_suit_pressure_oxy, got unhandled
+  'pp oh two': true get_suit_pressure_oxy, got unhandled
+  'suit oh two partial press': true get_suit_pressure_oxy, got unhandled
+  'EV1 say again suit oxygen pressure over': true get_suit_pressure_oxy, got unhandled
+  'carbon dioxide in my suit not the helmet': true get_suit_pressure_co2, got unhandled
+  'pp see oh too': true get_suit_pressure_co2, got unhandled
+  'whats my ceeoh two': true get_suit_pressure_co2, got unhandled
+  'trays gas reading': true get_suit_pressure_other, got unhandled
+  'other gasses in the suit uh what are they at': true get_suit_pressure_other, got get_oxy_pri_storage
+  'check suit contamints level': true get_suit_pressure_other, got unhandled
+  'suit press reading kilo': true get_suit_pressure_total, got unhandled
+  'total pressure not oxygen just total': true get_suit_pressure_total, got unhandled
+  'houston EV1 suit psi over': true get_suit_pressure_total, got unhandled
+  'suite pressure check': true get_suit_pressure_total, got unhandled
+  'helmut CO2': true get_helmet_pressure_co2, got unhandled
+  'co2 in the helmet not the suit': true get_helmet_pressure_co2, got unhandled
+  'foxtrot helmet see oh two reading': true get_helmet_pressure_co2, got unhandled
+  'helmetco2 level': true get_helmet_pressure_co2, got unhandled
+  'primary fan yankee': true get_fan_pri_rpm, got unhandled
+  'primery fan revs': true get_fan_pri_rpm, got unhandled
+  'how fast is fan won spinning': true get_fan_pri_rpm, got unhandled
+  'fan two': true get_fan_sec_rpm, got unhandled
+  'secondary fan not primary rpm': true get_fan_sec_rpm, got unhandled
+  'fan too rpm': true get_fan_sec_rpm, got unhandled
+  'echo victor two backup fan spinning over': true get_fan_sec_rpm, got unhandled
+  'scrubber ACO two': true get_scrubber_a_co2_storage, got unhandled
+  'scrubber ay storage': true get_scrubber_a_co2_storage, got unhandled
+  'scrubber alfa carbon dioxide': true get_scrubber_a_co2_storage, got unhandled
+  'scrubber bravo no sorry scrubber alpha': true get_scrubber_a_co2_storage, got unhandled
+  'scrubber bee': true get_scrubber_b_co2_storage, got unhandled
+  'scrubber B not A': true get_scrubber_b_co2_storage, got unhandled
+  'scrub b co2 storage': true get_scrubber_b_co2_storage, got get_oxy_pri_storage
+  'scrubber alpha correction bravo': true get_scrubber_b_co2_storage, got unhandled
+  'temp over': true get_temperature, got unhandled
+  'uh roger copy how hot is it in here over': true get_temperature, got unhandled
+  'coolant level not pressure': true get_coolant_storage, got unhandled
+  'cool ant how much left': true get_coolant_storage, got unhandled
+  'coolent remaining percent': true get_coolant_storage, got get_oxy_pri_storage
+  'gas coolant pres kilo': true get_coolant_gas_pressure, got unhandled
+  'coolant liquid no wait gas pressure': true get_coolant_gas_pressure, got unhandled
+  'cool and gas side psi': true get_coolant_gas_pressure, got unhandled
+  'liquid coolant press uh': true get_coolant_liquid_pressure, got unhandled
+  'coolant gas correction liquid pressure': true get_coolant_liquid_pressure, got get_oxy_pri_storage
+  'water loop psi niner': true get_coolant_liquid_pressure, got get_oxy_pri_storage
+  'heart rait': true get_heart_rate, got unhandled
+  'EV1 bpm check over': true get_heart_rate, got unhandled
+  'harte rate': true get_heart_rate, got unhandled
+  'O2 burn': true get_oxy_consumption, got unhandled
+  'uh rate of oxygen usage how fast': true get_oxy_consumption, got unhandled
+  'oh two consumption rate whiskey': true get_oxy_consumption, got unhandled
+  "not how much is left how fast I'm burning oxygen": true get_oxy_consumption, got unhandled
+  'co2 production not suit co2': true get_co2_production, got unhandled
+  'how much see oh two am I making': true get_co2_production, got unhandled
+  'carbon dioxide output rate zulu': true get_co2_production, got unhandled
+  'my co2 production rate say again': true get_co2_production, got unhandled
+  'eva runtime uh copy': true get_eva_elapsed_time, got unhandled
+  'batt quick': true get_primary_battery_level, got unhandled
+  'batt one': true get_primary_battery_level, got unhandled
+  'charge level': true get_primary_battery_level, got get_oxy_pri_storage
+  'secondary battery wait no primary': true get_primary_battery_level, got unhandled
+  'backup bat charge': true get_secondary_battery_level, got get_oxy_pri_storage
+  'battery too percent': true get_secondary_battery_level, got unhandled
+  'backup power level': true get_secondary_battery_level, got unhandled
+  'primary battery scratch that secondary': true get_secondary_battery_level, got get_primary_battery_level
+  'alarms cautions anything': true get_warnings, got unhandled
+  'whats rong': true get_warnings, got unhandled
+  'vidals screen': true open_menu_vitals, got get_oxy_pri_storage
+  'bio med panel up': true open_menu_vitals, got unhandled
+  'map screen': true open_menu_navigation, got unhandled
+  'task list': true open_menu_tasks, got unhandled
+  'open check list': true open_menu_tasks, got get_oxy_pri_storage
+  "show tasks don't mark anything": true open_menu_tasks, got unhandled
+  'procedure list up': true open_menu_tasks, got get_oxy_pri_storage
+  'you eye ay screen': true open_menu_uia, got unhandled
+  'u i a': true open_menu_uia, got unhandled
+  'umbilical inner face panel': true open_menu_uia, got unhandled
+  'dismiss it delta': true close_menu, got unhandled
+  'get this off my screen': true close_menu, got unhandled
+  'open vitals no actually close it': true close_menu, got open_menu_vitals
+  'coords Halcyon Dome': true Get_coordinates, got unhandled
+  "where's Cinder Flats don't navigate just coordinates": true Get_coordinates, got unhandled
+  'location of Pike Plateau oscar': true Get_coordinates, got unhandled
+  'set target Juniper Spire': true Set_navigation_target, got unhandled
+  'go to Halcyon Dome not just coordinates take me there': true Set_navigation_target, got open_menu_navigation
+  'navigate Cinder Flats': true Set_navigation_target, got get_oxy_pri_storage
+  'nav to pike plateau over': true Set_navigation_target, got open_menu_navigation
+  're route me around this': true reroute_navigation, got unhandled
+  'route blocked new path same spot': true reroute_navigation, got get_oxy_pri_storage
+  'find a different path dont change destination': true reroute_navigation, got unhandled
+  'reroot please': true reroute_navigation, got unhandled
+  'waypoint add Fennel Rock': true Add_waypoint, got unhandled
+  'new way point Ochre Bluff': true Add_waypoint, got get_oxy_pri_storage
+  'mark this spot as Driftwood waypoint': true Add_waypoint, got unhandled
+  'add a waypoint called Tamarack not navigate': true Add_waypoint, got unhandled
+  'remove waypoint Fennel Rock': true Delete_waypoint, got unhandled
+  'scrap the Driftwood waypoint': true Delete_waypoint, got unhandled
+  'done with the dust sweep': true Complete_task, got unhandled
+  'cable routing complete': true Complete_task, got get_oxy_pri_storage
+  "don't show the map": true unhandled, got open_menu_navigation
+  'oxygen hmm': true unhandled, got get_oxy_pri_storage
+  'I like this nav display': true unhandled, got open_menu_navigation
+  'I was at basalt knoll an hour ago': true unhandled, got get_eva_elapsed_time
+  'no need to open vitals': true unhandled, got open_menu_vitals
+  'uh coolant': true unhandled, got get_oxy_pri_storage
+{'val': {'accuracy': 0.2257, 'macro_f1': 0.1831}, 'clean': {'accuracy': 0.2133, 'macro_f1': 0.1951}, 'attack': {'accuracy': 0.2267, 'macro_f1': 0.138}}

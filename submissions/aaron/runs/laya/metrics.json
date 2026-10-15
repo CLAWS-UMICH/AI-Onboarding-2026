@@ -1,0 +1,16 @@
+{
+ "model": "convaiinnovations/laya",
+ "method": "zero-shot (no training)",
+ "val": {
+  "accuracy": 0.2257,
+  "macro_f1": 0.1831
+ },
+ "clean": {
+  "accuracy": 0.2133,
+  "macro_f1": 0.1951
+ },
+ "attack": {
+  "accuracy": 0.2267,
+  "macro_f1": 0.138
+ }
+}
