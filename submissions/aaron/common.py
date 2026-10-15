@@ -18,7 +18,7 @@ from sklearn.model_selection import train_test_split
 HERE = Path(__file__).parent
 SEEDS = [42, 43, 44]
 VAL_FRACTION = 0.15
-TEST_SETS = ["clean", "attack", "final"]
+TEST_SETS = ["clean", "attack", "final", "final_attack"]
 
 # Label ids come from intents.json order, never from the data, so they never change between runs.
 LABELS = [

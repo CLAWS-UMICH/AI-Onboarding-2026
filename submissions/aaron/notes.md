@@ -46,7 +46,14 @@
 - Voice stretch: skipped (onboarding scope).
 - [x] Tuning screen (8 runs, seed 42, choose by val macro-F1 only, logs in `runs/tune/`): v1 was undertrained. Raising head lr (1e-3 -> 1e-2), encoder lr (2e-5 -> 5e-5) or epochs (10 -> 20) each fix it: val F1 0.910 -> 0.989-0.994, clean 0.920 -> 1.000, attack 0.780 -> 0.82-0.87. Removing label smoothing hurt (0.896). No run overfit (val loss fell every epoch, train-val gap <= 0.011). Top 5 configs tied within one val example (288 rows); tie rule picks h5 (head 1e-2, enc 5e-5, 20 ep max, best ep 4, gap -0.002). Needs multi-seed confirmation.
 - [x] Confirm (3 seeds): H5 val F1 0.993 +- 0.003, clean 0.996, attack 0.864 +- 0.019; H7 val F1 0.993 +- 0.001, clean 1.000, attack 0.880 +- 0.007. Tie on val; H7 wins on lower seed spread. Chosen: `--lr-head 1e-2 --lr-encoder 5e-5 --epochs 10`. Val accuracy vs unhandled threshold is flat from 0.2 to 0.5 (within one val example).
-- [ ] Official run, set threshold
-- [ ] Improvement loop (max 3 rounds)
+- [x] Official run (H7: `--lr-head 1e-2 --lr-encoder 5e-5`, 10 epochs): val 0.992 acc / 0.993 macro-F1, clean 1.000, attack 0.880 (3 seeds). Final model (5 epochs, all data): clean 0.993, attack 0.860. Threshold 0.5 (val flat 0.2-0.5; "say again" safer than a wrong action).
+- [x] Improvement round 1 (one round only):
+  - Official model's 21 attack misses grouped: 12 speech-to-text spellings/shorthand, 3 corrections (picked the first mention), 5 bare fragments, 1 negation aside.
+  - Sealed honest yardstick first: `test_final_attack.jsonl` (150, blind). Before round: raw 0.820, with threshold 0.813 (`runs/eval_before_r1.txt`). Its misses are never read.
+  - New data: `augment.py` (speech-to-text substitution table on clean rows, 178 rows) + LLM generator (60 corrections, 40 fragments, 20 negation asides). Critic kept 278/298; it dropped augmented rows where "two"->"too/to", "one"->"won" or "scrubber a"->"eh" erased the word that separates primary/secondary or A/B.
+  - Leak caught: I used test_attack sentences as examples in the generator prompt; `dedup.py` (now also checking `test_final_attack`) removed those copies, plus original rows near-identical to the new sealed set. 24 dropped.
+  - `data/train.jsonl`: 1,917 -> 2,171 rows (49-65 per intent, 212 unhandled; 164 tagged `"source": "augment"`). `validate.py`: 0 problems.
+  - Threshold 0.5 costs accuracy on noisy input (test_attack raw 0.860 vs 0.827 with threshold): revisit after the round.
+  - After retrain (same H7 settings, new data; `runs/eval_after_r1.txt`): **test_final_attack 0.820 -> 0.940 raw (0.813 -> 0.933 with threshold)**, the honest gain (+12). test_attack 0.860 -> 0.933 (steered set, inflated). Clean stays 1.000. Val 0.992 -> 0.984, but val is now a different, harder set (326 rows incl. augmented/correction rows), so not comparable. Threshold now costs <1 point.
 - [ ] Experiments: SetFit, Laya
 - [ ] Final results on `test_final`
